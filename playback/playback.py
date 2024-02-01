@@ -1,2 +1,1 @@
-playBack=input("Enter any sentence:")
-print(playBack,sep="...")
+print("This is cs50",sep="...")
