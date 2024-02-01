@@ -1,2 +1,3 @@
-lowerCase=input("Enter any sentence")
-upperCase=lowerCase.toupper()
+lowerCase=input("Enter any sentence:")
+upperCase=lowerCase.upper()
+print(upperCase)
