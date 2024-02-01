@@ -1,4 +1,5 @@
 sentence=input("Enter a sentence:")
-print(sentence," hello",sep="...")
+sentence1=str(sentence.split())
+print(sentence1)
 
 
