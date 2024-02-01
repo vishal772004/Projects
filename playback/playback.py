@@ -1,5 +1,5 @@
 sentence=input("Enter a sentence:")
-sentence1=str(sentence.split())
+sentence1=sentence.replace(" ","...")
 print(sentence1)
 
 
