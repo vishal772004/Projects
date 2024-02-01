@@ -1,3 +1,4 @@
 sentence=input("Enter a sentence:").split()
-print(sentence.join(),sep="...")
+sentence1=sentence.join
+print(,sep="...")
 
