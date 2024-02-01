@@ -1,4 +1,4 @@
-sentence=input("Enter a sentence:").split()
+sentence=input("Enter a sentence:")
 
 print(sentence,sep="...")
 
