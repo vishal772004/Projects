@@ -1,4 +1,4 @@
-sentence=input("Enter a sentence:")
-
-print(sentence,sep="...")
+sentence=input("Enter a sentence:").split()
+for i in sentence:
+    print(sentence[i],sep="...")
 
