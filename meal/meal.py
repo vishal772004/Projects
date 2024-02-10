@@ -1,10 +1,12 @@
 def main():
     time=input("What time is it?")
-
+    convert(time)
 
 
 def convert(time):
-    hours,minutes=int(time.split(":"))
+    hours,minutes=time.split(":")
+    hours=int(hours)
+    minutes=int(minutes)
     if hours==(7 or 8) and minutes<=60:
         print("breakfast time")
     elif hours==(12 or 13) and minutes<=60:
