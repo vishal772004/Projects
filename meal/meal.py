@@ -14,7 +14,7 @@ def main():
         print("dinner time")
 
 def convert(time):
-    convert_time=int(time
+    convert_time=int(time.split(":"))
 
 
 if __name__ == "__main__":
