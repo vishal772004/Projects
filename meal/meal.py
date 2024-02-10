@@ -13,7 +13,7 @@ def convert(time):
     elif hours==18 or hours==19 and minutes<=60:
         print("dinner time")
 
-if __name__ == "__main__":
-    main()
+
+main()
 
 
