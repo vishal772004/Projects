@@ -1,4 +1,4 @@
-filetype=input("Enter the type of the file:").strip()
+filetype=input("Enter the type of the file:").strip().lower()
 if filetype.endswith("jpg"):
      print("image/jpg")
 elif filetype.endswith("gif"):
