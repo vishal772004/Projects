@@ -14,7 +14,7 @@ elif filetype.endswith("txt"):
 elif filetype.endswith("zip"):
      print("application/zip")
 else :
-     pritnf("application/octet-stream")
+     print("application/octet-stream")
 
 
 
