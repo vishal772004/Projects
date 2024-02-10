@@ -10,7 +10,7 @@ elif filetype.endswith("png"):
 elif filetype.endswith("pdf"):
      print("application/pdf")
 elif filetype.endswith("txt"):
-     print("text/"+filetype.)
+     print("text/"+filetype.rstrip(".txt"))
 elif filetype.endswith("zip"):
      print("application/zip")
 else :
