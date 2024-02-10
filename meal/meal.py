@@ -3,7 +3,7 @@ def main():
     convert(time)
 
 def convert(time):
-    hours,minutes=time.split(":")
+    hours,minutes=time.split(":" or ".")
     hours=int(hours)
     minutes=int(minutes)
     if hours==7 or hours==8 and minutes<=60:
