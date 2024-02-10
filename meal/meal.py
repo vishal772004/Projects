@@ -2,7 +2,6 @@ def main():
     time=input("What time is it?")
     convert(time)
 
-
 def convert(time):
     hours,minutes=time.split(":")
     hours=int(hours)
@@ -13,5 +12,6 @@ def convert(time):
         print("lunch time")
     elif hours==18 or hours==19 and minutes<=60:
         print("dinner time")
-    if __name__ == "__main__":
-        main()
+
+if __name__ == "__main__":
+    main()
