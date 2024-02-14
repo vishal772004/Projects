@@ -14,7 +14,7 @@ while amt1>=amt:
     else:
         break
 
-print("Change owed:",amt)
+print("Change owed:",amt1)
 
 
 
