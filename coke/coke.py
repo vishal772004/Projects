@@ -9,6 +9,7 @@ while amt>0:
     if amt1<amt:
         print("Change Owed:",amt1)
         break
+    amt1=amt
     amt=int(input("Insert Coin:"))
 
 
