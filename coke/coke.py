@@ -14,5 +14,5 @@ while amt!=0:
          print("Change Owed:",amt1)
      elif amt1==0:
          print("Change Owed:",amt1)
-     if amt!=0:
+     if amt1>=0:
          amt=int(input("Insert coin:"))
