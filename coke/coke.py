@@ -10,6 +10,7 @@ while amt>=0:
          else:
                print("Amount Due:50")
      amt1=amt
-     
+     if amt==0 or amt>amt1:
+          pritn("Changed Owed :",amt)
 
 
