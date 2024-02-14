@@ -6,7 +6,7 @@ while amt1>=0:
         amt=amt1-amt
         if amt>0:
             print("Amount Due:",amt)
-    else:
+    elif amt1==50:
         print("Amount Due:50")
     amt1=amt
     if amt1!=0:
