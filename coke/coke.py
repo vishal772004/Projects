@@ -12,7 +12,7 @@ while amt1>=0:
     if amt1!=0:
         amt=int(input("Insert Coin:"))
     if amt>amt1:
-        break
-print("Change owed:",amt)
+        print("Change owed:",amt)
+
 
 
