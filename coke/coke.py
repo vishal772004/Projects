@@ -8,11 +8,12 @@ while amt>=0:
                amt=amt1-amt
                if amt1>0:
                     print("Amount Due:",amt)
-         else:
-               print("Amount Due:50")
+               else:
+                    print("Amount Due:50")
 
      if amt==0 or amt>amt1:
           print("Changed Owed :",amt)
+          break
      if amt1>amt:
           amt=int(input("Insert coin:"))
      amt1=amt
