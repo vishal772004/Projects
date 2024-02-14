@@ -8,3 +8,7 @@ while amt!=0:
      amt1=amt
      if amt!=0:
         amt=int(input("Insert coin:"))
+     if amt>amt1:
+         print("Change Owed:",amt1)
+     elif amt1==0:
+         print("Change Owed:",amt1)
