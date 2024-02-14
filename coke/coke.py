@@ -8,7 +8,7 @@ while amt1>=amt:
         if amt>0:
             print("Amount Due:",amt)
     elif amt1==50:
-        print("Amount Due:50")
+        print("Amount Due: 50")
         i=0
         break
     amt1=amt
