@@ -6,9 +6,9 @@ while amt>=0:
      if amt==5 or amt==10 or amt==25:
          if amt<=amt1:
                amt=amt1-amt
-               if amt1>0:
+               if amt1>0 and amt!=0:
                     print("Amount Due:",amt)
-               else:
+               elif amt==50:
                     print("Amount Due:50")
 
      if amt==0 or amt>amt1:
