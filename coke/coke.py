@@ -6,4 +6,5 @@ while amt!=0:
          amt=amt1-amt
          print("Change owed:",amt)
      amt1=amt
-     amt=int(input("Insert coin:"))
+     if amt!=0:
+        amt=int(input("Insert coin:"))
