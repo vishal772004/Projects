@@ -1,8 +1,8 @@
 print("Amount Due:50")
 amt=int(input("Insert coin:"))
-amt1=50-amt
+amt1=50
 while amt!=0:
      if amt==5 or amt==10 or amt==25:
-         amt1=50-amt
+         amt=amt1-amt
          print("Change owed:",amt)
      amt=int(input("Insert coin:"))
