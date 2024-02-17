@@ -8,10 +8,16 @@ def main():
 
 def is_valid(s):
     l=[]
+    j=0
     for i in plate:
         l.append(i)
         if i.isdigit():
-            
+            if i==0 and j==0:
+                j=j+1
+                return False
+    if plate[-1].isdigit():
+        pass
+
 
     if plate[0].isalpha() or plate[1].isalpha():
         pass
