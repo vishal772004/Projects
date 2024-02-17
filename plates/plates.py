@@ -10,7 +10,15 @@ def is_valid(s):
     l=[]
     for i in plate:
         l.append(i)
-    if l[0].isal
+    if plate[0].isalpha() or plate[1].isalpha():
+        pass
+    else:
+        return False
+    if 2>len(l)<=6:
+        pass
+    else:
+        return False
+    
 
 
 plate= input("Plate: ")
