@@ -13,26 +13,26 @@ def is_valid(s):
         l.append(i)
         if i.isdigit():
             if i==0 and j==0:
-                return False
+                return True
             j=j+1
     if plate[-1].isdigit():
         pass
     else:
-        return False
+        return
 
 
     if plate[0].isalpha() or plate[1].isalpha():
         pass
     else:
-        return False
+        return
     if 2>len(l)<=6:
         pass
     else:
-        return False
+        return
     if plate.isalnum():
         pass
     else:
-        return False
+        return
 
 
 
