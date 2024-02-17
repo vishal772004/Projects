@@ -1,5 +1,5 @@
 def main():
-
+    plate= input("Plate: ")
     if is_valid(plate):
         print("Valid")
     else:
@@ -9,19 +9,19 @@ def main():
 def is_valid(s):
     l=[]
     j=0
-    for i in plate:
+    for i in s:
         l.append(i)
         if i.isdigit():
             if i==0 and j==0:
                 return True
             j=j+1
-    if plate[-1].isdigit():
+    if s[-1].isdigit():
         pass
     else:
         return
 
 
-    if plate[0].isalpha() or plate[1].isalpha():
+    if s[0].isalpha() or s[1].isalpha():
         pass
     else:
         return
@@ -29,13 +29,13 @@ def is_valid(s):
         pass
     else:
         return
-    if plate.isalnum():
+    if s.isalnum():
         pass
     else:
         return
 
 
 
-plate= input("Plate: ")
+
 
 main()
