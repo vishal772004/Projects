@@ -1,5 +1,5 @@
 def main():
-    plate = input("Plate: ")
+
     if is_valid(plate):
         print("Valid")
     else:
@@ -10,7 +10,9 @@ def is_valid(s):
     l=[]
     for i in plate:
         l.append(i)
-    
+    if l[0].isal
 
+
+plate= input("Plate: ")
 
 main()
