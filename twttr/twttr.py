@@ -5,5 +5,6 @@ for i in phrase:
 vowels=["A","E","I","O","U","a","e","i","o","u"]
 for i in phrase:
     for j in vowels:
-        phrase=phrase.replace(i,"")
+        if i==j:
+            phrase=phrase.replace(i,"")
 print("Output:",phrase)
