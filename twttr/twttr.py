@@ -1,3 +1,5 @@
-phrase=str(input("Input:")).split()
-print(phrase)
+phrase=str(input("Input:"))
+vowel=
+for i in phrase:
+    if
 
