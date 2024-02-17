@@ -1,7 +1,10 @@
 phrase=input("Input:").split()
+l=[]
+for j in phrase:
+    l.append(j)
 vowels=["A","E","I","O","U","a","e","i","o","u"]
-for i in phrase:
+for i in l:
     for k in vowels:
         if i==k:
-            phrase.replace(i," ")
-print(phrase)
+            l.replace(i," ")
+print(l)
