@@ -10,9 +10,9 @@ def is_valid(s):
     l=[]
     for i in s:
         l.append(i)
-    for j in l:
-        if j.isdigit():
-            
+    if s.isalnum():
+        
+
 
     print(l)
     return True
