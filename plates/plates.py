@@ -15,27 +15,23 @@ def is_valid(s):
             if i==0 and j==0:
                 return True
             j=j+1
-    if s[-1].isdigit():
-        pass
-    else:
-        return
+        if s[-1].isdigit():
+             pass
+        else:
+             return False
 
 
     if s[0].isalpha() or s[1].isalpha():
         pass
     else:
-        return
+        return False
     if 2>len(l)<=6:
         pass
     else:
-        return
+        return False
     if s.isalnum():
         pass
     else:
-        return
-
-
-
-
-
+        return False
+    return True
 main()
