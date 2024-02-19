@@ -8,10 +8,12 @@ def main():
 
 def is_valid(s):
     l=[]
+    j=0
     for i in s:
         l.append(i)
-    if s.isalnum():
-        
+        if i>=0 and i<=9:
+            j=j+1
+
 
 
     print(l)
