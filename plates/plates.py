@@ -11,7 +11,7 @@ def is_valid(s):
     j=0
     for i in s:
         l.append(i)
-        if i>=0 and i<=9:
+        if i.isdigit():
             j=j+1
     if 2<=len(l)<=6:
         pass
