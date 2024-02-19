@@ -10,7 +10,8 @@ def is_valid(s):
     l=[]
     for i in s:
         l.append(i)
-        
+    print(l)
+    return True
 
 
 main()
