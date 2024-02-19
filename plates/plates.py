@@ -16,7 +16,7 @@ def is_valid(s):
     else:
         return False
     for i in l:
-        if i>=0 and i<=9:
+        if i.isdigit():
             j=j+1
     a=len(l)
     if j>0 and l[a].isdigit():
