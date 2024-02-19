@@ -19,7 +19,7 @@ def is_valid(s):
         if i.isdigit():
             j=j+1
     a=len(l)
-    if j>0 and l[a].isdigit():
+    if j>0 and l[-1].isdigit():
         pass
     else:
         return False
