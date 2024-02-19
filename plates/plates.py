@@ -27,7 +27,7 @@ def is_valid(s):
         pass
     else:
         return False
-    print(l)
+    
     return True
 
 
