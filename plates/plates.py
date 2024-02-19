@@ -10,8 +10,10 @@ def is_valid(s):
     l=[]
     for i in s:
         l.append(i)
-    if s.isdigit()
-        
+        if i>0 && i<9:
+            
+
+
     print(l)
     return True
 
