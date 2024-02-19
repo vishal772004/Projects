@@ -15,7 +15,14 @@ def is_valid(s):
         pass
     else:
         return False
-
+    for i in l:
+        if i>=0 and i<=9:
+            j=j+1
+    a=len(l)
+    if j>0 and l[a].isdigit():
+        pass
+    else:
+        return False
     print(l)
     return True
 
