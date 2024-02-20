@@ -13,7 +13,8 @@ def is_valid(s):
         l.append(i)
         if i==0 and j==0:
             return False
-            j=j+1
+        j=j+1
+        
     if 2<=len(l)<=6:
         pass
     else:
