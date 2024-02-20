@@ -15,7 +15,13 @@ def is_valid(s):
         pass
     else:
         return False
-    
+    c=l[0]
+    c1=l[1]
+    if c.isalpha() and c1.isalpha():
+        pass
+    else :
+        return False
+
     return True
 
 
