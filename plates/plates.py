@@ -15,18 +15,6 @@ def is_valid(s):
         pass
     else:
         return False
-    for i in l:
-        if i.isdigit():
-            j=j+1
-    a=len(l)
-    if j>0 and l[-1].isdigit():
-        pass
-    else:
-        return False
-    if s.isalnum():
-        pass
-    else:
-        return False
     
     return True
 
