@@ -31,10 +31,8 @@ def is_valid(s):
         pass
     else :
         return False
-    c2=l[-1]
-    c3=l[-2]
-    if c2.isalpha() and z>0 and c3. :
-        return False
+    for i in l:
+        if z==1 
 
     return True
 
