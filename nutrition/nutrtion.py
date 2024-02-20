@@ -1,16 +1,43 @@
-item=input("Item:")
+item=input("Item:").lower()
 match item:
-    case "Apple":
+    case "apple":
         print("Calories:130")
-    case "Avocado":
+    case "avocado":
         print("Calories:50")
-    case "Banana":
+    case "banana":
         print("Calories:110")
-    case "Cantalope":
+    case "cantalope":
         print("Calories:50")
-    case "Grapefruit":
+    case "grapefruit":
         print("Calories:60")
-    case "Grapes":
+    case "grapes":
         print("Calories:90")
-    case "Honeydew Melon":
+    case "honeydew melon":
         print("Calories:50")
+    case "kiwifruit":
+        print("Calories:90")
+    case "lemon":
+        print("Calories:15")
+    case "lime":
+        print("Calories:20")
+    case "nectarine":
+        print("Calories:60")
+    case "orange":
+        print("Calories:80")
+    case "peach":
+        print("Calories:60")
+    case "pear":
+        print("Calories:100")
+    case "pineapple":
+        print("Calories:50")
+    case "plums":
+        print("Calories:70")
+    case "strawberries":
+        print("Calories:50")
+    case "sweet cherries":
+        print("Caloreis:100")
+    case "tangerine":
+        print("Calories:50")
+    case "watermelon":
+        print("Calories:80")
+
