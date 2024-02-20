@@ -15,7 +15,10 @@ def is_valid(s):
             return False
         if i.isdigit():
             j=j+1
-
+    if s.isalnum():
+        pass
+    else:
+        return False
     if 2<=len(l)<=6:
         pass
     else:
