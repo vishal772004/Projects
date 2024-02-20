@@ -32,7 +32,11 @@ def is_valid(s):
     else :
         return False
     for i in l:
-        if z==1 
+        if i.isdigit():
+            if l[i+1].isdigit() and l[i+2].isdigit():
+                pass
+        else :
+            return False
 
     return True
 
