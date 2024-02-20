@@ -9,12 +9,14 @@ def main():
 def is_valid(s):
     l=[]
     j=0
+    z=0
     for i in s:
         l.append(i)
         if i=="0" and j==0:
             return False
         if i.isdigit():
             j=j+1
+            z=1
     if s.isalnum():
         pass
     else:
@@ -29,8 +31,10 @@ def is_valid(s):
         pass
     else :
         return False
-
-
+    c2=l[-1]
+    if c2.isalpha() and z==0:
+        return False
+    print(c2)
     return True
 
 
