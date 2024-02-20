@@ -34,7 +34,7 @@ def is_valid(s):
     c2=l[-1]
     if c2.isalpha() and z>0:
         return False
-    print(c2)
+    
     return True
 
 
