@@ -33,7 +33,7 @@ def is_valid(s):
         return False
     for i in l:
         if i.isdigit():
-            if l[i+1].isdigit() and l[i+2].isdigit():
+            if l[-1].isdigit() and l[-2].isdigit():
                 pass
         else :
             return False
