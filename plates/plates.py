@@ -32,7 +32,7 @@ def is_valid(s):
     else :
         return False
     c2=l[-1]
-    if c2.isalpha() and z==0:
+    if c2.isalpha() and z>0:
         return False
     print(c2)
     return True
