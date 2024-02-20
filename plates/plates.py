@@ -31,11 +31,10 @@ def is_valid(s):
         pass
     else :
         return False
-    for i in l:
-        if i.isdigit():
-            if l[-1].isdigit() and l[-2].isdigit():
-                pass
-        else :
+    if z==1:
+        if l[-1].isdigit() and l[-2].isdigit():
+            pass
+        else:
             return False
 
     return True
