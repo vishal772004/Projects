@@ -35,7 +35,7 @@ match item:
     case "strawberries":
         print("Calories:50")
     case "sweet cherries":
-        print("Caloreis:100")
+        print("Calories:100")
     case "tangerine":
         print("Calories:50")
     case "watermelon":
