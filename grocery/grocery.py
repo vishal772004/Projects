@@ -7,5 +7,5 @@ while True:
         break
 for i in l:
     for j in l:
-        if l[i]<l[j]:
+        if i[0]<j[0]:
             print(l[i])
