@@ -13,10 +13,12 @@ for  i in l:
     for j in l:
         if i==j:
             z=z+1
-            
+            l.remove(j)
+        d[i]=z
+        z=0
 for i in a:
     for j in l:
         if j.startswith(i):
-            print(j)
+            print(d,j)
 
 
