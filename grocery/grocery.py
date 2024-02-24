@@ -17,13 +17,12 @@ for k in l:
     d[k]=z
     z=0
 
-d1={}
 for i in a:
     for j in l:
         if j.startswith(i):
-            d1=j
+            print(d[j],j)
 
 
-print(d1)
+
 
 
