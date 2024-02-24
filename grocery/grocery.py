@@ -18,7 +18,7 @@ for k in l:
 
         if z>=2:
             l.remove(m)
-            z=z+1
+            
     d[k]=z
 
 
