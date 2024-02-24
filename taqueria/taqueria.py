@@ -16,6 +16,7 @@ while True:
         item=input().lower()
         if item in menu:
             sum=sum+menu[item]
+        print("Item:")
         continue
     except EOFError:
         print("\n")
