@@ -14,10 +14,10 @@ for k in l:
     for m in l:
         if k==m and z>1:
             z=z+1
-
-        d[k]=z
-        l.remove(m)
-
+            l.remove(m)
+    d[k]=z
+    z=1
+print(l)
 
 for i in a:
     for j in l:
