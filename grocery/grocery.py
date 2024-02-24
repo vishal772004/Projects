@@ -11,7 +11,8 @@ a=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","
 for i in a:
     for j in l:
         if j.startswith(i):
-             print(j)
-
+             l[z]=j
+             z=z+1
+print(l)
 
 
