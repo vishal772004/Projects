@@ -13,6 +13,10 @@ sum=0
 while True:
     try:
         item=input("Item:")
-        if 
+        if item in menu:
+            sum=sum+menu[item]
+        print("\n")
+        continue
     except EOFError:
         print("Total:")
+        break
