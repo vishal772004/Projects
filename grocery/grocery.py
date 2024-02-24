@@ -14,8 +14,9 @@ for k in l:
     for m in l:
         if k==m and z>1:
             z=z+1
-            l.remove(m)
+
         d[k]=z
+        l.remove(m)
 
 
 for i in a:
