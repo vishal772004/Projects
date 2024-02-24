@@ -10,7 +10,7 @@ menu={
     "tortilla salad": 8.00
 }
 sum=0
-print("Item:")
+print("Items:")
 while True:
     try:
         item=input().lower()
