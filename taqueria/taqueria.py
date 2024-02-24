@@ -11,6 +11,7 @@ menu={
 }
 sum=0
 while True:
+    print("\n")
     try:
         print("Item:",end="")
         item=input().lower()
