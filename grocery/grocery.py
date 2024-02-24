@@ -15,14 +15,14 @@ for k in l:
         if k==m:
             z=z+1
     d[k]=z
-    s.add(m)
     z=0
 
 d1={}
 for i in a:
     for j in l:
         if j.startswith(i):
-            d1[j]=z
+            d1=j
+
 
 print(d1)
 
