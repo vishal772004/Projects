@@ -18,7 +18,7 @@ while True:
             sum=sum+menu[item]
         continue
     except EOFError:
-        print(f"Total:{sum:.2f}")
+        print(f"${sum:.2f}")
         break
     except KeyError:
         continue
