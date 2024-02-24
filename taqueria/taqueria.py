@@ -12,7 +12,7 @@ menu={
 sum=0
 while True:
     try:
-        check=input()
+        
         print("Item:",end="")
         item=input().lower()
         if item in menu:
