@@ -12,14 +12,14 @@ menu={
 sum=0
 while True:
     try:
-        
+
         print("Item:",end="")
         item=input().lower()
         if item in menu:
             sum=sum+menu[item]
         continue
     except EOFError:
-        print(f"${sum:.2f}")
         break
     except KeyError:
         continue
+print(f"${sum:.2f}")
