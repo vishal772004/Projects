@@ -14,7 +14,7 @@ for k in l:
     for m in l:
         if k==m:
             z=z+1
-        if z>2:
+        if z>=2:
             l.remove(m)
             print(l)
     d[k]=z
