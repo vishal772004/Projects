@@ -15,7 +15,8 @@ while True:
         item=input("Item:")
         if item in menu:
             sum=sum+menu[item]
-        
+        print("\n")
+        continue
     except EOFError:
         print(f"Total:{sum:.2f}")
         break
