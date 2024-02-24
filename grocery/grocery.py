@@ -15,8 +15,7 @@ for k in l:
     for m in l:
         if k==m:
             z=z+1
-            print(z)
-            print(l)
+
         if z>=2:
             l.remove(m)
             z=z+1
