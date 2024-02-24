@@ -13,10 +13,8 @@ for i in l:
     for j in l:
         if i==j:
             z=z+1
-    for k in i:
-        for l in a:
-            if k==a:
-                d[i]=len(a)
-print(d)
+    if z==0:
+        print("1",i)
+
 
 
