@@ -9,7 +9,9 @@ z=0
 d={}
 a=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 for i in a:
-    print(i)
+    for j in l:
+        if a==l[0]:
+             print(l)
 
 
 
