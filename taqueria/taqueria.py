@@ -9,4 +9,10 @@ menu={
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-while 
+sum=0
+while True:
+    try:
+        item=input("Item:")
+        if 
+    except EOFError:
+        print("Total:")
