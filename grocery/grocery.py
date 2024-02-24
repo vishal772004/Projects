@@ -17,7 +17,7 @@ for k in l:
         if z>1:
             l.remove(m)
     d[k]=z
-    z=1
+    z=0
 print(l)
 
 for i in a:
