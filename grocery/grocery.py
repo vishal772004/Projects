@@ -18,7 +18,7 @@ for k in l:
 
         if z>=2:
             l.remove(m)
-            
+
     d[k]=z
 
 
@@ -26,7 +26,7 @@ for i in a:
     for j in l:
         if j.startswith(i):
             print(d[j],j)
-
+print(d)
 
 
 
