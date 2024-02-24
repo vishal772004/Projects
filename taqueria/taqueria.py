@@ -12,7 +12,8 @@ menu={
 sum=0
 while True:
     try:
-        item=input("Item:").lower()
+        print("Item:",end="")
+        item=input().lower()
         if item in menu:
             sum=sum+menu[item]
         continue
