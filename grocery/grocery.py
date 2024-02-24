@@ -14,8 +14,8 @@ for k in l:
     for m in l:
         if k==m:
             z=z+1
-        if z>1:
-            l.remove(m)
+       # if z>1:
+           # l.remove(m)
     d[k]=z
     z=1
 
@@ -23,6 +23,6 @@ for k in l:
 for i in a:
     for j in l:
         if j.startswith(i):
-            print(j)
-print(d)
+            print(d[j],j)
+#print(d)
 
