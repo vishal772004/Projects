@@ -19,9 +19,7 @@ for k in l:
             print(l)
         if z>=2:
             l.remove(m)
-            print("5")
-            print(l)
-            print(z)
+            z=z+1
     d[k]=z
 
 
