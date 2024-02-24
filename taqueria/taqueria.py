@@ -15,10 +15,10 @@ while True:
         item=input("Item:")
         if item in menu:
             sum=sum+menu[item]
-        print("\n")
+
         continue
     except EOFError:
-        print("Total:")
+        print(f"Total:{sum}")
         break
     except KeyError:
         continue
