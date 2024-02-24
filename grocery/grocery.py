@@ -7,7 +7,7 @@ while True:
         break
 z=0
 d={}
-s={}
+s=set()
 a=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 x=len(l)
 for k in l:
@@ -24,4 +24,5 @@ for i in a:
         if j.startswith(i):
             print(d[j],j)
 print(d)
+print(s)
 
