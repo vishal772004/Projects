@@ -18,7 +18,7 @@ while True:
 
         continue
     except EOFError:
-        print("Total:",sum)
+        print(f"Total:{sum:.2f}")
         break
     except KeyError:
         continue
