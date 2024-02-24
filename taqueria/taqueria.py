@@ -12,7 +12,7 @@ menu={
 sum=0
 while True:
     try:
-        item=input("Item").lower()
+        item=input("Item:").lower()
         if item in menu:
             sum=sum+menu[item]
         continue
