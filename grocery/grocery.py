@@ -16,6 +16,7 @@ for k in l:
             z=z+1
         if z>2:
             l.remove(m)
+            print(l)
     d[k]=z
     z=0
 
