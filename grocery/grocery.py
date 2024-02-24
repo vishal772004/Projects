@@ -5,6 +5,10 @@ while True:
         l.append(g)
     except EOFError:
         break
+z=0
 for i in l:
     for j in l:
-        print(j)
+        if i==j:
+            z=z+1
+        
+
