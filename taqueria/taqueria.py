@@ -19,6 +19,7 @@ while True:
             sum=sum+menu[item]
         continue
     except EOFError:
+        print("\n")
         break
     except KeyError:
         continue
