@@ -10,5 +10,5 @@ for i in l:
     for j in l:
         if i==j:
             z=z+1
-        
+        if 
 
