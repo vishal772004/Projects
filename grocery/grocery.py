@@ -19,6 +19,8 @@ for k in l:
         if z>=2:
             l.remove(m)
             print("5")
+            print(l)
+            print(z)
     d[k]=z
     z=0
 
