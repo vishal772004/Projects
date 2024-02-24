@@ -7,7 +7,7 @@ while True:
         break
 z=0
 d={}
-
+s={}
 a=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 x=len(l)
 for k in l:
@@ -15,6 +15,7 @@ for k in l:
         if k==m:
             z=z+1
     d[k]=z
+    s.add(m)
     z=0
 
 
