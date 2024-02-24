@@ -20,3 +20,5 @@ while True:
     except EOFError:
         print("Total:")
         break
+    except KeyError:
+        continue
