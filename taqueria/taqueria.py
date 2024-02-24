@@ -14,9 +14,9 @@ while True:
     try:
         print("Item:",end="")
         item=input().lower()
-        print(f"${sum:.2f}")
         if item in menu:
             sum=sum+menu[item]
+        print(f"${sum:.2f}")
         continue
     except EOFError:
         print(f"${sum:.2f}")
