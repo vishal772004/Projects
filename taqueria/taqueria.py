@@ -10,9 +10,10 @@ menu={
     "tortilla salad": 8.00
 }
 sum=0
+print("Item:")
 while True:
     try:
-        item=input("Item:").lower()
+        item=input().lower()
         if item in menu:
             sum=sum+menu[item]
         continue
