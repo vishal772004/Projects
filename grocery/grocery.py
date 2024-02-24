@@ -5,7 +5,7 @@ while True:
         l.append(g)
     except EOFError:
         break
-z=0
+z=1
 d={}
 k=[]
 a=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
@@ -14,16 +14,15 @@ for k in l:
     for m in l:
         if k==m:
             z=z+1
-            print(z)
         if z>1:
             l.remove(m)
     d[k]=z
-    z=0
-print(l)
+    z=1
+
 
 for i in a:
     for j in l:
         if j.startswith(i):
             print(d[j],j)
-print(d)
+
 
