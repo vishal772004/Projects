@@ -16,10 +16,10 @@ for k in l:
         if k==m:
             z=z+1
             print(k)
-        d[m]=z
+        
         if z>=2:
             l.remove(m)
-        
+
 for i in a:
     for j in l:
         if j.startswith(i):
