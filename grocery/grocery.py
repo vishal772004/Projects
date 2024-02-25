@@ -6,7 +6,7 @@ while True:
     except EOFError:
         break
 z=0
-d={}
+d=d1={}
 
 a=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
@@ -20,7 +20,8 @@ for k in l:
             l.remove(m)
 
     d[k]=z
-    d1[k]=z
+    d1.update{k:z}
+
 print(d1)
 
 for i in a:
