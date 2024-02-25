@@ -20,14 +20,15 @@ for k in l:
             l.remove(m)
 
     d[k]=z
-    print(d)
-
+    d1={k:d[k]}
+print(d1)
 
 for i in a:
     for j in l:
         if j.startswith(i):
             print(d[j],end=" ")
-            
+            print(j)
+
 
 
 
