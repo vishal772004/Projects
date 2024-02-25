@@ -1,4 +1,4 @@
-l=[]
+l=y=[]
 while True:
     try :
         g=input().upper()
@@ -15,10 +15,7 @@ for k in l:
     for m in l:
         if k==m:
             z=z+1
-            print(k)
-        
-        if z>=2:
-            l.remove(m)
+            
 
 for i in a:
     for j in l:
