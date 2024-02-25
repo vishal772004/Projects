@@ -20,7 +20,7 @@ for k in l:
             l.remove(m)
 
     d[k]=z
-    d1={k:z}
+    d1[k]=z
 print(d1)
 
 for i in a:
