@@ -17,11 +17,10 @@ for k in l:
             z=z+1
             d[k]=z
 for i in l:
-    try:
         s.add(i)
-    exception 
+
 for i in a:
-    for j in l:
+    for j in s:
         if j.startswith(i):
             print(d[j],end=" ")
             print(j)
