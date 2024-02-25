@@ -15,13 +15,13 @@ for k in l:
     for m in l:
         if k==m:
             z=z+1
-            
+            d[k]=z
 
 for i in a:
     for j in l:
         if j.startswith(i):
-            print(j,end=" ")
-           # print(j)
+            print(d[j],end=" ")
+            print(j)
 
 
 
