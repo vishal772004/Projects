@@ -16,7 +16,7 @@ for k in l:
         if k==m:
             z=z+1
             print(k)
-
+        print(z)
 for i in a:
     for j in l:
         if j.startswith(i):
