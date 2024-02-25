@@ -24,7 +24,7 @@ for k in l:
 for i in a:
     for j in l:
         if j.startswith(i):
-            print(d[j],end=" ")
+            print(j,end=" ")
            # print(j)
 
 
