@@ -18,7 +18,7 @@ while True:
         d1=date.split(" ")
         if d1[0].isalpha():
             if date.find(",")<=0:
-                break
+                continue
             for i in month:
                 if i==d1[0]:
                     month1=month[i]
@@ -31,7 +31,7 @@ while True:
                 continue
             print(year1+"-"+month1+"-"+day1)
         elif d1[0].isdigit():
-            break
+            continue
         else:
             d2=date.split("/")
             if int(d2[0])<=12 :
