@@ -36,10 +36,9 @@ while True:
             d2=date.split("/")
             if int(d2[0])<=12 :
                 if int(d2[0])<=9:
-                    d2[0]="0"+d2[0]
+                    d2[0]="0"+d2[0].strip()
             else:
                 continue
-            d2[1]=d2[1].strip()
             if int(d2[1])<=31 :
                 if int(d2[1])<=9:
                     d2[1]="0"+d2[1]
