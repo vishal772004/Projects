@@ -14,9 +14,13 @@ month={
 }
 date1=[]
 while True:
-    date=input("Date:").split("/")
+    date=input("Date:")
     for i in date:
+        for j in month:
+            if i==j:
+                date1[1]=month[j]
         print(i)
+        print(date[1])
     break
 
 
