@@ -41,9 +41,10 @@ while True:
                 continue
             if int(d2[1])<=31 :
                 if int(d2[1])<=9:
-                    d2[1]="0"+d2[1]
+                    d2[1]="0"+d2[1].strip()
             else:
                 continue
+            d2[2]=d2[2].strip()
             print(d2[2]+"-"+d2[0]+"-"+d2[1])
         break
     except ValueError:
