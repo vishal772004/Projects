@@ -18,8 +18,10 @@ while True:
     d1=date.split(" ")
     print(d1)
     d2=date.split("/")
-    day2=d2[]
-    print(d2)
+    day2=d2[1]
+    month2=d2[0]
+    year2=d2[2]
+    print(year2+"-"+month2+"-"+day2)
 
     print(date)
     break
