@@ -17,6 +17,8 @@ while True:
         date=input("Date:")
         d1=date.split(" ")
         if d1[0].isalpha():
+            if date.find(",")<=0:
+                break
             for i in month:
                 if i==d1[0]:
                     month1=month[i]
