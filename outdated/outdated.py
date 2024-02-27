@@ -17,7 +17,7 @@ while True:
     date=input("Date:")
     if date.isalnum():
          d1=date.split(" ")
-         print(d1python )
+         print(d1)
     d2=date.split("/")
 
     print(date)
