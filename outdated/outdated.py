@@ -13,24 +13,25 @@ month={
     "December":"12"
 }
 while True:
-    date=input("Date:")
-    d1=date.split(" ")
-    if d1[0].isalpha():
-        for i in month:
-            if i==d1[0]:
-                month1=month[i]
-        day1=d1[1].strip(",")
-        year1=d1[-1]
-        if int(day1)<=31 :
-            if int(day1)<=9:
-                day1="0"+day1
+    try:
+        date=input("Date:")
+        d1=date.split(" ")
+        if d1[0].isalpha():
+            for i in month:
+                if i==d1[0]:
+                    month1=month[i]
+            day1=d1[1].strip(",")
+            year1=d1[-1]
+            if int(day1)<=31 :
+                if int(day1)<=9:
+                    day1="0"+day1
+            else:
+                continue
+            print(year1+"-"+month1+"-"+day1)
+        elif d1[0].isdigit():
+            break
         else:
-            continue
-        print(year1+"-"+month1+"-"+day1)
-    elif d1[0].isdigit():
-        break
-    else:
-        d2=date.split("/")
+            d2=date.split("/")
         if int(d2[0])<=12 :
             if int(d2[0])<=9:
                 d2[0]="0"+d2[0]
@@ -42,7 +43,10 @@ while True:
         else:
             continue
         print(d2[2]+"-"+d2[0]+"-"+d2[1])
-    break
+        break
+    except ValueError:
+        break
+
 
 
 
