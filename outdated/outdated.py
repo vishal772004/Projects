@@ -25,6 +25,12 @@ while True:
         print(year1+"-"+month1+"-0"+day1)
     else:
         d2=date.split("/")
+        if int(d2[0])<=31 :
+            if int(d2[0])<=9:
+                d2[0]="0"+d2[0]
+        else:
+            continue
+        if int(d2[])
         print(d2[2]+"-0"+d2[0]+"-0"+d2[1])
     break
 
