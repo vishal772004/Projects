@@ -18,11 +18,15 @@ while True:
     if date.isalpha():
         d1=date.split()
         if d1[1]<=12:
-            for i in d1:
-                date1[0]=
-                for j in month:
-                    if i==j:
-                         date1=month[j]
+            pass
+        else:
+            continue
+        date1[0]=d1[-1]
+        for i in d1:
+            for j in month:
+                if i==j:
+                    date1[1]=month[j]
+        
 
     break
 
