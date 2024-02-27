@@ -19,7 +19,7 @@ while True:
     for i in month:
         if i==d1[0]:
             month1=month[i]
-    day1=d1[1].rstrip(",")
+    day1=d1[1].strip(",")
     year1=d1[-1]
     print(year1+"-"+month1+"-0"+day1)
 
