@@ -18,19 +18,19 @@ n=2
 while True:
     date=input("Date:")
     d1=date.split(" ")
-  #  if date.isalnum():
-    if int(d1[1])<=31:
-        date1=d1[1]
-        print(date1)
-    else:
-        continue
-    date1[0]=d1[-1]
-    print(date1[0])
-    for i in d1:
-        for j in month:
-            if i==j:
-                date1[1]="0"+month[j]
-    print(date1[1])
+    if date.isalnum():
+        if int(d1[1])<=31:
+            date1=d1[1]
+            print(date1)
+        else:
+            continue
+        date1[0]=d1[-1]
+        print(date1[0])
+        for i in d1:
+            for j in month:
+                if i==j:
+                    date1[1]="0"+month[j]
+    print(date1)
     break
 
 
