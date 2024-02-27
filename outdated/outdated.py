@@ -16,18 +16,16 @@ date1=[]
 while True:
     date=input("Date:")
     d1=date.split(" ")
-    for i in month:
-        if i==d1[0]:
-            month1=month[i]
-    day1=d1[1].strip(",")
-    year1=d1[-1]
-    print(year1+"-"+month1+"-0"+day1)
-
-
-    d2=date.split("/")
-  #  print(d2[2]+"-0"+d2[0]+"-0"+d2[1])
-
-    print(d2)
+    if d1[0].isalpha():
+        for i in month:
+            if i==d1[0]:
+                month1=month[i]
+        day1=d1[1].strip(",")
+        year1=d1[-1]
+        print(year1+"-"+month1+"-0"+day1)
+    else:
+        d2=date.split("/")
+        print(d2[2]+"-0"+d2[0]+"-0"+d2[1])
     break
 
 
