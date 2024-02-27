@@ -32,17 +32,17 @@ while True:
             break
         else:
             d2=date.split("/")
-        if int(d2[0])<=12 :
-            if int(d2[0])<=9:
-                d2[0]="0"+d2[0]
-        else:
-            continue
-        if int(d2[1])<=31 :
-            if int(d2[1])<=9:
-                d2[1]="0"+d2[1]
-        else:
-            continue
-        print(d2[2]+"-"+d2[0]+"-"+d2[1])
+            if int(d2[0])<=12 :
+                if int(d2[0])<=9:
+                    d2[0]="0"+d2[0]
+            else:
+                continue
+            if int(d2[1])<=31 :
+                if int(d2[1])<=9:
+                    d2[1]="0"+d2[1]
+            else:
+                continue
+            print(d2[2]+"-"+d2[0]+"-"+d2[1])
         break
     except ValueError:
         break
