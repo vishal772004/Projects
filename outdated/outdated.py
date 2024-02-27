@@ -22,8 +22,8 @@ while True:
         day1=d1[1].strip(",")
         year1=d1[-1]
         if int(d1[1])<=31 :
-            if int(d2[0])<=9:
-                day1="0"+d2[0]
+            if int(d1[1])<=9:
+                day1="0"+d1[1]
         else:
             continue
         print(year1+"-"+month1+"-"+day1)
@@ -35,8 +35,8 @@ while True:
         else:
             continue
         if int(d2[1])<=31 :
-            if int(d2[0])<=9:
-                d2[0]="0"+d2[0]
+            if int(d2[1])<=9:
+                d2[1]="0"+d2[1]
         else:
             continue
         print(d2[2]+"-"+d2[0]+"-"+d2[1])
