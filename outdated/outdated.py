@@ -30,7 +30,7 @@ while True:
             for j in month:
                 if i==j:
                     date1[1]="0"+month[j]
-    print(date1)
+    print(date)
     break
 
 
