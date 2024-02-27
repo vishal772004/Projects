@@ -25,12 +25,9 @@ while True:
 
 
     d2=date.split("/")
-    day2=d2[1]
-    month2=d2[0]
-    year2=d2[2]
-    print(year2+"-0"+month2+"-0"+day2)
+  #  print(d2[2]+"-0"+d2[0]+"-0"+d2[1])
 
-    print(date)
+    print(d2)
     break
 
 
