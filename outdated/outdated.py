@@ -39,9 +39,10 @@ while True:
                     d2[0]="0"+d2[0]
             else:
                 continue
+            d2[1]=d2[1].strip()
             if int(d2[1])<=31 :
                 if int(d2[1])<=9:
-                    d2[1]="0"+d2[1].strip()
+                    d2[1]="0"+d2[1]
             else:
                 continue
             d2[2]=d2[2].strip()
