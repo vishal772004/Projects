@@ -15,5 +15,7 @@ month={
 while True:
     date=input("Date:").split("/")
     for i in date:
-        
+        if date[0]==i :
+            for j in month:
+                
 
