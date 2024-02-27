@@ -47,7 +47,7 @@ while True:
             print(d2[2]+"-"+d2[0]+"-"+d2[1])
         break
     except ValueError:
-        break
+        continue
 
 
 
