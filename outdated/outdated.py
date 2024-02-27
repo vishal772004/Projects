@@ -15,12 +15,14 @@ month={
 date1=[]
 while True:
     date=input("Date:")
-    d1=date.split()
-    for i in d1:
-        for j in month:
-            if i==j:
-                date1=month[j]
-        
+    if date.isalpha():
+        d1=date.split()
+        if d1[1]<=12:
+            for i in d1:
+                for j in month:
+                    if i==j:
+                         date1=month[j]
+
     break
 
 
