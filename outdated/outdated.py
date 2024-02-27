@@ -1,2 +1,3 @@
+
 date=input("Date:").split("/")
 
