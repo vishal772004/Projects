@@ -21,7 +21,7 @@ while True:
             month1=month[i]
     day1=d1[1].rstrip(",")
     year1=d1[-1]
-    print(year1+"-0"+month1+"-0"+day1)
+    print(year1+"-"+month1+"-0"+day1)
 
 
     d2=date.split("/")
