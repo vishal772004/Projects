@@ -19,6 +19,7 @@ while True:
         d1=date.split()
         if d1[1]<=12:
             for i in d1:
+                date1[0]=
                 for j in month:
                     if i==j:
                          date1=month[j]
