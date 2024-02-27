@@ -18,6 +18,7 @@ while True:
     d1=date.split(" ")
     print(d1)
     d2=date.split("/")
+    day2=d2[]
     print(d2)
 
     print(date)
