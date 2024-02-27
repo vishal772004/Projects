@@ -13,13 +13,15 @@ month={
     "December":12
 }
 date1=[]
+m=1
+n=2
 while True:
     date=input("Date:")
     d1=date.split(" ")
   #  if date.isalnum():
     if int(d1[1])<=31:
-        date1[2]=d1[1]
-        print(date1[2])
+        date1=d1[1]
+        print(date1)
     else:
         continue
     date1[0]=d1[-1]
