@@ -21,7 +21,7 @@ while True:
     day2=d2[1]
     month2=d2[0]
     year2=d2[2]
-    print(year2+"-"+month2+"-"+day2)
+    print(year2+"-0"+month2+"-0"+day2)
 
     print(date)
     break
