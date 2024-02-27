@@ -17,6 +17,7 @@ while True:
     date=input("Date:")
     d1=date.split(" ")
     print(d1)
+    
     d2=date.split("/")
     day2=d2[1]
     month2=d2[0]
