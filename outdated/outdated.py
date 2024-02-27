@@ -1,16 +1,16 @@
 month={
-    "January":1,
-    "February":2,
-    "March":3,
-    "April":4,
-    "May":5,
-    "June":6,
-    "July":7,
-    "August":8,
-    "September":9,
-    "October":10,
-    "November":11,
-    "December":12
+    "January":"01",
+    "February":"02",
+    "March":"03",
+    "April":"04",
+    "May":"05",
+    "June":"06",
+    "July":"07",
+    "August":"08",
+    "September":"09",
+    "October":"10",
+    "November":"11",
+    "December":"12"
 }
 date1=[]
 while True:
@@ -18,7 +18,9 @@ while True:
     d1=date.split(" ")
     for i in month:
         if i==d1[0]:
-            
+            month1=month[i]
+    day1=d1[]
+
 
     d2=date.split("/")
     day2=d2[1]
