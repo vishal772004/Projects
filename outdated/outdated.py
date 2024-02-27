@@ -12,6 +12,8 @@ month={
     "November":11,
     "December":12
 }
-date=input("Date:").split("/")
-
+while True:
+    date=input("Date:").split("/")
+    for i in date:
+        
 
