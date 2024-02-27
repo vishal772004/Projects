@@ -15,8 +15,8 @@ month={
 date1=[]
 while True:
     date=input("Date:")
-    if date.isalnum():
-        d1=date.split(" ")
+    d1=date.split(" ")
+  #  if date.isalnum():
         if d1[1]<=31:
             date1[2]=d1[1]
             print(date1[2])
