@@ -1,4 +1,4 @@
 import requests
-emo=input("Input:").split()
+#emo=input("Input:").split()
 req=requests.get("https://carpedm20.github.io/emoji/all.html?enableList=enable_list_alias")
-print(req)
+print(req.json())
