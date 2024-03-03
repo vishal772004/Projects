@@ -3,10 +3,10 @@ def main():
     import pyfiglet
 
     if sys.argv[1]=="-f" or sys.argv[1]=="--font" :
-        text=input("Input:")
+        text=input()
         text=pyfiglet.figlet_format(text,font=sys.argv[2])
         print(text)
 
-    print("Invalid usage")
+        print("Invalid usage")
     sys.exit(0)
 main()
