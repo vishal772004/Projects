@@ -7,5 +7,5 @@ def main():
         text=pyfiglet.figlet_format(text,font=sys.argv[2])
         print(text)
     else:
-        sys.exit
+        sys.exit()
 main()
