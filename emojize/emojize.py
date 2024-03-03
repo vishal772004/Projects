@@ -1,4 +1,4 @@
 import emoji
-emo=(input("Input:")).split()
+emo=(input("Input:"))
 print("Hello",emoji.emojize(emo),language="alias")
 
