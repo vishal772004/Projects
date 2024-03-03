@@ -1,8 +1,14 @@
 def main():
     import sys
     import pyfiglet
+    f=pyfiglet.FigletFont.getFonts()
+    z=0
+    for i in f:
+        if i==sys.argv[2]:
+            z=1
 
-    if sys.argv[1]=="-f" or sys.argv[1]=="--font" :
+
+    if sys.argv[1]=="-f" or sys.argv[1]=="--font" or z==1:
         text=input()
         text=pyfiglet.figlet_format(text,font=sys.argv[2])
         print(text)
