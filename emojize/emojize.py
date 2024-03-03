@@ -1,5 +1,8 @@
 import emoji
-import requests
-emo=(input("Input:"))
-req=requests.get("https://carpedm20.github.io/emoji/all.html?enableList=enable_list_alias")
-print(emoji.emojize(emo))
+emo=(input("Input:")).split()
+for i in emo:
+    if i.startswith(":"):
+        print(emoji.emojize(i))
+    else:
+        print(i)
+
