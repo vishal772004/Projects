@@ -9,7 +9,7 @@ def main():
     if z!=1:
         sys.exit(1)
 
-    if sys.argv[1]=="-f" or sys.argv[1]=="--font" or z==1:
+    if sys.argv[1]=="-f" or sys.argv[1]=="--font":
         text=input()
         text=pyfiglet.figlet_format(text,font=sys.argv[2])
         print(text)
