@@ -12,5 +12,4 @@ def main():
 
         print("Invalid usage")
         sys.exit
-if __name__==__init__:
-    main()
+main()
