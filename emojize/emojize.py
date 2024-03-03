@@ -1,3 +1,5 @@
 import emoji
+import requests
 emo=(input("Input:"))
-print(emoji.emojize(emo))
+req=requests.get("https://carpedm20.github.io/emoji/all.html?enableList=enable_list_alias")
+
