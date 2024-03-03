@@ -1,3 +1,3 @@
 import emoji
-emo=emoji.emojize(input("Input:"))
-
+emo=(input("Input:"))
+print(emoji.emojize(emo))
