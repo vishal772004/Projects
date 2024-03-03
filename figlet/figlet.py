@@ -8,5 +8,5 @@ def main():
         print(text)
     else:
         print("Invalid usage")
-        sys.exit(0)
+    sys.exit(0)
 main()
