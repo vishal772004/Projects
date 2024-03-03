@@ -7,7 +7,5 @@ def main():
         text=pyfiglet.figlet_format(text,font=sys.argv[2])
         print(text)
     else:
-
-        print("Invalid usage")
         sys.exit
 main()
