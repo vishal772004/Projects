@@ -1,8 +1,9 @@
 list_of_name=[]
-i=0
+
 while True:
     try:
         name=input("Name:")
+        i=0
         list_of_name[i]=name
         i=i+1
     except EOFError:
