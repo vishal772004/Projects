@@ -10,7 +10,7 @@ while True:
         break
 
 for i in list_of_name:
-    if list_of_name[0]==i and len(list_of_name)<=1:
+    if list_of_name[0]==i and len(list_of_name)==1:
         print(i)
         break
     elif list_of_name[-1]==i:
