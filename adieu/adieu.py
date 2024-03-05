@@ -1,9 +1,7 @@
 list_of_name=[]
 
 while True:
-    print("Name:")
     try:
-
         name=input()
         list_of_name.append(name)
     except EOFError:
