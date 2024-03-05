@@ -11,7 +11,9 @@ for i in list_of_name:
     if list_of_name[-1]==i:
         print("and",list_of_name[-1])
     elif list_of_name[-2]==i:
-        print(i,end=" ")
+        print(i,end=",")
+    else:
+        print(i,end=",")
 
 
 
