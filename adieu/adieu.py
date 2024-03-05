@@ -3,9 +3,7 @@ list_of_name=[]
 while True:
     try:
         name=input("Name:")
-        i=0
-        list_of_name[i]=name
-        i=i+1
+        list_of_name.append(name)
     except EOFError:
         break
 print("Adieu,adieu,to ")
