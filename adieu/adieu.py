@@ -8,10 +8,11 @@ while True:
         break
 print("Adieu,adieu,to",end=" ")
 for i in list_of_name:
-    if list_of_name[-1]==i:
-        print("and",list_of_name[-1])
-    elif list_of_name[-2]==i:
-        print(i,end=",")
+    if list_of_name[0]==i:
+        print(i)
+        break
+    elif list_of_name[-1]==i:
+        print("and",i)
     else:
         print(i,end=",")
 
