@@ -5,6 +5,7 @@ while True:
         name=input("Name:")
         list_of_name.append(name)
     except EOFError:
+        print("\n")
         break
 print("Adieu, adieu, to",end=" ")
 for i in list_of_name:
