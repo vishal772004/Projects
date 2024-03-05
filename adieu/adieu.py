@@ -2,10 +2,10 @@ list_of_name=[]
 
 while True:
     try:
-        name=input()
+        name=input("Name:")
         list_of_name.append(name)
     except EOFError:
-        print("Adieu, adieu, to",end=" ")
+        print("\nAdieu, adieu, to",end=" ")
         break
 
 for i in list_of_name:
