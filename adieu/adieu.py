@@ -5,6 +5,11 @@ while True:
         name=input("Name:")
         list_of_name[i]=name
         i=i+1
-    except :
+    except EOFError:
+        break
+print("Adieu,adieu,to ")
+for i in list_of_name:
+    
+
 
 
