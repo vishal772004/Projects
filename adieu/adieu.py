@@ -9,7 +9,9 @@ while True:
         break
 print("Adieu,adieu,to ")
 for i in list_of_name:
-    
+    if list_of_name[-1]==i:
+        print("and ",list_of_name[-1])
+    print(i,end=",")
 
 
 
