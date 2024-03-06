@@ -13,7 +13,7 @@ while True:
         continue
 number=random.randint(1,level)
 if guess<number:
-    print("Too small!")
+    sys.exit()
 elif guess>level:
     print("Too large!")
 else:
