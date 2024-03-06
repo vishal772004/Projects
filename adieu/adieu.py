@@ -7,8 +7,8 @@ while True:
     except EOFError:
         print("Adieu, adieu, to",end=" ")
         break
-
-output=str(list_of_name.join(list_of_names))
+output=""
+output.join(list_of_name)
 print(output)
 #for i in list_of_name:
  #   if list_of_name[0]==i and len(list_of_name)==1:
