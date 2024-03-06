@@ -7,7 +7,7 @@ while True:
         if guess<1 or guess>100 :
             continue
         if guess>level:
-            sys.exit()
+            print("Too large!")
         break
     except ValueError:
         continue
