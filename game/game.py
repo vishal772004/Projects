@@ -1,8 +1,11 @@
 import random
+import sys
 while True:
     try:
         level=int(input("Level:"))
         guess=int(input("Guess:"))
+        if guess<1 or guess>100:
+            sys.exit()
         break
     except ValueError:
         continue
