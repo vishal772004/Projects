@@ -1,5 +1,5 @@
 list_of_name=[]
-
+output=""
 while True:
     try:
         name=input()
@@ -7,17 +7,14 @@ while True:
     except EOFError:
         print("Adieu, adieu, to",end=" ")
         break
-output=""
-x=output.join(list_of_name)
-print(x)
-#for i in list_of_name:
- #   if list_of_name[0]==i and len(list_of_name)==1:
-  #      print(i)
-   #     break
-    #elif list_of_name[-1]==i:
-     #   print("and",i)
-    #else:
-     #   print(i,end=", ")
+for i in list_of_name:
+    if len(list_of_name)==1:
+        print(i,end=" ")
+    if list_of_name[-1]==i:
+        print("and",i,)
+    else:
+        print(i,sep=",",end=" ")
+
 
 
 
