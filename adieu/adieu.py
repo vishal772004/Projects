@@ -13,7 +13,7 @@ for i in list_of_name:
         break
     if list_of_name[-1]==i:
         print("and",i,)
-    elif list_of_name[-2]==i:
+    elif list_of_name[-2]==i and len(list_of_name)==2 :
         print(i,end=" ")
     else:
         print(i,end=",")
