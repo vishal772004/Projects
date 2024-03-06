@@ -7,9 +7,9 @@ while True:
     except ValueError:
         continue
 number=random.randint(1,100)
-if level<number:
+if guess<number:
     print("Too small!")
-elif number>level:
+elif guess>level:
     print("Too large!")
 else:
     print("Just right!")
