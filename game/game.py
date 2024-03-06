@@ -5,5 +5,10 @@ while True:
         break
     except ValueError:
         continue
-print(level)
-number=random.
+number=random.randint(1,100)
+if level<number:
+    print("Too small!")
+elif number>level:
+    print("Too large!")
+else:
+    print("Just right!")
