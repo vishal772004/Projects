@@ -1,4 +1,4 @@
-
+import random
 while True:
     try:
         level=int(input("Level:"))
@@ -6,3 +6,4 @@ while True:
     except ValueError:
         continue
 print(level)
+number=random.
