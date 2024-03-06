@@ -16,7 +16,7 @@ for i in list_of_name:
     elif list_of_name[-2]==i and len(list_of_name)==2 :
         print(i,end=" ")
     else:
-        print(i,end=",")
+        print(i,end=", ")
 
 
 
