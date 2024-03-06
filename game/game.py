@@ -6,6 +6,8 @@ while True:
         guess=int(input("Guess:"))
         if guess<1 or guess>100 :
             continue
+        if guess>level:
+            sys.exit()
         break
     except ValueError:
         continue
