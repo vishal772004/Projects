@@ -1,9 +1,10 @@
 import random
-import sys
+z=0
 while True:
-    level=int(input("Level:"))
     try:
-
+        if z==0:
+            level=int(input("Level:"))
+            z=z+1
         guess=int(input("Guess:"))
         if guess<1 or guess>100 :
             continue
