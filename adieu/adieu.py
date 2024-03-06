@@ -10,10 +10,11 @@ while True:
 for i in list_of_name:
     if len(list_of_name)==1:
         print(i,end=" ")
+        break
     if list_of_name[-1]==i:
         print("and",i,)
     else:
-        print(i,sep=",",end=" ")
+        print(i,end=",")
 
 
 
