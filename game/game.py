@@ -1,21 +1,25 @@
 import random
 import sys
 while True:
+    level=int(input("Level:"))
     try:
-        level=int(input("Level:"))
+
         guess=int(input("Guess:"))
         if guess<1 or guess>100 :
             continue
         if guess>level:
             print("Too large!")
             sys.exit(1)
-        break
+        number=random.randint(1,level)
+        if guess<number:
+            print("Too small!")
+        elif guess>number:
+            print("Too large!")
+        elif guess==number:
+            print("Just right!")
+            break
+        else:
+            continue
     except ValueError:
         continue
-number=random.randint(1,level)
-if guess<number:
-    print("Too small!")
-elif guess>number:
-    print("Too large!")
-elif guess==number:
-    print("Just right!")
+
