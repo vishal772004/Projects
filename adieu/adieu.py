@@ -8,7 +8,8 @@ while True:
         print("Adieu, adieu, to",end=" ")
         break
 
-output=list_of_names.join
+output=output.join(list_of_names)
+print(output)
 #for i in list_of_name:
  #   if list_of_name[0]==i and len(list_of_name)==1:
   #      print(i)
