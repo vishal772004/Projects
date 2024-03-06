@@ -4,7 +4,7 @@ while True:
     try:
         level=int(input("Level:"))
         guess=int(input("Guess:"))
-        if guess<1 or guess>100:
+        if guess<1 or guess>100 or guess>level:
             continue
         break
     except ValueError:
