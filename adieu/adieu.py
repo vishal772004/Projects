@@ -8,14 +8,15 @@ while True:
         print("Adieu, adieu, to",end=" ")
         break
 
-for i in list_of_name:
-    if list_of_name[0]==i and len(list_of_name)==1:
-        print(i)
-        break
-    elif list_of_name[-1]==i:
-        print("and",i)
-    else:
-        print(i,end=", ")
+output=list_of_names.join
+#for i in list_of_name:
+ #   if list_of_name[0]==i and len(list_of_name)==1:
+  #      print(i)
+   #     break
+    #elif list_of_name[-1]==i:
+     #   print("and",i)
+    #else:
+     #   print(i,end=", ")
 
 
 
