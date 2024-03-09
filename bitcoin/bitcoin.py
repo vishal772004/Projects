@@ -6,7 +6,7 @@ price=0.0
 try:
     for i in sys.argv[1]:
         temp=temp+i
-    y=temp.find(".")
+    y=temp.rfind(".")
     print(y)
     if y>0 or temp.isdigit():
         pass
