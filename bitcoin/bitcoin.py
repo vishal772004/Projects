@@ -6,7 +6,7 @@ price=0.0
 try:
     n=float(sys.argv[1])
 except ValueError:
-    sys.exit()
+    sys.exit(0)
 except IndexError:
     print("Missing Command-line Argument")
 try:
