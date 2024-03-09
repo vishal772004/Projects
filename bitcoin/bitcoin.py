@@ -7,6 +7,7 @@ try:
     for i in sys.argv[1]:
         temp=temp+i
     y=temp.find(".")
+    print(y)
     if y>0 or temp.isdigit():
         pass
 except ValueError:
@@ -28,7 +29,7 @@ try:
         else:
             price=price+(float(i)*math.pow(10,y))
             y=y-1
-        print(price)
- #   print("$",price)
+
 except requests.RequestException:
     sys.exit()
+
