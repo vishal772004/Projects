@@ -44,7 +44,7 @@ def generate_integer(level):
     return score
 
 def generate_number(level):
-    if level==0:
+    if level==1:
         x=random.randint(math.pow(10,(level-1))-1,math.pow(10,level)-1)
     else:
         x=random.randint(math.pow(10,(level-1)),math.pow(10,level)-1)
