@@ -24,10 +24,13 @@ try:
         elif i==".":
             z=z+1
             continue
+        elif z>0:
+            price=price+(float(i)*math.pow(10,-z))
+            z=z+1
         else:
-            price=(price*math.pow(10,y))+float(i)
-            print(y,float(i),math.pow(10,y))
-            y=y+1
+            price=(price*10)+float(i)
+            print(price)
+
 
 except requests.RequestException:
     sys.exit()
