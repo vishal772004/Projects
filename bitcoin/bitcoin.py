@@ -7,7 +7,6 @@ try:
     for i in sys.argv[1]:
         temp=temp+i
     y=temp.index(".")
-    print(y)
     if y>0 or temp.isdigit():
         pass
 except ValueError:
@@ -17,12 +16,16 @@ except IndexError:
 try:
     z=0
     details=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
-    s=details['bpi']['USD']['rate'].split(".")
-    for i in s:
+    for i in details['bpi']['USD']['rate']:
         if i==",":
             continue
-        price=price+(float(i)*)
+        if i==".":
+            z=z+1
+            continue
 
+        price=price*math.pow(10,y)+(float(i))
+        print(price)
+        y=y+1
 
 except requests.RequestException:
     sys.exit()
