@@ -7,11 +7,14 @@ def main():
 
 def get_level():
     while True:
-        n=int(input("Level:"))
-        if n<=0 or n>3:
+        try:
+            n=int(input("Level:"))
+            if n<=0 or n>3:
+                continue
+            else:
+                break
+        except ValueError:
             continue
-        else:
-            break
     return n
 
 def generate_integer(level):
@@ -22,7 +25,7 @@ def generate_integer(level):
         second=random.randint(0,math.pow(10,level))
         answer=first+second
         try:
-            print(f"{first} + {second} =",end=" ")
+            print(f"\n{first} + {second} =",end=" ")
             l=int(input())
             for i in range(2):
                 if l==answer:
