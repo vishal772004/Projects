@@ -34,6 +34,7 @@ def generate_integer(level):
                     score=score-1
             n=n+1
         except ValueError:
+            print("EEE")
             continue
 
     return score
