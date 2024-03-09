@@ -25,8 +25,8 @@ try:
         elif z>0:
             price=price+(float(i)*(math.pow(10,-z)))
         else:
-            y=y-1
             price=price+(float(i)*(math.pow(10,y)))
+            y=y-1
     print("$",price)
 except requests.RequestException:
     sys.exit()
