@@ -25,13 +25,12 @@ try:
             z=z+1
             continue
         elif z>0:
-            print(z,math.pow(10,-z),price)
             price=price+(float(i)*math.pow(10,-z))
             z=z+1
 
         else:
             price=(price*10)+float(i)
-           # print(price)
+    print(price*float(sys.argv[1]))
 
 
 except requests.RequestException:
