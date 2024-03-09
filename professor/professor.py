@@ -31,9 +31,10 @@ def generate_integer(level):
                     print(f"{first}+{second}=",end=" ")
                     l=int(input())
                     score=score-1
+            n=n+1
         except ValueError:
             continue
-        n=n+1
+
     return score
 
 if __name__ == "__main__":
