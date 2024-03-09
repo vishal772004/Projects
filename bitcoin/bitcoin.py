@@ -1,13 +1,11 @@
 import requests
 import sys
 import math
-temp=""
 price=0.0
 try:
     n=float(sys.argv[1])
 except ValueError:
     print("Command line argument is not a number")
-    sys.exit(0)
 except IndexError:
     print("Missing Command-line Argument")
 try:
@@ -24,7 +22,6 @@ try:
         elif z>0:
             price=price+(float(i)*math.pow(10,-z))
             z=z+1
-
         else:
             price=(price*10)+float(i)
     print(f"${price*n:,.4f}")
