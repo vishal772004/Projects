@@ -7,9 +7,10 @@ try:
     for i in sys.argv[1]:
         temp=temp+i
     y=temp.index(".")
-    if y>0 or temp.isdigit():
+    if temp.isdigit():
         pass
 except ValueError:
+    print("hello")
     sys.exit()
 except IndexError:
     print("Missing Command-line Argument")
