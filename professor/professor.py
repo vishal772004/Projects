@@ -32,7 +32,7 @@ def generate_integer(level):
                     l=int(input())
                     score=score-1
         except ValueError:
-            
+            continue
         n=n+1
     return score
 
