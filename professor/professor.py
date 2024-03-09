@@ -8,7 +8,7 @@ def main():
 def get_level():
     while True:
         try:
-            n=int(input())
+            n=int(input("Level:"))
             if n==1 or n==2 or n==3:
                 return n
             else:
@@ -20,7 +20,8 @@ def generate_integer(level):
     n=1
     score=10
     while n<=10:
-        first,second=generate_number(level)
+        first=generate_number(level)
+        second=generate_number(level)
         answer=first+second
         try:
             print(f"{first} + {second} =",end=" ")
@@ -42,14 +43,12 @@ def generate_integer(level):
 
     return score
 
-    def generate_number(level):
-        if level==0:
-            first=random.randint(math.pow(10,(level-1))-1,math.pow(10,level)-1)
-            second=random.randint(math.pow(10,(level-1))-1,math.pow(10,level)-1)
-        else:
-            first=random.randint(math.pow(10,(level-1)),math.pow(10,level)-1)
-            second=random.randint(math.pow(10,(level-1)),math.pow(10,level)-1)
-        return (first,second)
+def generate_number(level):
+    if level==0:
+        x=random.randint(math.pow(10,(level-1))-1,math.pow(10,level)-1)
+    else:
+        x=random.randint(math.pow(10,(level-1)),math.pow(10,level)-1)
+    return x
 
 if __name__ == "__main__":
     main()
