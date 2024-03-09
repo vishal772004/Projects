@@ -20,8 +20,8 @@ def generate_integer(level):
     n=1
     score=10
     while n<=10:
-        first=random.randint(math.pow(10,(level-1)-1),math.pow(10,level))
-        second=random.randint(math.pow(10,(level-1)-1),math.pow(10,level))
+        first=random.randint(math.pow(10,(level-1))-1,math.pow(10,level)-1)
+        second=random.randint(math.pow(10,(level-1))-1,math.pow(10,level))
         answer=first+second
         try:
             print(f"{first} + {second} =",end=" ")
