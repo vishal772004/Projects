@@ -24,7 +24,11 @@ def generate_integer(level):
         answer=first+second
         l=int(input(first"+"+second+"="))
         for i in range(2):
-            
+            if l==answer:
+                break
+            else:
+                l=int(input(first"+"+second+"="))
+
 
 
 
