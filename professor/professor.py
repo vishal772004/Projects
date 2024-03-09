@@ -17,7 +17,10 @@ def get_level():
 
 
 def generate_integer(level):
-    ...
+    first=random.randint(0,level*10)
+    second=random.randint(0,level*10)
+    l=int(input(first"+"+second+"="))
+
 
 
 if __name__ == "__main__":
