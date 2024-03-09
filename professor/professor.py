@@ -32,7 +32,7 @@ def generate_integer(level):
                     print(f"{first} + {second} =",end=" ")
                     l=int(input())
             if l!=answer:
-                print(f"{first}+{second}=",answer)
+                print(f"{first} + {second} =",answer)
                 score=score-1
             n=n+1
         except ValueError:
