@@ -21,13 +21,13 @@ try:
     for i in details['bpi']['USD']['rate']:
         if i==",":
             continue
-        if i==".":
+        elif i==".":
             z=z+1
             continue
-
-        price=price*math.pow(10,y)+(float(i))
-        print(price)
-        y=y+1
+        else:
+            price=price*math.pow(10,y)+(float(i))
+            print(price)
+            y=y+1
 
 except requests.RequestException:
     sys.exit()
