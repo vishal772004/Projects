@@ -1,11 +1,9 @@
 import random
 
-
 def main():
     level1=get_level()
-    print(level1)
-
-
+    score=generate_integer(level1)
+    print("Score:",score)
 
 def get_level():
     while True:
@@ -15,9 +13,9 @@ def get_level():
         break
     return n
 
-
 def generate_integer(level):
     n=1
+    score=10
     while n<=10:
         first=random.randint(0,level*10)
         second=random.randint(0,level*10)
@@ -29,10 +27,9 @@ def generate_integer(level):
             else:
                 print("EEE")
                 l=int(input(first"+"+second+"="))
-
-
-
-
+                score=score-1
+        n=n+1
+    return score
 
 if __name__ == "__main__":
     main()
