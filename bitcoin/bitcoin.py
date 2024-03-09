@@ -12,6 +12,6 @@ except IndexError:
     print("Missing Command-line Argument")
 try:
     details=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
-    print("$",details)
+    print("$",details['bpi']['USD']['rate'])
 except requests.RequestException:
     sys.exit()
