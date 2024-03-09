@@ -20,16 +20,19 @@ def generate_integer(level):
         first=random.randint(0,level*10)
         second=random.randint(0,level*10)
         answer=first+second
-        print(f"{first}+{second}=",end=" ")
-        l=int(input())
-        for i in range(2):
-            if l==answer:
-                break
-            else:
-                print("EEE")
-                print(f"{first}+{second}=",end=" ")
-                l=int(input())
-                score=score-1
+        try:
+            print(f"{first}+{second}=",end=" ")
+            l=int(input())
+            for i in range(2):
+                if l==answer:
+                    break
+                else:
+                    print("EEE")
+                    print(f"{first}+{second}=",end=" ")
+                    l=int(input())
+                    score=score-1
+        except ValueError:
+            
         n=n+1
     return score
 
