@@ -1,5 +1,5 @@
 import random
-
+import math
 def main():
     level1=get_level()
     score=generate_integer(level1)
@@ -18,8 +18,8 @@ def generate_integer(level):
     n=1
     score=10
     while n<=10:
-        first=random.randint(0,level*10)
-        second=random.randint(0,level*10)
+        first=random.randint(0,math.pow(10,level))
+        second=random.randint(0,math.pow(10,level))
         answer=first+second
         try:
             print(f"{first} + {second} =",end=" ")
