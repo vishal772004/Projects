@@ -27,7 +27,7 @@ try:
 
         else:
             price=(price*10)+float(i)
-    print(price*n)
+    print(f"${price*n:,.4f}")
 
 
 except requests.RequestException:
