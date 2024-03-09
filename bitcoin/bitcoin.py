@@ -17,18 +17,12 @@ except IndexError:
 try:
     z=0
     details=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
-    for i in details['bpi']['USD']['rate']:
+    s=details['bpi']['USD']['rate'].split(".")
+    for i in s:
         if i==",":
             continue
-        if i==".":
-            z=z+1
-            continue
-        if z>0:
-            price=price+(float(i)*math.pow(10,-z))
-            z=z+1
-        else:
-            price=price+(float(i)*math.pow(10,y))
-            y=y-1
+        price=price+(float(i)*)
+
 
 except requests.RequestException:
     sys.exit()
