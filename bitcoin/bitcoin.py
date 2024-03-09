@@ -10,7 +10,7 @@ try:
     if temp.isdigit():
         pass
 except ValueError:
-    print("hello")
+    print("Command Line Argument is not a number")
     sys.exit()
 except IndexError:
     print("Missing Command-line Argument")
