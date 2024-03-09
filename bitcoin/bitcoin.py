@@ -22,11 +22,13 @@ try:
         if i==".":
             z=z+1
             continue
-        elif z>0:
-            price=price+(float(i)*(math.pow(10,-z)))
+        if z>0:
+            price=price+(float(i)*math.pow(10,-z))
+            z=z+1
         else:
-            price=price+(float(i)*(math.pow(10,y)))
+            price=price+(float(i)*math.pow(10,y))
             y=y-1
-    print("$",price)
+        print(price)
+ #   print("$",price)
 except requests.RequestException:
     sys.exit()
