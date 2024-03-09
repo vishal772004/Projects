@@ -25,8 +25,8 @@ try:
             z=z+1
             continue
         else:
-            price=price+(float(i)*math.pow(10,y))
-            print(price)
+            price=(price*math.pow(10,y))+float(i)
+            print(y,float(i),math.pow(10,y))
             y=y+1
 
 except requests.RequestException:
