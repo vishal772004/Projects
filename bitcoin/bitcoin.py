@@ -11,7 +11,7 @@ except ValueError:
 except IndexError:
     print("Missing Command-line Argument")
 try:
-    details=requests.get()
+    details=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     print(details)
 except requests.RequestException:
     sys.exit()
