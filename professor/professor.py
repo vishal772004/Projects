@@ -8,7 +8,7 @@ def main():
 def get_level():
     while True:
         n=int(input("Level:"))
-        if n<=0 and n>3:
+        if n<=0 or n>3:
             continue
         else:
             break
@@ -31,7 +31,9 @@ def generate_integer(level):
                     print("EEE")
                     print(f"{first}+{second}=",end=" ")
                     l=int(input())
-                    score=score-1
+            if l!=answer:
+                print(f"{first}+{second}=",answer)
+                score=score-1
             n=n+1
         except ValueError:
             print("EEE")
