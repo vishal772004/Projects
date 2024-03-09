@@ -9,10 +9,10 @@ def get_level():
     while True:
         try:
             n=int(input("Level:"))
-            if n<=0 or n>3:
-                continue
-            else:
+            if n==1 or n==2 or n==3:
                 break
+            else:
+                continue
         except ValueError:
             continue
     return n
