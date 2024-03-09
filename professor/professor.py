@@ -24,7 +24,7 @@ def generate_integer(level):
         second=random.randint(0,math.pow(10,level))
         answer=first+second
         try:
-            print(f"\n{first} + {second} =",end=" ")
+            print(f"{first} + {second} =",end=" ")
             l=int(input())
             for i in range(2):
                 if l==answer:
