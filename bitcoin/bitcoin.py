@@ -4,11 +4,7 @@ import math
 temp=""
 price=0.0
 try:
-    for i in sys.argv[1]:
-        temp=temp+i
-    y=temp.index(".")
-    if temp.isdigit():
-        pass
+    n=float(sys.argv[1])
 except ValueError:
     print("Command Line Argument is not a number")
     sys.exit()
@@ -31,7 +27,7 @@ try:
 
         else:
             price=(price*10)+float(i)
-    print(price*float(sys.argv[1]))
+    print(price*n)
 
 
 except requests.RequestException:
