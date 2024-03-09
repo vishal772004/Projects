@@ -17,8 +17,12 @@ try:
     z=0
     details=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
     for i in details['bpi']['USD']['rate']:
-        if i=="." or z>0:
+        if i==",":
+            continue
+        if i==".":
             z=z+1
+            continue
+        elif z>0:
             price=price+(float(i)*(math.pow(10,-z)))
         else:
             y=y-1
