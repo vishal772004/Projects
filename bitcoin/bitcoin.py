@@ -25,7 +25,7 @@ try:
             z=z+1
             continue
         else:
-            price=(price*math.pow(10,y))+float(i)
+            price=price+(float(i)*math.pow(10,y))
             print(price)
             y=y+1
 
