@@ -9,6 +9,7 @@ try:
 except ValueError:
     sys.exit()
 try:
-    
+    details=requests.json()
+    print(details)
 except requests.RequestException:
-    ...
+    sys.exit()
