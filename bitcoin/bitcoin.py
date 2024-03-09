@@ -21,8 +21,8 @@ try:
             z=z+1
             price=price+(float(i)*(math.pow(10,-z)))
         else:
-
-            price=price+(float(i))
+            y=y-1
+            price=price+(float(i)*(math.pow(10,y)))
     print("$",price*sys.argv[1])
 except requests.RequestException:
     sys.exit()
