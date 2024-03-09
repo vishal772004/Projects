@@ -2,7 +2,7 @@ import requests
 import sys
 import math
 temp=""
-price=[]
+price=0.0
 try:
     for i in sys.argv[1]:
         temp=temp+i
