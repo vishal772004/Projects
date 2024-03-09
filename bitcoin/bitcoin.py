@@ -13,8 +13,8 @@ except ValueError:
     sys.exit()
 except IndexError:
     print("Missing Command-line Argument")
-    z=0
 try:
+    z=0
     details=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
     for i in details['bpi']['USD']['rate']:
         if i=="." or z>0:
