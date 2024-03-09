@@ -27,6 +27,7 @@ def generate_integer(level):
             if l==answer:
                 break
             else:
+                print("EEE")
                 l=int(input(first"+"+second+"="))
 
 
