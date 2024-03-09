@@ -27,6 +27,6 @@ try:
         else:
             y=y-1
             price=price+(float(i)*(math.pow(10,y)))
-    print("$",price*sys.argv[1])
+    print("$",price)
 except requests.RequestException:
     sys.exit()
