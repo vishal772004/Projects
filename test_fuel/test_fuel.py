@@ -5,6 +5,6 @@ def test_zero_division():
     with pytest.raises(ZeroDivisionError):
         1/0
 def test_value_error():
-    pytest.raises(ValueError, convert, 0<fraction<100)
+    pytest.raises(ValueError, convert, 0<convert(fraction)<100)
 
 
