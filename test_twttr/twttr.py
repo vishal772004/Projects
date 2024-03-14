@@ -1,3 +1,4 @@
+
 phrase=input("Input:")
 l=[]
 for i in phrase:
