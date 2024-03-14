@@ -5,7 +5,7 @@ def main():
     for i in phrase:
         l.append(i)
     print(shorten(phrase))
-    
+
 def shorten(word):
     vowels=["A","E","I","O","U","a","e","i","o","u"]
     for i in word:
