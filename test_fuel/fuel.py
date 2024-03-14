@@ -12,7 +12,8 @@ def main():
                 print("%")
             break
         except ValueError:
-            continue
+            raise ValueError
+
         except ZeroDivisionError:
             continue
 def gauge(p):
