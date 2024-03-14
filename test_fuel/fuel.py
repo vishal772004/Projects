@@ -12,7 +12,7 @@ def main():
                 print("%")
             break
         except ValueError:
-            raise ValueError
+            continue
 
         except ZeroDivisionError:
             continue
