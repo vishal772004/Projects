@@ -3,6 +3,8 @@ from plates import is_valid
 def test_starts_with_alphabet():
     assert is_valid("12ABCD")==False
     assert is_valid("ABCDEF")==True
+    assert is_valid("AB")==True
+    assert is_valid("A1234")==False
 
 def test_length():
     assert is_valid("ABC1234")==False
