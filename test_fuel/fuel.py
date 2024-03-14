@@ -12,7 +12,6 @@ def main():
             if x>y:
                 continue
             p=(x/y)*100
-
             break
         except ValueError:
             continue
