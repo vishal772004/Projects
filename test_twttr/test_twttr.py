@@ -5,7 +5,7 @@ def main():
 
 
 def shorten(word):
-    assert
+    assert("Twitter")=="Twttr"
 
 
 if __name__ == "__main__":
