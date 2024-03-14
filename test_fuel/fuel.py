@@ -2,6 +2,10 @@ def main():
     while True:
         try:
             first=input("Fraction:")
+            if fraction.find(".")>=0:
+                continue
+            else:
+                pass
             p=convert(first)
             print(gauge(p),end="")
             if 0<gauge(p)<100:
@@ -22,10 +26,6 @@ def gauge(p):
         return int(p)
 
 def convert(fraction):
-    if fraction.find(".")>=0:
-        continue
-    else:
-        pass
     l=first.split("/")
     x=int(l[0])
     y=int(l[-1])
