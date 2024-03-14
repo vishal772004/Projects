@@ -4,7 +4,8 @@ def main():
             first=input("Fraction:")
             p=convert(first)
             print(gauge(p),end="")
-            if gauge(p)
+            if 0<gauge(p)<100:
+                print("%")
             break
         except ValueError:
             continue
