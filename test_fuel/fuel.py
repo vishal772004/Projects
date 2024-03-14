@@ -2,7 +2,7 @@ def main():
     while True:
         try:
             first=input("Fraction:")
-            if fraction.find(".")>=0:
+            if first.find(".")>=0:
                 continue
             else:
                 pass
@@ -26,11 +26,9 @@ def gauge(p):
         return int(p)
 
 def convert(fraction):
-    l=first.split("/")
+    l=fraction.split("/")
     x=int(l[0])
     y=int(l[-1])
-    if x>y:
-        continue
     return (x/y)*100
 
 if __name__ == "__main__":
