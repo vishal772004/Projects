@@ -1,7 +1,7 @@
 import twttr
 
 def main():
-    shorten(twttr.phrase)
+    shorten(phrase)
 
 
 def shorten(word):
