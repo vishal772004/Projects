@@ -1,3 +1,4 @@
 from bank import value
 
-def 
+def test_fullgreeting():
+    assert value("H)
