@@ -7,9 +7,9 @@ def  main():
 def convert(first):
     while True:
         try:
-            l=first.split("/")
-            x=int(l[0])
-            y=int(l[-1])
+            x,y=first.split("/")
+            x=int(x)
+            y=int(y)
             if y==0:
                 raise ZeroDivisionError
             if x>y:
