@@ -10,9 +10,6 @@ def convert(first):
             l=first.split("/")
             x=int(l[0])
             y=int(l[-1])
-            if x>y:
-                raise ValueError
-            break
         except ValueError:
             raise
         except ZeroDivisionError:
