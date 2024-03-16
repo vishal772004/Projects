@@ -6,7 +6,7 @@ def main():
                 continue
             p=convert(first)
             print(gauge(p),end="")
-            if 0<gauge(p)<100:
+            if 0<int(gauge(p))<100:
                 print("%")
             break
         except ValueError:
