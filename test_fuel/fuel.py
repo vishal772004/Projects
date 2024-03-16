@@ -11,9 +11,7 @@ def convert(first):
             x=int(l[0])
             y=int(l[-1])
             break
-        except ValueError:
-            raise
-        except ZeroDivisionError:
+        except (ValueError,ZeroDivisionError):
             raise
     return (x/y)*100
 
