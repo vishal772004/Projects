@@ -14,12 +14,14 @@ def convert(first):
                 raise ZeroDivisionError
             if x>y:
                 raise ValueError
-
-            break
+            per=(x/y)
+            if per<=1:
+                return int(per*100)
+            else:
+                first=input("Fraction:")
         except (ValueError,ZeroDivisionError):
             raise
-    per=(x/y)*100
-    return int(per)
+
 
 def gauge(p):
     if p<=1:
