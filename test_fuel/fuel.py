@@ -10,20 +10,24 @@ def convert(first):
             l=first.split("/")
             x=int(l[0])
             y=int(l[-1])
+            if y==0:
+                raise ZeroDivisionError
+            if x>y:
+                raise ValueError
+
             break
         except (ValueError,ZeroDivisionError):
             raise
-    return (x/y)*100
+    return int(x/y)*100
 
 def gauge(p):
     if p<=1:
         return "E"
     elif p>=99:
         return "F"
-    elif (p-int(p)>=0.5):
-        return str(int(p+1))+"%"
     else:
         return str(p)+"%"
+
 
 if __name__=="__main__":
     main()
