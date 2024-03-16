@@ -31,7 +31,7 @@ def gauge(p):
 
 def convert(x,y):
     p=(x/y)*100
-    return p
+    return float(p)
 
 if __name__=="__main__":
     main()
