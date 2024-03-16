@@ -18,7 +18,8 @@ def convert(first):
             break
         except (ValueError,ZeroDivisionError):
             raise
-    return int(x/y)*100
+    per=(x/y)*100
+    return int(per)
 
 def gauge(p):
     if p<=1:
