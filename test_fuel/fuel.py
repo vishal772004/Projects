@@ -10,6 +10,7 @@ def convert(first):
             l=first.split("/")
             x=int(l[0])
             y=int(l[-1])
+            break
         except ValueError:
             raise
         except ZeroDivisionError:
