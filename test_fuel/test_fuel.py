@@ -11,11 +11,11 @@ def test_full():
     assert gauge(100)=="F"
     assert gauge(99)=="F"
 def test_half():
-    assert gauge(66.5)==67
-    assert gauge(65)==65
+    assert gauge(66.5)=="67%"
+    assert gauge(65)=="65%"
 def test_fraction():
-    assert convert(3,4)==75
-    assert convert(1,2)==50
-    assert convert(0,1)==0
+    assert convert("3/4")==75
+    assert convert("1/2")==50
+    assert convert("0/1")==0
 
 

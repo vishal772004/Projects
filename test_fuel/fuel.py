@@ -4,10 +4,9 @@ def  main():
     final=gauge(percentage)
     print(final)
 
-def convert(x,y):
+def convert(first):
     while True:
         try:
-
             l=first.split("/")
             x=int(l[0])
             y=int(l[-1])
@@ -26,9 +25,9 @@ def gauge(p):
     elif p>=99:
         return "F"
     elif (p-int(p)>=0.5):
-        return(int(p+1))+"%"
+        return str(int(p+1))+"%"
     else:
-        return int(p)+"%"
+        return str(p)+"%"
 
 if __name__=="__main__":
     main()
