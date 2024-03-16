@@ -1,10 +1,11 @@
 def  main():
-    percentage=convert()
+    first=input("Fraction:")
+    percentage=convert(first)
 
 def convert(x,y):
     while True:
         try:
-            first=input("Fraction:")
+
             l=first.split("/")
             x=int(l[0])
             y=int(l[-1])
