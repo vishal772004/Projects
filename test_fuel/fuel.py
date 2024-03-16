@@ -6,8 +6,13 @@ def main():
                 continue
             else:
                 pass
-
-            p=convert(first)
+                l=[]
+            l=first.split("/")
+            x=int(l[0])
+            y=int(l[-1])
+            if x>y:
+                continue
+            p=convert(x,y)
             gauge(p)
             break
         except ValueError:
@@ -24,13 +29,7 @@ def gauge(p):
     else:
         print(int(p),"%",sep="")
 
-def convert(first):
-    l=[]
-    l=first.split("/")
-    x=int(l[0])
-    y=int(l[-1])
-    if x>y:
-        continue
+def convert(x,y):
     p=(x/y)*100
     return p
 
