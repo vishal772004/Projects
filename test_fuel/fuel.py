@@ -1,7 +1,8 @@
 def  main():
     first=input("Fraction:")
     percentage=convert(first)
-    final
+    final=gauge(percentage)
+    print(final)
 
 def convert(x,y):
     while True:
@@ -11,11 +12,7 @@ def convert(x,y):
             x=int(l[0])
             y=int(l[-1])
             if x>y:
-                continue
-            x=convert(x,y)
-            print(gauge(x),end="")
-            if 1<=float(gauge(x))<=100:
-                print("%")
+                raise ValueError
             break
         except ValueError:
             raise
@@ -29,9 +26,10 @@ def gauge(p):
     elif p>=99:
         return "F"
     elif (p-int(p)>=0.5):
-        return(int(p+1))
+        return(int(p+1))+"%"
     else:
-        return int(p)
+        return int(p)+"%"
 
-
+if __name__=="__main__":
+    main()
 
