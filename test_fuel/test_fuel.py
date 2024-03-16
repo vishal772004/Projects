@@ -1,6 +1,14 @@
 import pytest
 from fuel import convert,gauge
 
+def main():
+    test_zero_division()
+    test_value_error()
+    test_empty()
+    test_full()
+    test_half()
+    test_fraction()
+
 def test_zero_division():
     with pytest.raises(ZeroDivisionError):
         convert("1/0")
