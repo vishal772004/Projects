@@ -1,4 +1,5 @@
 def  main():
+    percentage=convert()
 
 def convert(x,y):
     while True:
@@ -18,7 +19,7 @@ def convert(x,y):
             continue
         except ZeroDivisionError:
             continue
-    return float(x/y)*100
+    return int(x/y)*100
 
 def gauge(p):
     if p<=1:
