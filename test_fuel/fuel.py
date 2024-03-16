@@ -4,8 +4,6 @@ def main():
             first=input("Fraction:")
             if first.find(".")>=0:
                 continue
-            else:
-                pass
             p=convert(first)
             print(gauge(p),end="")
             if 0<gauge(p)<100:
@@ -13,7 +11,6 @@ def main():
             break
         except ValueError:
             continue
-
         except ZeroDivisionError:
             continue
 def gauge(p):
