@@ -2,10 +2,6 @@ def  main():
     while True:
         try:
             first=input("Fraction:")
-            if first.find(".")>=0:
-                continue
-            else:
-                pass
             l=first.split("/")
             x=int(l[0])
             y=int(l[-1])
