@@ -27,6 +27,7 @@ def gauge(p):
         return int(p)
 
 def convert(fraction):
+    l=[]
     l=fraction.split("/")
     x=int(l[0])
     y=int(l[-1])

@@ -13,3 +13,6 @@ def test_full():
 def test_half():
     assert gauge(66.5)==67
     assert gauge(65)==65
+def test_fraction():
+    assert convert("3/4")==75
+    assert convert("1/2")==50
