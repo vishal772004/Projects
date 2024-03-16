@@ -7,5 +7,6 @@ def test_zero_division():
 def test_value_error():
     pytest.raises(ValueError)
 def test_empty():
-    asssert gauge(0)=="E"
-
+    assert gauge(0)=="E"
+def test_full():
+    assert gauge(100)=="F"
