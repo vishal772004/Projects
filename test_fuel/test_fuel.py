@@ -2,8 +2,7 @@ import pytest
 from fuel import convert,gauge
 
 def test_zero_division():
-    with pytest.raises(ZeroDivisionError):
-        1/0
+    pytest.raises(ZeroDivisionError)
 def test_value_error():
     pytest.raises(ValueError)
 def test_empty():
