@@ -1,4 +1,6 @@
 def  main():
+
+def convert(x,y):
     while True:
         try:
             first=input("Fraction:")
@@ -16,7 +18,6 @@ def  main():
             continue
         except ZeroDivisionError:
             continue
-def convert(x,y):
     return float(x/y)*100
 
 def gauge(p):
