@@ -17,7 +17,7 @@ def convert(first):
             raise
         except ZeroDivisionError:
             raise
-    return int(x/y)*100
+    return (x/y)*100
 
 def gauge(p):
     if p<=1:
