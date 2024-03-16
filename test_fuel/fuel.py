@@ -20,7 +20,7 @@ def main():
         except ZeroDivisionError:
             continue
 def gauge(p):
-    if p<=1:
+    if p<=1 or p==0:
         print("E")
     elif p>=99:
         print("F")
