@@ -15,4 +15,4 @@ def test_half():
 def test_fraction():
     assert convert("3/4")==75
     assert convert("1/2")==50
-sys.exit(0)
+sys.exit(100)
