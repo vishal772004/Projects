@@ -1,6 +1,7 @@
 def  main():
     first=input("Fraction:")
     percentage=convert(first)
+    final
 
 def convert(x,y):
     while True:
@@ -17,9 +18,9 @@ def convert(x,y):
                 print("%")
             break
         except ValueError:
-            continue
+            raise
         except ZeroDivisionError:
-            continue
+            raise
     return int(x/y)*100
 
 def gauge(p):
