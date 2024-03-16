@@ -2,33 +2,34 @@ def  main():
     while True:
         try:
             first=input("Fraction:")
-            convert(first)
-
+            if first.find(".")>=0:
+                continue
+            else:
+                pass
+            l=first.split("/")
+            x=int(l[0])
+            y=int(l[-1])
+            if x>y:
+                continue
+            x=convert(x,y)
+            gauge(x)
             break
         except ValueError:
             continue
         except ZeroDivisionError:
             continue
-def convert(first):
-    if first.find(".")>=0:
-        continue
-    else:
-        pass
-    l=first.split("/")
-    x=int(l[0])
-    y=int(l[-1])
-    if x>y:
-        continue
+def convert(x,y):
     return (x/y)*100
 
-if p<=1:
-    print("E")
-elif p>=99:
-    print("F")
-elif (p-int(p)>=0.5):
-    print(int(p+1),"%",sep="")
-else:
-     print(int(p),"%",sep="")
+def gauge(p):
+    if p<=1:
+        print("E")
+    elif p>=99:
+        print("F")
+    elif (p-int(p)>=0.5):
+        print(int(p+1),"%",sep="")
+    else:
+        print(int(p),"%",sep="")
 
 
 
