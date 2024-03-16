@@ -24,15 +24,15 @@ def convert(fraction):
             raise
 
 
-def gauge(p):
-    if p<=1:
+def gauge(percentage):
+    if percentage<=1:
         return "E"
-    elif p>=99:
+    elif percentage>=99:
         return "F"
-    elif (p-int(p)>=0.5):
-        return str(int(p+1))+"%"
+    elif (percentage-int(percentage)>=0.5):
+        return str(int(percentage+1))+"%"
     else:
-        return str(p)+"%"
+        return str(percentage)+"%"
 
 if __name__=="__main__":
     main()
