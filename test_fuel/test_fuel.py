@@ -19,6 +19,6 @@ def test_fraction():
     assert convert("1/2")==50
     assert convert("0/1")==0
     assert convert("1/100")==1
-    assert convert("99/100")==0
+    assert convert("99/100")==99
 
 
