@@ -1,13 +1,13 @@
 def  main():
-    first=input("Fraction:")
-    percentage=convert(first)
+    fraction=input("Fraction:")
+    percentage=convert(fraction)
     final=gauge(percentage)
     print(final)
 
-def convert(first):
+def convert(fraction):
     while True:
         try:
-            x,y=first.split("/")
+            x,y=fraction.split("/")
             x=int(x)
             y=int(y)
             if y==0:
