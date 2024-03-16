@@ -15,6 +15,7 @@ def test_zero_division():
 def test_value_error():
     with pytest.raises(ValueError):
         convert("cat")
+        convert("5/3")
 def test_empty():
     assert gauge(0)=="E"
     assert gauge(1)=="E"
