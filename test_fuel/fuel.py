@@ -25,9 +25,10 @@ def gauge(p):
         return "E"
     elif p>=99:
         return "F"
+    elif (p-int(p)>=0.5):
+        return str(int(p+1))+"%"
     else:
         return str(p)+"%"
-
 
 if __name__=="__main__":
     main()
