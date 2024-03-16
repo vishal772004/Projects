@@ -12,7 +12,9 @@ def  main():
             if x>y:
                 continue
             x=convert(x,y)
-            gauge(x)
+            print(gauge(x),end="")
+            if 1<=float(gauge(x))<=100:
+                print("%")
             break
         except ValueError:
             continue
@@ -23,13 +25,13 @@ def convert(x,y):
 
 def gauge(p):
     if p<=1:
-        print("E")
+        return "E"
     elif p>=99:
-        print("F")
+        return "F"
     elif (p-int(p)>=0.5):
-        print(int(p+1),"%",sep="")
+        return(int(p+1))
     else:
-        print(int(p),"%",sep="")
+        return int(p)
 
 
 
