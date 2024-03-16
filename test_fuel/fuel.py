@@ -18,7 +18,8 @@ def convert(fraction):
             if per<=1:
                 return int(per*100)
             else:
-                first=input("Fraction:")
+                fraction=input("Fraction:")
+                continue
         except (ValueError,ZeroDivisionError):
             raise
 
