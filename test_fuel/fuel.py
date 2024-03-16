@@ -19,7 +19,7 @@ def  main():
         except ZeroDivisionError:
             continue
 def convert(x,y):
-    return (x/y)*100
+    return float(x/y)*100
 
 def gauge(p):
     if p<=1:

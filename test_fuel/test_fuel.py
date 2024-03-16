@@ -16,5 +16,6 @@ def test_half():
 def test_fraction():
     assert convert(3,4)==75
     assert convert(1,2)==50
-    
+    assert convert(0,1)==0
+
 
