@@ -2,11 +2,10 @@ import sys
 l=0
 check=0
 try:
-    try :
-        if sys.argv[2]:
-            pass
-    except IndexError:
-            print("Too many command-line arguments")
+    if sys.argv[2]:
+        print("Too many command-line arguments")
+        sys.exit(1)
+
     if sys.argv[1].endswith(".py"):
         pass
     elif not(sys.argv[1].endswith(".py")):
