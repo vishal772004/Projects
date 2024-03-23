@@ -1,0 +1,20 @@
+import sys
+def main():
+    if len(sys.argv)<2:
+        sys.exit("Too few command line arguments")
+    elif len(sys.argv)>2:
+        sys.exit("Too many command line arguments")
+    else:
+        try:
+            if not(sys.argv[1].endswith(".csv")):
+                sys.exit("Not a CSV File")
+            with open("sicilian.csv") as file:
+                read=file.reader()
+
+
+
+
+
+
+if __name__=="__main__":
+    main()
