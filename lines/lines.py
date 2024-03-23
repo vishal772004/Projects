@@ -6,9 +6,7 @@ def main():
         sys.exit("Too few command-line arguments")
     l=0
     try:
-        if sys.argv[1].endswith(".py"):
-            pass
-        elif not(sys.argv[1].endswith(".py")):
+        if not(sys.argv[1].endswith(".py")):
             sys.exit("Not a python file")
         with open(sys.argv[1]) as file:
             lines=file.readlines()
