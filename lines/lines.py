@@ -1,8 +1,6 @@
 import sys
 l=0
-check=0
 try:
-
     if sys.argv[1].endswith(".py"):
         pass
     elif not(sys.argv[1].endswith(".py")):
