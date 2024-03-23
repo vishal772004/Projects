@@ -17,9 +17,10 @@ try:
 except IndexError:
         try:
             if sys.argv[2]:
-                sys.exit(1)
+                pass
         except IndexError:
                 print("Too many command-line arguments")
+                sys.exit(1)
         print("Too few command-line arguments")
         sys.exit
 except FileNotFoundError:
