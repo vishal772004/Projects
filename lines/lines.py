@@ -1,6 +1,9 @@
 import sys
 def main():
-
+    if len(sys.argv)>2:
+        sys.exit("Too many command-line arguments")
+    elif len(sys.argv)<2:
+        sys.exit("Too few command-line arguments")
     l=0
     try:
         if sys.argv[1].endswith(".py"):
@@ -10,15 +13,10 @@ def main():
         with open(sys.argv[1]) as file:
             lines=file.readlines()
         for line in lines:
-            line=line.lstrip()
             if line.startswith("#") or line.isspace():
                 continue
             l=l+1
-        if len(sys.argv)==3:
-            sys.exit("Too many command-line arguments")
         print(l)
-    except IndexError:
-        sys.exit("Too few command-line arguments")
     except FileNotFoundError:
         sys.exit("File does not exist")
 
