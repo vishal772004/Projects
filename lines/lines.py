@@ -2,9 +2,6 @@ import sys
 l=0
 check=0
 try:
-    if sys.argv[2]:
-        print("Too many command-line arguments")
-        sys.exit(1)
 
     if sys.argv[1].endswith(".py"):
         pass
@@ -18,6 +15,11 @@ try:
             l=l+1
     print(l)
 except IndexError:
+        try:
+            if sys.argv[2]:
+                sys.exit(1)
+        except IndexError:
+                print("Too many command-line arguments")
         print("Too few command-line arguments")
         sys.exit
 except FileNotFoundError:
