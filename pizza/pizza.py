@@ -13,7 +13,7 @@ def main():
             with open(sys.argv[1]) as file:
                 read=csv.reader(file)
                 for line in read:
-                    print(tabulate(line[1:],headers=line[:1],tablefmt="grid"))
+                    print(tabulate(line,tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
 
