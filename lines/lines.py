@@ -12,12 +12,11 @@ try:
             if line.startswith("# ") or line.isspace():
                 continue
             l=l+1
-    print(l)
-except IndexError:
     if len(sys.argv)==3:
         sys.exit("Too many command-line arguments")
-    else:
-        sys.exit("Too few command-line arguments")
+    print(l)
+except IndexError:
+    sys.exit("Too few command-line arguments")
 except FileNotFoundError:
     sys.exit("File does not exist")
 
