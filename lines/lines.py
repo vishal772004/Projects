@@ -2,9 +2,8 @@ import sys
 l=0
 check=0
 try:
-    if sys.argv[1].endswith(".py") and sys.argv[2].endswith(".py") :
-        check=1
-        sys.exit
+    if sys.argv[1].endswith(".py"):
+        pass
     elif not(sys.argv[1].endswith(".py")):
         print("Not a python file")
         sys.exit
@@ -15,9 +14,7 @@ try:
             l=l+1
     print(l)
 except IndexError:
-    if check==1:
         print("Too many command-line arguments")
-    else:
         print("Too few command-line arguments")
     sys.exit
 except FileNotFoundError:
