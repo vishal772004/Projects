@@ -12,8 +12,8 @@ def main():
                 sys.exit("Not a CSV File")
             with open(sys.argv[1]) as file:
                 read=csv.reader(file)
-            for line in read:
-                print(line)
+                for line in read:
+                    print(line)
         except FileNotFoundError:
             sys.exit("File does not exist")
 
