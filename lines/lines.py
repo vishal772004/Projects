@@ -8,7 +8,7 @@ try:
         sys.exit()
     with open(sys.argv[1]) as file:
         for line in file:
-            if line.startswith("#"):
+            if line.startswith("#") or line.startswith(" "):
                 continue
             l=l+1
     print(l)
