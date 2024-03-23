@@ -14,7 +14,7 @@ def main():
             if line.startswith("#") or line.isspace():
                 continue
             l=l+1
-        print(l)
+        print(lines)
     except FileNotFoundError:
         sys.exit("File does not exist")
 
