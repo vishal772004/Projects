@@ -13,15 +13,9 @@ def main():
             with open(sys.argv[1]) as file:
                 read=csv.DictReader(file)
             for line in read:
-                print(tabulate(line[1:],line[:1],tablefmt="grid"))
+                print(line)
         except FileNotFoundError:
             sys.exit("File does not exist")
-
-
-
-
-
-
 
 if __name__=="__main__":
     main()
