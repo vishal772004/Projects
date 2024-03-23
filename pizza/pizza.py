@@ -11,7 +11,11 @@ def main():
             if not(sys.argv[1].endswith(".csv")):
                 sys.exit("Not a CSV File")
             with open("sicilian.csv") as file:
-                read=csv.reader(file)
+                read=csv.DictReader(file)
+            for line in read:
+                print(tabulate(table,headers,tablefmt="grid"))
+        except FileNotFoundError:
+            sys.exit("File does not exist")
 
 
 
