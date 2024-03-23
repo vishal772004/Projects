@@ -1,5 +1,6 @@
+import sys
 def main():
-    import sys
+
     l=0
     try:
         if sys.argv[1].endswith(".py"):
