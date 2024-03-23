@@ -13,7 +13,7 @@ def main():
             with open("sicilian.csv") as file:
                 read=csv.DictReader(file)
             for line in read:
-                print(tabulate(table,line[],tablefmt="grid"))
+                print(tabulate(line[1:],line[:1],tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
 
