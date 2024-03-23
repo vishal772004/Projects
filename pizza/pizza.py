@@ -1,5 +1,6 @@
 import sys
 import csv
+import tabulate
 def main():
     if len(sys.argv)<2:
         sys.exit("Too few command line arguments")
@@ -11,7 +12,7 @@ def main():
                 sys.exit("Not a CSV File")
             with open("sicilian.csv") as file:
                 read=csv.reader(file)
-            
+
 
 
 
