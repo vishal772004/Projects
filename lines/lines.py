@@ -11,11 +11,10 @@ def main():
         with open(sys.argv[1]) as file:
             lines=file.readlines()
         for line in lines:
-            line=line.strip()
-            if line.startswith("#") or line.isspace():
+            if line.strip().startswith("#") or line.isspace():
                 continue
             l=l+1
-        print(lines)
+        print(l)
     except FileNotFoundError:
         sys.exit("File does not exist")
 
