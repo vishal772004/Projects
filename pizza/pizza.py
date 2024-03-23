@@ -11,7 +11,7 @@ def main():
             if not(sys.argv[1].endswith(".csv")):
                 sys.exit("Not a CSV File")
             with open(sys.argv[1]) as file:
-                read=csv.DictReader(file)
+                read=csv.reader(file)
             for line in read:
                 print(line)
         except FileNotFoundError:
