@@ -10,7 +10,7 @@ def main():
         try:
             if not(sys.argv[1].endswith(".csv")):
                 sys.exit("Not a CSV File")
-            with open("sicilian.csv") as file:
+            with open(sys.argv[1]) as file:
                 read=csv.DictReader(file)
             for line in read:
                 print(tabulate(line[1:],line[:1],tablefmt="grid"))
