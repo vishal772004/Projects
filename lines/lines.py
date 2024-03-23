@@ -11,6 +11,7 @@ def main():
         with open(sys.argv[1]) as file:
             lines=file.readlines()
         for line in lines:
+            line=line.strip()
             if line.startswith("#") or line.isspace():
                 continue
             l=l+1
