@@ -1,4 +1,5 @@
 import sys
+import csv
 def main():
     if len(sys.argv)<2:
         sys.exit("Too few command line arguments")
@@ -9,7 +10,8 @@ def main():
             if not(sys.argv[1].endswith(".csv")):
                 sys.exit("Not a CSV File")
             with open("sicilian.csv") as file:
-                read=file.reader()
+                read=csv.reader(file)
+            
 
 
 
