@@ -16,7 +16,7 @@ try:
 except IndexError:
         print("Too many command-line arguments")
         print("Too few command-line arguments")
-    sys.exit
+        sys.exit
 except FileNotFoundError:
     print("File does not exist")
     sys.exit
