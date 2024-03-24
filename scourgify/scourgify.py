@@ -12,5 +12,6 @@ def main():
             read=csv.DictReader(file)
         print(read)
 
-
+if __name__=="__main__":
+    main()
 
