@@ -13,8 +13,9 @@ def main():
             read=csv.DictReader(file)
             for i in read:
                 hogwarts.append(i)
-            print(hogwarts)
-
+        with open(sys.argv[2]) as file1:
+            writer=csv.writer(file1)
+            writer.writerow(hogwarts[0])
 if __name__=="__main__":
     main()
 
