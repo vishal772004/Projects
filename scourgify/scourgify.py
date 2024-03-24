@@ -19,8 +19,9 @@ def main():
             #writer.writerows(hogwarts)
             for i in hogwarts:
                 str=i['name']
-                str=str.reverse()
-                print(str)
+                str=str.split(",")
+                first_name,last_name=str[1],str[0]
+                print(first_name,last_name)
 if __name__=="__main__":
     main()
 
