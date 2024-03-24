@@ -15,7 +15,7 @@ def main():
                 hogwarts.append(i)
         with open(sys.argv[2]) as file1:
             writer=csv.writer(file1)
-            writer.writerow(hogwarts[0])
+            writer.writerows("hello")
 if __name__=="__main__":
     main()
 
