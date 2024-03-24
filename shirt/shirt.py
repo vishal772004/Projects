@@ -18,9 +18,9 @@ def main():
             sys.exit("Input Does not exist")
 
 def check_extension():
-    end1=sys.argv[1][-4]
-    end2=sys.argv[2][-4]
-    if end1==end2:
+    if sys.argv[1].endswith(".jpg") and sys.argv[2].endswith(".jpg") :
+        return False
+    elif sys.argv[1].endswith(".png") and sys.argv[2].endswith(".png"):
         return False
     else:
         return True
