@@ -1,9 +1,9 @@
 import sys
 from PIL import Image
 def main():
-    if len(sys.argv)<2:
+    if len(sys.argv)<3:
         sys.exit("Too few command line arguments")
-    elif len(sys.argv)>2:
+    elif len(sys.argv)>3:
         sys.exit("Too many command line arguments")
     else:
         try:
@@ -20,6 +20,7 @@ def main():
 def check_extension():
     end1=sys.argv[1][-4]
     end2=sys.argv[2][-4]
+    
     if end1==end2:
         return False
     else:
