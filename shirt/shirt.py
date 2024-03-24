@@ -23,7 +23,7 @@ def main():
 
 def check_extension():
     if sys.argv[1].endswith(".jpg") and sys.argv[2].endswith(".jpg") :
-        return False
+        pass
     elif sys.argv[1].endswith(".png") and sys.argv[2].endswith(".png"):
         return False
     else:
