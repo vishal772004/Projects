@@ -12,9 +12,7 @@ def main():
         with open(sys.argv[1]) as file:
             read=csv.DictReader(file)
         with open(sys.argv[2]) as file1:
-            fieldname=['name','house']
-            writer=csv.DictWriter(file1,fieldnames=fieldname)
-            writer.writerow(read)
+            writer=csv.DictWriter(file1,fieldnames=['name','house'])
 
 if __name__=="__main__":
     main()
