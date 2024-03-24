@@ -16,11 +16,11 @@ def main():
                     before.append(i)
             with open(sys.argv[2],"w") as file1:
                 writer = csv.DictWriter(file1, fieldnames=['first','last','house'])
-                writer.writeheader()
                 for i in before:
                     str=i['name']
                     str=str.split(",")
                     after.append({'first':str[1],'last':str[0],'house':i['house']})
+                writer.writeheader()
                 writer.writerows(after)
         except FileNotFoundError:
             sys.exit("Could not find the csv file")
