@@ -14,7 +14,8 @@ def main():
             for i in read:
                 hogwarts.append(i)
         with open(sys.argv[2]) as file1:
-            file1.write()
+            for i in hogwarts:
+                file1.write(i)
 
 if __name__=="__main__":
     main()
