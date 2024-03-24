@@ -19,7 +19,7 @@ def main():
             for i in hogwarts:
                 str=i['name']
                 str=str.split(",")
-                full_name=str[1]+","str[0]
+                full_name=str[1]+","+str[0]
                 after.append({'name':full_name,'house':i})
             print(after)
             #writer.writerows(hogwarts)
