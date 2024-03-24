@@ -1,5 +1,5 @@
 import sys
-from PIL import Image
+from PIL import Image,ImageOps
 def main():
     if len(sys.argv)<3:
         sys.exit("Too few command line arguments")
