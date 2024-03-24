@@ -13,8 +13,8 @@ def main():
             read=csv.DictReader(file)
             for i in read:
                 hogwarts.append(i)
-        with open(sys.argv[2]) as file1:
-            writer = csv.DictWriter(sys.argv[2], fieldnames=['name','house'])
+        with open(sys.argv[2],"a") as file1:
+            writer = csv.DictWriter(file1, fieldnames=['name','house'])
             writer.writeheader()
             writer.writerows(hogwarts)
 
