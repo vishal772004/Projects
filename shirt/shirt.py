@@ -25,12 +25,9 @@ def check_extension():
     else:
         return True
 def check_valid():
-    end1=sys.argv[1].substring[-2]
-    end2=sys.argv[2][-2]
-    print(end1,end2)
-    if end1==".jpg" or end1==".png":
+    if sys.argv[1].endswith(".jpg") or sys.argv[1].endswith(".png"):
         pass
-    elif end2==".jpg" or end2==".png":
+    elif sys.argv[2].endswith(".jpg") or sys.argv[2].endswith(".png"):
         return False
     else:
         return True
