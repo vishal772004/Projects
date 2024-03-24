@@ -12,7 +12,7 @@ def main():
         with open(sys.argv[1]) as file:
             read=csv.DictReader(file)
             for i in read:
-                hogwarts.append({'name':i[]})
+                hogwarts.append(i)
         with open(sys.argv[2],"a") as file1:
             writer = csv.DictWriter(file1, fieldnames=['name','house'])
             writer.writeheader()
