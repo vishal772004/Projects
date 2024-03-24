@@ -15,6 +15,7 @@ def main():
                 hogwarts.append(i)
         with open(sys.argv[2]) as file1:
             
+
 if __name__=="__main__":
     main()
 
