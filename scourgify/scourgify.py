@@ -12,7 +12,7 @@ def main():
         with open(sys.argv[1]) as file:
             read=csv.DictReader(file)
             hogwarts.append(read)
-        print(hogwarts)
+            print(hogwarts['name'],hogwarts['house'])
 
 if __name__=="__main__":
     main()
