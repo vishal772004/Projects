@@ -14,10 +14,7 @@ def main():
             with open(sys.argv[1]) as file:
                 read=csv.DictReader(file)
                 for line in read:
-                    pizza.append(line['Regular Pizza'])
-                    pizza.append(line['Small'])
-                    pizza.append(line['Large'])
-            print(tabulate(pizza,tablefmt="grid"))
+                    print(line)
         except FileNotFoundError:
             sys.exit("File does not exist")
 
