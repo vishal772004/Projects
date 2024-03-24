@@ -7,14 +7,12 @@ def main():
     elif len(sys.argv)>2:
         sys.exit("Too many command line arguments")
     else:
-        pizza=[]
         try:
             if not(sys.argv[1].endswith(".csv")):
                 sys.exit("Not a CSV File")
             with open(sys.argv[1]) as file:
                 read=csv.DictReader(file)
-                for line in read:
-                    print(tabulate(line,headers="keys",tablefmt="grid"))
+                print(tabulate(read,headers="keys",tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
 
