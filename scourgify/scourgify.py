@@ -11,8 +11,9 @@ def main():
         hogwarts=[]
         with open(sys.argv[1]) as file:
             read=csv.DictReader(file)
-        with open(sys.argv[2]) as file1:
-            writer=csv.writer(file1)
+            with open(sys.argv[2]) as file1:
+                writer=csv.writer(file1)
+                writer.writerows(read)
 
 if __name__=="__main__":
     main()
