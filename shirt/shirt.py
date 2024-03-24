@@ -5,11 +5,14 @@ def main():
     elif len(sys.argv)>2:
         sys.exit("Too many command line arguments")
     else:
-        if check_valid():
-            sys.exit("Invalid input")
-        if check_extension():
-            sys.exit("Input and output have different extensions")
-
+        try:
+            if check_valid():
+                sys.exit("Invalid input")
+            if check_extension():
+                sys.exit("Input and output have different extensions")
+            
+        except FileNotFoundError:
+            sys.exit("Input Does not exist")
 
 def check_extension():
     end1=sys.argv[1][-4]
