@@ -14,8 +14,13 @@ def main():
             for i in read:
                 hogwarts.append(i)
         with open(sys.argv[2]) as file1:
-            for i in hogwarts:
-                file1.write(i)
+    writer = csv.DictWriter(csvfile, fieldnames=fields)
+ 
+    # writing headers (field names)
+    writer.writeheader()
+ 
+    # writing data rows
+    writer.writerows(mydict)
 
 if __name__=="__main__":
     main()
