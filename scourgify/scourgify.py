@@ -13,7 +13,7 @@ def main():
             read=csv.DictReader(file)
             for i in read:
                 before.append(i)
-        with open(sys.argv[2],"a") as file1:
+        with open(sys.argv[2],"w") as file1:
             writer = csv.DictWriter(file1, fieldnames=['name','house'])
             writer.writeheader()
             for i in before:
