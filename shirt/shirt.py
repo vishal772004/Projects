@@ -16,6 +16,7 @@ def main():
             size = shirt.size
             muppet=ImageOps.fit(image,size)
             muppet.paste(shirt,shirt)
+            muppet.save(sys.argv[2])
 
         except FileNotFoundError:
             sys.exit("Input Does not exist")
