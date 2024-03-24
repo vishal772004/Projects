@@ -8,7 +8,7 @@ def main():
     else:
         if not(sys.argv[1].endswith(".csv")):
             sys.exit("Could not read",sys.argv[1])
-        hogwarts=[]
+        hogwarts,after=[],[]
         with open(sys.argv[1]) as file:
             read=csv.DictReader(file)
             for i in read:
@@ -16,12 +16,13 @@ def main():
         with open(sys.argv[2],"a") as file1:
             writer = csv.DictWriter(file1, fieldnames=['name','house'])
             writer.writeheader()
-            #writer.writerows(hogwarts)
             for i in hogwarts:
                 str=i['name']
                 str=str.split(",")
-                first_name,last_name=str[1],str[0]
-                hogwarts.update({'name':first_name,last_name})
+                full_name=str[1]+","str[0]
+                after.append({'name':full_name,'house':i})
+            print(after)
+            #writer.writerows(hogwarts)
 if __name__=="__main__":
     main()
 
