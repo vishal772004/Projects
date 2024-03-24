@@ -14,13 +14,12 @@ def main():
             for i in read:
                 before.append(i)
         with open(sys.argv[2],"w") as file1:
-            writer = csv.DictWriter(file1, fieldnames=['name','house'])
+            writer = csv.DictWriter(file1, fieldnames=['first','last','house'])
             writer.writeheader()
             for i in before:
                 str=i['name']
                 str=str.split(",")
-                full_name=str[1]+","+str[0]
-                after.append({'name':full_name,'house':i['house']})
+                after.append({'first':str[1],'last':str[0],'house':i['house']})
             writer.writerows(after)
 if __name__=="__main__":
     main()
