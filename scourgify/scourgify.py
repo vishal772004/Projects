@@ -18,7 +18,9 @@ def main():
             writer.writeheader()
             #writer.writerows(hogwarts)
             for i in hogwarts:
-                print(i)
+                str=i['name']
+                str=str.reverse()
+                print(str)
 if __name__=="__main__":
     main()
 
