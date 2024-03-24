@@ -21,7 +21,7 @@ def main():
                 str=i['name']
                 str=str.split(",")
                 first_name,last_name=str[1],str[0]
-                hogwarts
+                hogwarts.update({'name':first_name,last_name})
 if __name__=="__main__":
     main()
 
