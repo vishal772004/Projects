@@ -14,7 +14,8 @@ def main():
             image = Image.open(sys.argv[1])
             shirt = Image.open("shirt.png")
             size = shirt.size
-            
+            muppet=ImageOps.fit(image,size)
+            muppet.paste(shirt,shirt)
 
         except FileNotFoundError:
             sys.exit("Input Does not exist")
