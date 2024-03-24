@@ -10,4 +10,11 @@ def main():
 
         if sys.argv[1].endswith(".jpg") and sys.argv[2].endswith(".png"):
             sys.exit("Input and output have different extensions")
-        
+
+def check_extension():
+    end1=sys.argv[1][-4]
+    end2=sys.argv[2][-4]
+    if end1==end2:
+        return True
+    else:
+        return False
