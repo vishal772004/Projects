@@ -12,7 +12,7 @@ def main():
             if check_extension():
                 sys.exit("Input and output have different extensions")
             shirt = Image.open(sys.argv[1])
-            size = sys.argv[1].size
+            
             sys.argv[2].paste(shirt, "shirt.png")
         except FileNotFoundError:
             sys.exit("Input Does not exist")
