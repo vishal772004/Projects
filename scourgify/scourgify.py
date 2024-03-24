@@ -11,8 +11,8 @@ def main():
         hogwarts=[]
         with open(sys.argv[1]) as file:
             read=csv.DictReader(file)
-            for line in read:
-                print(line['name'],line['house'])
+        with open(sys.argv[2]) as file1:
+            
 
 if __name__=="__main__":
     main()
