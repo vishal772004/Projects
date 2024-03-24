@@ -17,7 +17,8 @@ def main():
             writer = csv.DictWriter(file1, fieldnames=['name','house'])
             writer.writeheader()
             writer.writerows(hogwarts)
-
+            for i in hogwarts:
+                print(i)
 if __name__=="__main__":
     main()
 
