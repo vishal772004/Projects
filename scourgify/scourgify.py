@@ -20,7 +20,7 @@ def main():
                 str=i['name']
                 str=str.split(",")
                 full_name=str[1]+","+str[0]
-                after.append({'name':full_name,'house':i})
+                after.append({'name':full_name,'house':i['house']})
             writer.writerows(after)
 if __name__=="__main__":
     main()
