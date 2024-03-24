@@ -21,6 +21,6 @@ def check_extension():
 def check_valid():
     end1=sys.argv[1][-4]
     end2=sys.argv[2][-4]
-    if end1==".jpg" or end2=".jpg":
-        
+    if 
+
 
