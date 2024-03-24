@@ -5,7 +5,7 @@ def main():
     elif len(sys.argv)>2:
         sys.exit("Too many command line arguments")
     else:
-        if not(sys.argv[1].endswith(".jpg") and sys.argv[2].endswith(".jpg")):
+        if check_valid():
             sys.exit("Invalid input")
         if check_extension():
             sys.exit("Input and output have different extensions")
@@ -21,6 +21,12 @@ def check_extension():
 def check_valid():
     end1=sys.argv[1][-4]
     end2=sys.argv[2][-4]
-    if 
+    if end1==".jpg" or end1==".png":
+        pass
+    elif end2==".jpg" or end2==".png":
+        return False
+    else:
+        return True
 
-
+if __name__=="__main__":
+    main()
