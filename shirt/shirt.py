@@ -10,7 +10,7 @@ def main():
                 sys.exit("Invalid input")
             if check_extension():
                 sys.exit("Input and output have different extensions")
-            
+            shirt = Image.open("shirt.png"
         except FileNotFoundError:
             sys.exit("Input Does not exist")
 
