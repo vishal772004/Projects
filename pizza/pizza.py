@@ -16,7 +16,7 @@ def main():
                 pizza.append([])
                 for line in pizza:
                     print(line)
-                    #print(tabulate(line,line[0:],tablefmt="grid"))
+                    print(tabulate(line,tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
 
