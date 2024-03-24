@@ -13,9 +13,7 @@ def main():
                 sys.exit("Not a CSV File")
             with open(sys.argv[1]) as file:
                 read=csv.DictReader(file)
-                pizza.append([])
-                for line in pizza:
-                    print(line)
+                for line in read:
                     print(tabulate(line,tablefmt="grid"))
         except FileNotFoundError:
             sys.exit("File does not exist")
