@@ -11,8 +11,11 @@ def main():
                 sys.exit("Invalid input")
             if check_extension():
                 sys.exit("Input and output have different extensions")
-            shirt = Image.open(sys.argv[1])
+            image = Image.open(sys.argv[1])
+            shirt = Image.open("shirt.png")
+            size = shirt.size
             
+
         except FileNotFoundError:
             sys.exit("Input Does not exist")
 
