@@ -20,7 +20,7 @@ def main():
                     str=i['name']
                     str=str.split(",")
                     after.append({'first':str[1],'last':str[0],'house':i['house']})
-                writer.writerows({"first":"first","last":"last","house":"house"})
+                writer.writerow({"first":"first","last":"last","house":"house"})
                 writer.writerows(after)
         except FileNotFoundError:
             sys.exit("Could not find the csv file")
