@@ -7,10 +7,11 @@ def main():
 
 
 def validate(ip):
-    if re.search(r"^([0-2][0-5]|[0-9])?([0-5]|[0-9])?\.[0-2]?([0-5]|[0-9])?([0-5]|[0-9])?\.[0-2]?([0-5]|[0-9])?([0-5]|[0-9])?\.[0-2]?([0-5]|[0-9])?([0-5]|[0-9])?$",ip):
-        return True
-    else:
-        return False
+    ipv4=re.search(r"^(\d)\.(\d)\.(\d)\.(\d)$",ip)
+    for i in (0,3):
+        if 0<int(ipv4.group(i))>255:
+            return False
+    return True
 
 
 if __name__ == "__main__":
