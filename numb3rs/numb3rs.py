@@ -1,10 +1,7 @@
 import re
 import sys
-
-
 def main():
     print(validate(input("IPv4 Address: ")))
-
 
 def validate(ip):
     ipv4=re.search(r"^(\d*\d*\d*)\.(\d*\d*\d*)\.(\d*\d*\d*)\.(\d*\d*\d*)$",ip)
@@ -16,7 +13,6 @@ def validate(ip):
         if li[i]>255:
             return False
     return True
-
 
 if __name__ == "__main__":
     main()
