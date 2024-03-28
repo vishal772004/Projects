@@ -7,7 +7,7 @@ def main():
 
 
 def validate(ip):
-    ipv4=re.search(r"^([0-2]?[0-9][0-9])+\.([0-2]?[0-9][0-9])+\.([0-2]?[0-9][0-9])+\.([0-2]?[0-9][0-9])+$",ip)
+    ipv4=re.search(r"^(\d*\d\d)$",ip)
     li=[]
     print(ipv4.group(1))
     for i in range(len(li)):
