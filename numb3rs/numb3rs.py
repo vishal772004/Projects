@@ -7,9 +7,11 @@ def main():
 
 
 def validate(ip):
-    ipv4=re.search(r"^(\d*\d\d)$",ip)
+    ipv4=re.search(r"^(\d*\d*\d*)\.(\d*\d*\d*)\.(\d*\d*\d*)\.(\d*\d*\d*)$",ip)
     li=[]
-    print(ipv4.group(1))
+    for i in range(1,5):
+        v=ipv4.group(i)
+        li.append(int(v))
     for i in range(len(li)):
         if li[i]>255:
             return False
