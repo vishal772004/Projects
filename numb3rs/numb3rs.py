@@ -13,6 +13,7 @@ def validate(ip):
         v=ipv4.group(i)
         li.append(int(v))
     for i in range(len(li)):
+        print(li[i])
         if li[i]>255:
             return False
     return True
