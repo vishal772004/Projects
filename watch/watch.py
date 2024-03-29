@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    
+    link=re.search(r"^$",s)
 
 
 if __name__ == "__main__":
