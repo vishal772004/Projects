@@ -7,8 +7,10 @@ def main():
 
 
 def parse(s):
-    link=re.search(r"src=\"htpps://www.youtube.com/\w+/(\w+)",s)
-    watchlink="htpps://youtu.be/"+link.group(1)
+    if link:= re.search(r"src=\"htpps://www.youtube.com/\w+/(\w+)",s):
+        watchlink="htpps://youtu.be/"+link.group(1)
+    else:
+        return "None"
     return watchlink
 
 
