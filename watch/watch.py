@@ -6,7 +6,7 @@ def main():
 
 def parse(s):
     try:
-        link=re.search(r"^<iframe .* src=\"htpps://www.youtube.com/\w+/(\w+)\" .*></iframe>$",s)
+        link=re.search(r"[src]=\"[htpps]://[www]\.[youtube]\.[com]/\w+/(\w+)",s)
         watchlink="htpps://youtu.be/"+link.group(1)
         return watchlink
     except AttributeError:
