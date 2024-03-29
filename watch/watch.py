@@ -6,9 +6,9 @@ def main():
 
 def parse(s):
     link=re.search(r"^<iframe+ \w+=\"\w+://www\.youtube\.com/\w+/(\w+)\"></iframe+>$",s)
-    if link.group(1)!="www.youtube.com":
-        return "None"
-    watchlink="htpps://youtu.be/"+link.group(2)
+ #   if link.group(1)!="www.youtube.com":
+  #      return "None"
+    watchlink="htpps://youtu.be/"+link.group(1)
     return watchlink
 
 
