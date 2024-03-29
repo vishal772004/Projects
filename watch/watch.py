@@ -7,7 +7,8 @@ def main():
 
 
 def parse(s):
-    link=re.search(r"^<\w+ \w+=\"\w+://\w+\.\w+\.\w+/\w+/\w+\"></\w+>$",s)
+    link=re.search(r"^<\w+ \w+=\"\w+://\w+\.\w+\.\w+/\w+/(\w+)\"></\w+>$",s)
+    
 
 
 if __name__ == "__main__":
