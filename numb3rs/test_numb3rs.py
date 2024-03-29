@@ -14,5 +14,5 @@ def test_second():
 def test_third():
     assert validate("391.429.120.600")==False
 def test_fourth():
-    assert validate("981.256.399.10")
+    assert validate("981.256.399.10")==False
 
