@@ -5,12 +5,12 @@ def main():
 
 
 def parse(s):
-    link=re.search(r"^<iframe+ \w+=\"\w+://www\.youtube\.com/\w+/(\w+)\"></iframe+>$",s)
- #   if link.group(1)!="www.youtube.com":
-  #      return "None"
-    watchlink="htpps://youtu.be/"+link.group(1)
-    return watchlink
-
+    try:
+        link=re.search(r"^<iframe .*\w+=\"\w+://www\.youtube\.com/\w+/(\w+)\"></iframe>$",s)
+        watchlink="htpps://youtu.be/"+link.group(1)
+        return watchlink
+    except AttributeError:
+        return "None"
 
 if __name__ == "__main__":
     main()
