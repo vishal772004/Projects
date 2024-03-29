@@ -10,8 +10,9 @@ def validate(ip):
         for i in range(1,5):
             v=ipv4.group(i)
             li.append(int(v))
-        if li[0]>255:
-            return False
+        for i in range(len(li)):
+            if li[i]>255:
+                return False
         return True
     except AttributeError:
         return False
