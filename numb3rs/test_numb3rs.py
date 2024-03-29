@@ -8,6 +8,6 @@ def test_valid_ip():
 def test_invalid_ip():
     assert validate("300.274.574.256")==False
 def test_invalid():
-    with pytest.raises(AttributeError):
+    with pytest.raises(ValueError):
         validate("cat")
 
