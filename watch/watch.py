@@ -6,10 +6,10 @@ def main():
 
 def parse(s):
     if re.search(r"<iframe(.)*><\/iframe>",s):
-        link=re.search(r"(http(s)*:\/\/(www\.)*youtube\.com\/embed\/)([a-z_A-Z_0-9]+)",s)
+        link=re.search(r"(http(s)*:\/\/(www\.)*youtube\.com\/embed\/)(\w)+",s)
         if link:
             url=link.groups()
-            return "htpps://youtu.be/"+url[3]
+            return "https://youtu.be/"+url[3]
 
 if __name__ == "__main__":
     main()
