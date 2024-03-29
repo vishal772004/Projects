@@ -6,7 +6,7 @@ def main():
 
 def parse(s):
     if re.search(r"<iframe(.)*><\/iframe>",s):
-        link=re.search(r"(?:http|https)*:\/\/(?:www\.)*youtube\.com\/embed\/(\w)+",s)
+        link=re.search(r"(http|https)*:\/\/(www\.)*youtube\.com\/embed\/([a-z_A-Z_0-9])+",s)
         if link:
             return "https://youtu.be/"+link.group(3)
 
