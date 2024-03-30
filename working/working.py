@@ -5,7 +5,7 @@ def main():
 
 
 def convert(s):
-    if time:=re.search("^[0-9]+",s):
+    if time:=re.search("^[0-9]+(:[0-9]+) (AM|PM)+ ",s):
         print("yes")
 
 
