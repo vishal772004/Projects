@@ -18,8 +18,7 @@ def convert(s):
                 if li[i].find(":")<=0:
                     li[i]=li[i]+":00"
             return li[0]+"to "+li[1].strip()
-        else:
-            raise ValueError
+        raise ValueError
     except ValueError:
         return None
 
