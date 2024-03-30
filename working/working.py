@@ -12,7 +12,7 @@ def convert(s):
                 if li[i].find(":")<=0:
                     hour,minute=li[i].split(":")
                 else:
-                    hour=li[i][2].strip()
+                    hour=li[i]
                 if li[i].find("PM")>0 :
                     r=int(hour)+12
                     li[i]=li[i].replace("PM","")
