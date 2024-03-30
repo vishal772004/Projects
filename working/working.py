@@ -10,9 +10,9 @@ def convert(s):
             li=s.split(" to ")
             for i in range(len(li)):
                 if li[i].find("PM")>0 :
-                    r=int(li[i][0])+12
+                    r=int(li[i])+12
                     li[i]=li[i].replace("PM","")
-                    if int(li[i][0])!=12:
+                    if r!=132:
                         li[i]=li[i].replace(li[i][0],str(r))
                 li[i]=li[i].replace("AM","")
             for i in range(len(li)):
