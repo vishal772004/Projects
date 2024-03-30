@@ -15,7 +15,7 @@ def convert(s):
                     hour=time
                 if meridian=="PM":
                      r=int(hour)+12
-                     if r!=12:
+                     if r!=24:
                         li[i]=li[i].replace(hour,str(r))
                      li[i]=li[i].replace("PM","")
                 if meridian=="AM":
