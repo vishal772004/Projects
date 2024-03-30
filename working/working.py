@@ -6,7 +6,7 @@ def main():
 
 def convert(s):
     try:
-        if time:=re.search("^([0-1][0-9])?(:[0-5][0-9])? (AM|PM)+ to [0-9]+(:[0-5][0-9])? (AM|PM)+$",s):
+        if time:=re.search("^([1-9]|[1][0-2])?(:[0-5][0-9])? (AM|PM)+ to ([1-9]|[1][0-2])?(:[0-5][0-9])? (AM|PM)+$",s):
             li=s.split(" to ")
             for i in range(len(li)):
                 if li[i].find("PM")>0:
