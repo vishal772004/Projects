@@ -19,6 +19,9 @@ def convert(s):
                      if hour!="12":
                         li[i]=li[i].replace(hour,str(r))
                      li[i]=li[i].replace("PM","")
+                li[i]=li[i].replace("AM","")
+            return li[0]+"to "+li[1].strip()
+        raise ValueError
 
 
 
