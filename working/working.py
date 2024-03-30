@@ -13,20 +13,6 @@ def convert(s):
                     hour,minute=li[i].split(":")
                 else:
                     hour=li[i]
-                if li[i].find("PM")>0 :
-                    r=int(hour)+12
-                    li[i]=li[i].replace("PM","")
-                    if hour!="12":
-                        li[i]=li[i].replace(hour,str(r))
-                li[i]=li[i].replace("AM","")
-            for i in range(len(li)):
-                if li[i].find(":")<=0:
-                    li[i]=li[i]+":00"
-            return li[0]+"to "+li[1].strip()
-        raise ValueError
-   # except ValueError:
-     #   return None
-
 
 
 if __name__ == "__main__":
