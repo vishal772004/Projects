@@ -11,4 +11,5 @@ def test_inavlidtime():
         convert("13:00 AM to 13:00 PM")
         convert("9:00 AM - 9:00 PM")
         convert("12 AM -12 PM")
+        convert("12 AM 12 PM")
 
