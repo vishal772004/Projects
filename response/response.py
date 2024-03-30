@@ -6,7 +6,7 @@ def main():
 
 def validate(s):
    # if re.search("^[a-zA-Z0-9]*@[a-zA-Z0-9]*\.com$",s,re.IGNORECASE):
-    if validators.email("someone@example.com")
+    if validators.email("someone@example.com"):
         return "Valid"
     else:
         return "Invalid"
