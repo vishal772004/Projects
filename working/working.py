@@ -7,7 +7,8 @@ def main():
 def convert(s):
     if time:=re.search("^[0-9]+(:[0-9]+) (AM|PM)+ to [0-9]+(:[0-9]+) (AM|PM)+$",s):
         li=s.split(" to ")
-        
+        for i in li:
+            
 
 
 
