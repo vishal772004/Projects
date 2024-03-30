@@ -17,7 +17,7 @@ def convert(s):
             for i in range(len(li)):
                 if li[i].find(":")<=0:
                     li[i]=li[i]+":00"
-            return li[0]+"to "+li[1]
+            return li[0]+"to "+li[1].strip()
         else:
             raise ValueError
     except ValueError:
