@@ -9,11 +9,11 @@ def convert(s):
         if time:=re.search("^([1-9]|[1][0-2])?(:[0-5][0-9])? (AM|PM)+ to ([1-9]|[1][0-2])?(:[0-5][0-9])? (AM|PM)+$",s):
             li=s.split(" to ")
             for i in range(len(li)):
-                hour,minute=li[i].split()
+                hour,minute=li[i].split(":")
                 if li[i].find("PM")>0 :
-                    r=int(li[i][0])+12
+                    r=int(hour)+12
                     li[i]=li[i].replace("PM","")
-
+                    li[i]=li[i].replace(hour,str(r))
                 li[i]=li[i].replace("AM","")
             for i in range(len(li)):
                 if li[i].find(":")<=0:
