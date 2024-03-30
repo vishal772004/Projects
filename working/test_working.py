@@ -10,8 +10,9 @@ def test_inavlidtime():
     with pytest.raises(ValueError):
         convert("13:00 AM to 13:00 PM")
         convert("9:00 AM - 9:00 PM")
-        convert("12 AM -12 PM")
+        convert("12 AM - 12 PM")
         convert("12 AM 12 PM")
         convert("25 to 36")
         convert("10:60 AM to 12:78 PM")
+        convert("13 PM to 17 PM")
 
