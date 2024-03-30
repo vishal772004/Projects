@@ -22,6 +22,8 @@ def convert(s):
                     r=int(hour)
                     if r<10:
                        li[i]=li[i].replace(hour,"0"+hour)
+                    if r==12:
+                       li[i]=li[i].replace(hour,"00")
                 li[i]=li[i].replace("AM","")
                 if time.find(":")<=0:
                     li[i]=li[i].strip()+":00 "
