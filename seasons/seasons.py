@@ -8,8 +8,6 @@ def main():
         print("Invalid date")
 
     d=Datetime(date,month,year)
-    d.__str__()
-    print(f"Date :{date}-Month :{month}-Year :{year}")
 
 class Datetime():
     def __init__(self,date,month,year):
@@ -19,7 +17,7 @@ class Datetime():
 
     def __str__(self):
         return f"Date :{self.date}-Month :{self.month}-Year :{self.year}"
-
+    print("Hello")
 
 if __name__ == "__main__":
     main()
