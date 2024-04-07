@@ -8,7 +8,7 @@ def main():
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
     final = date_-_date
-    words = p.number_to_words(seconds,andword=", ")
+    #words = p.number_to_words(seconds,andword=", ")
     print(final,"minutes")
 
 class Datetime():
@@ -28,11 +28,11 @@ class Datetime():
     @classmethod
     def gettoday(cls):
         year,month,date=str(datetime.date.today()).split("-")
-        return cls(year,month,date)
+        return cls(date(year,month,date))
     @classmethod
     def get(cls):
         year,month,date =input("Date of Birth:").split("-")
-        return cls(date,month,year)
+        return cls(date(date,month,year))
 
 
 if __name__ == "__main__":
