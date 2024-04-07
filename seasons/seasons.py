@@ -16,7 +16,8 @@ class Datetime():
         self.year=int(year)
 
     def convert(self):
-        start_date = datetime.date(self.year , self.month , self.date)
+        start_date = datetime.date.today()
+        end_date = datetime.date(self.year , self.month , self.date)
 
 
 
