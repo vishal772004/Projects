@@ -6,7 +6,7 @@ def main():
         _date=Datetime.get()
     except ValueError:
         sys.exit("Invalid Date")
-    words = p.number_to_words(_date,)
+    words = p.number_to_words(_date)
     print(words)
 
 class Datetime():
@@ -15,9 +15,10 @@ class Datetime():
         self.month=int(month)
         self.year=int(year)
 
-    def __str__(self):
+    def convert(self):
         start_date = datetime.date(self.year , self.month , self.date)
-        return str(start_date)
+        
+
 
     @classmethod
     def get(cls):
