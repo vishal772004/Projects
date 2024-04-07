@@ -6,17 +6,13 @@ def main():
     except ValueError:
         print("Invalid date")
 
-    Date = datetime.date(date,month,year)
-    print(Date)
-
-
-
 class Datetime():
     def __init__(self,date,month,year):
         self.date=date
         self.month=month
         self.year=year
-        print(f"{self.date} is  the date and {self.month} is the month and {self.year} is the year")
 
+    def check(self):
+        Date = datetime.date(date,month,year)
 if __name__ == "__main__":
     main()
