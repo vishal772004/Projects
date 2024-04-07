@@ -8,6 +8,7 @@ def main():
         print("Invalid date")
 
     Date=Datetime(date,month,year)
+    print(date.today())
 
 
 
