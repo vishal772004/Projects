@@ -13,10 +13,7 @@ def main():
     dob=Birthdate(birth_date)
     date_of_birth=dob.check(birth_date)
     today=datetime.date.today()
-    final=date_of_birth-today
-    total_days=final.days
-    total_minutes=total_days*24*60
-    words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
+
     print(words,"minutes")
 class Birthdate:
     def __init__(self,birth_date):
@@ -24,6 +21,11 @@ class Birthdate:
     def check(self,birth_date):
         date_=datetime.date(int(self.year),int(self.month),int(self.date))
         return date_
+    def convert(self,):
+        final=date_of_birth-today
+        total_days=final.days
+        total_minutes=total_days*24*60
+        words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
 
 if __name__ =="__main__":
     main()
