@@ -9,7 +9,7 @@ def main():
 
     d=Datetime(date,month,year)
     d.__str__()
-    print(f"Date :{self.date}-Month :{self.month}-Year :{self.year}")
+    print(f"Date :{date}-Month :{month}-Year :{year}")
 
 class Datetime():
     def __init__(self,date,month,year):
