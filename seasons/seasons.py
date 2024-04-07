@@ -25,7 +25,7 @@ class Birthdate:
 def convert(date_of_birth,today):
     print(type(today))
     final=today-date_of_birth
-    total_minutes=final*24*60
+    total_minutes=-(final*24*60)
     return total_minutes
 
 
