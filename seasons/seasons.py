@@ -6,7 +6,8 @@ def main():
         _date=Datetime.get()
     except ValueError:
         sys.exit("Invalid Date")
-    date_=Datetime.today()
+    date_=Datetime.gettoday()
+    final = _date-date_
     words = p.number_to_words(_date,andword=", ")
     print(words)
 
@@ -16,9 +17,8 @@ class Datetime():
         self.month=int(month)
         self.year=int(year)
 
-    def today(self):
-        start_date = datetime.date.today()
-        end_date = datetime.date(self.year , self.month , self.date)
+    def convert(self):
+        ...
 
     def __sub__(self,other):
         date = self.date-other.date
@@ -26,9 +26,9 @@ class Datetime():
         year = self.year-other.year
         return Datetime(date,month,year)
 
-
-
-
+    @classmethod
+    def gettoday(cls):
+        return cls(datetime.date.today())
     @classmethod
     def get(cls):
         year,month,date =input("Date of Birth:").split("-")
