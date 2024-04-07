@@ -8,6 +8,7 @@ def main():
         print("Invalid date")
 
     d=Datetime(date,month,year)
+    d.__str__()
 
 class Datetime():
     def __init__(self,date,month,year):
