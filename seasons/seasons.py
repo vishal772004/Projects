@@ -7,6 +7,7 @@ def main():
     except ValueError:
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
+    print(_date)
 
 
 class Datetime():
