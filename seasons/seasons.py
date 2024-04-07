@@ -22,11 +22,11 @@ class Birthdate:
     def check(self,birth_date):
         date_=datetime.date(int(self.year),int(self.month),int(self.date))
         return date_
-    def convert(self,date_of_birth,today):
-        final=date_of_birth-today
-        total_days=final.days
-        total_minutes=total_days*24*60
-        return total_minutes
+def convert(date_of_birth,today):
+    final=date_of_birth-today
+    total_days=final.days
+    total_minutes=total_days*24*60
+    return total_minutes
 
 
 if __name__ =="__main__":
