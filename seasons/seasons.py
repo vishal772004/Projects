@@ -4,6 +4,7 @@ def main():
     birth_date=input("Date of Birth:")
     p=inflect.engine()
     date_of_birth=check(birth_date)
+    print(date_of_birth)
     today=datetime.date.today()
     final=convert(date_of_birth,today)
     total_minutes=final.days
