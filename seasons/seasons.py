@@ -8,7 +8,7 @@ def main():
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
     final = _date-date_
-    final = datetime.timedelta(final)
+    final = datetime.timedelta()
     seconds = final.total_seconds()
     seconds = seconds*60
     words = p.number_to_words(seconds,andword=", ")
