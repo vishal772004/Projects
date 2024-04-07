@@ -10,13 +10,15 @@ def main():
     except ValueError:
         sys.exit("Invalid Date")
 
-    
+    dob=Birthdate(birth_date)
+    date_of_birth=dob.check(birth_date)
+    print(date_of_birth)
 class Birthdate:
     def __init__(self,birth_date):
         self.year,self.month,self.date=birth_date.split("-")
-
-
-
+    def check(self,birth_date):
+        date=datetime.date(birth_date)
+        return date
 
 if __name__ =="__main__":
     main()
