@@ -1,12 +1,13 @@
 import datetime,sys,inflect
 
 def main():
+    p = inflect.engine()
     try:
         _date=Datetime.get()
     except ValueError:
         sys.exit("Invalid Date")
-    words = inflect.number_to_words(_date)
-    print(_date)
+    words = p.number_to_words(_date,)
+    print(words)
 
 class Datetime():
     def __init__(self,date,month,year):
