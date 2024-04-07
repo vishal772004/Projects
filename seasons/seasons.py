@@ -4,7 +4,7 @@ def main():
     birth_date=input("Date of Birth:")
     p=inflect.engine()
     date_of_birth=check(birth_date)
-    print(type(date_of_birth))
+    date_=datetime.date(int(year),int(month),int(date))
     today=datetime.date.today()
     final=convert(date_of_birth,today)
     total_minutes=final.days
@@ -20,8 +20,7 @@ def check(birth_date):
     except ValueError:
         sys.exit("Invalid Date")
     year,month,date=birth_date.split("-")
-    date_=datetime.date(int(year),int(month),int(date))
-    return date_
+    return (year,month,date)
 def convert(date_of_birth,today):
     final=today-date_of_birth
     total_minutes=-(final*24*60)
