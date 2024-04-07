@@ -2,7 +2,7 @@ from datetime import date
 
 
 def main():
-    datetime = input("Date of Birth:")
+    date,month,year = input("Date of Birth:").split
     class datetime.date(date,month,year):
         print()
 
