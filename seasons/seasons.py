@@ -8,7 +8,8 @@ def main():
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
     final = _date-date_
-    words = p.number_to_words(_date,andword=", ")
+    final = final*60
+    words = p.number_to_words(final,andword=", ")
     print(words)
 
 class Datetime():
