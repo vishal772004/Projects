@@ -8,8 +8,6 @@ def main():
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
     final = date_-_date
-    seconds = datetime.timedelta().total_seconds()
-    seconds = seconds*60
     words = p.number_to_words(seconds,andword=", ")
     print(final,"minutes")
 
