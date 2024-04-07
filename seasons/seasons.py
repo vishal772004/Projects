@@ -8,7 +8,7 @@ def main():
     today=datetime.date.today()
     final=convert(date_,today)
     total_minutes=final.days
-    words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
+    words=p.number_to_words(total_minutes,andword="").lstrip("minus ")
     print(words.capitalize(),"minutes")
 
 def check(birth_date):
