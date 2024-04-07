@@ -4,10 +4,11 @@ from datetime import date
 def main():
     try:
         year,month,date = input("Date of Birth:").split("-")
+
     except ValueError:
         print("Invalid date")
 
-    d=Datetime(date,month,year)
+    date=Datetime(date,month,year)
 
 class Datetime():
     def __init__(self,date,month,year):
