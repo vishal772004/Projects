@@ -8,8 +8,8 @@ def main():
         print("Invalid date")
 
     Date=Datetime(date,month,year)
-    print(date.today())
-    satrt_date=date(1999,05,02)
+    start_date = datetime.date(2015, 5, 1)
+    print(start_date)
 
 
 
