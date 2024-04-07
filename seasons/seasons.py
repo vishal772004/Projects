@@ -7,7 +7,7 @@ def main():
     except ValueError:
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
-    final = _date-date_
+    final = date_-_date
     seconds = datetime.timedelta().total_seconds()
     seconds = seconds*60
     words = p.number_to_words(seconds,andword=", ")
@@ -19,7 +19,7 @@ class Datetime():
         self.month=int(month)
         self.year=int(year)
     def __str__(self):
-        return f"{self.date}-{self.month}-{self.year}"
+        return f"{self.year}-{self.month}-{self.date}"
 
     def __sub__(self,other):
         date = self.date-other.date
