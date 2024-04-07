@@ -26,11 +26,11 @@ class Datetime():
     @classmethod
     def gettoday(cls):
         year,month,date=str(datetime.date.today()).split("-")
-        return cls(datetime.date(year,month,date))
+        return cls(year,month,date)
     @classmethod
     def get(cls):
         year,month,date =input("Date of Birth:").split("-")
-        return cls(datetime.date(date,month,year))
+        return cls(date,month,year)
 
 
 if __name__ == "__main__":
