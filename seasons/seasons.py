@@ -16,8 +16,8 @@ def main():
     final=date_of_birth-today
     total_days=final.days
     total_minutes=total_days*24*60
-    words=p.number_to_words(total_minutes,andword=", ")
-    print(words)
+    words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
+    print(words,"minutes")
 class Birthdate:
     def __init__(self,birth_date):
         self.year,self.month,self.date=birth_date.split("-")
