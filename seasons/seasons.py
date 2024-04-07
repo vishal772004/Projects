@@ -13,7 +13,7 @@ def main():
     dob=Birthdate(birth_date)
     date_of_birth=dob.check(birth_date)
     today=datetime.date.today()
-    total_minutes=dob.convert(date_of_birth,today)
+    total_minutes=convert(date_of_birth,today)
     words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
     print(words,"minutes")
 class Birthdate:
@@ -23,6 +23,7 @@ class Birthdate:
         date_=datetime.date(int(self.year),int(self.month),int(self.date))
         return date_
 def convert(date_of_birth,today):
+    print(type(today))
     final=date_of_birth-today
     total_days=final.days
     total_minutes=total_days*24*60
