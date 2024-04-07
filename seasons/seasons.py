@@ -3,19 +3,20 @@ from datetime import date
 
 def main():
     try:
-        date,month,year = input("Date of Birth:").split
+        year,month,date = input("Date of Birth:").split("-")
     except ValueError:
         print("Invalid date")
 
+    d=Datetime(date,month,year)
 
-
-class datetime.date():
+class Datetime():
     def __init__(self,date,month,year):
-        self.date =
+        self.date = date
+        self.month = month
+        self.year = year
 
-
-
-...
+    def __str__(self):
+        return f"Date :{self.date}-Month :{self.month}-Year :{self.year}"
 
 
 if __name__ == "__main__":
