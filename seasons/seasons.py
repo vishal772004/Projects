@@ -2,9 +2,16 @@ from datetime import date
 
 
 def main():
-    date,month,year = input("Date of Birth:").split
-    class datetime.date():
-        def __init__(date,month,year):
+    try:
+        date,month,year = input("Date of Birth:").split
+    except ValueError:
+        print("Invalid date")
+
+
+
+class datetime.date():
+    def __init__(self,date,month,year):
+        self.date =
 
 
 
