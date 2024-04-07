@@ -29,7 +29,8 @@ class Datetime():
 
     @classmethod
     def gettoday(cls):
-        return cls(datetime.date.today())
+        year,month,date=datetime.date.today().split(",")
+        return cls(year,month,date)
     @classmethod
     def get(cls):
         year,month,date =input("Date of Birth:").split("-")
