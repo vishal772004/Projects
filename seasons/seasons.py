@@ -12,15 +12,13 @@ def main():
 
     dob=Birthdate(birth_date)
     date_of_birth=dob.check(birth_date)
-    print(date_of_birth)
+    today_date=datetime.date.today()
+    print(today_date)
 class Birthdate:
     def __init__(self,birth_date):
         self.year,self.month,self.date=birth_date.split("-")
     def check(self,birth_date):
-        self.year=int(year)
-        self.month=int(month)
-        self.date=int(date)
-        date_=datetime.date(birth_date)
+        date_=datetime.date(int(self.year),int(self.month),int(self.date))
         return date_
 
 if __name__ =="__main__":
