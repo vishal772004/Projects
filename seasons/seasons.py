@@ -9,7 +9,7 @@ def main():
     final=convert(date_,today)
     total_minutes=final.days
     words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
-    print(words,"minutes")
+    print(words.capitalize(),"minutes")
 
 def check(birth_date):
     try:
