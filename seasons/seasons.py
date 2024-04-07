@@ -1,7 +1,10 @@
-import datetime
+import datetime,sys
 
 def main():
-    _date=Datetime.get()
+    try:
+        _date=Datetime.get()
+    except ValueError:
+        sys.exit("Invalid Date")
     print(_date)
 
 class Datetime():
