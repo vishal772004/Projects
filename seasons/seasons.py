@@ -9,6 +9,7 @@ def main():
 
     Date=Datetime(date,month,year)
     print(date.today())
+    satrt_date=datetime.date(1999,05,02)
 
 
 
