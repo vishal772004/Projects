@@ -9,11 +9,15 @@ def main():
             raise ValueError
     except ValueError:
         sys.exit("Invalid Date")
-
+    p=inflect.engine()
     dob=Birthdate(birth_date)
     date_of_birth=dob.check(birth_date)
-    today_date=datetime.date.today()
-    print(today_date)
+    today=datetime.date.today()
+    final=date_of_birth-today
+    total_days=final.days
+    total_minutes=total_days*24*60
+    words=p.number_to_words(total_minutes,andword=", ")
+    print(words)
 class Birthdate:
     def __init__(self,birth_date):
         self.year,self.month,self.date=birth_date.split("-")
