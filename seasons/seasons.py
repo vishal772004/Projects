@@ -9,6 +9,7 @@ def main():
         print("Invalid date")
 
     date=Datetime(date,month,year)
+    date.MINYEAR("")
 
 class Datetime():
     def __init__(self,date,month,year):
