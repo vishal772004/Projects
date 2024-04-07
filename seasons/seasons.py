@@ -28,7 +28,8 @@ class Datetime():
 
     @classmethod
     def gettoday(cls):
-        year,month,date=str(datetime.date.today()).split(", ")
+        today=datetime.date.today()
+        todaydate=today
         return cls(year,month,date)
     @classmethod
     def get(cls):
