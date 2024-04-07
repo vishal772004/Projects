@@ -7,6 +7,7 @@ def main():
     except ValueError:
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
+    _date=datetime.date(_date)
     print(_date)
 
 
@@ -17,6 +18,7 @@ class Datetime():
         self.year=int(year)
     def __str__(self):
         return f"{self.year}-{self.month}-{self.date}"
+    
 
     def __sub__(self,other):
         date = self.date-other.date
