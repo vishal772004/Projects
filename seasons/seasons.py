@@ -1,8 +1,9 @@
-import datetime,sys,inflect
+import datetime,sys,inflect,re
 
 def main():
     try:
         birth_date=input("Date of Birth:")
+        if re.search("^[0-9][0-9][0-9][0-9]-[]$")
     except ValueError:
         sys.exit("Invalid Date")
 
