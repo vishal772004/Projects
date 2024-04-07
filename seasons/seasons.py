@@ -1,5 +1,4 @@
-from datetime import date
-
+import datetime
 
 def main():
     try:
@@ -7,9 +6,8 @@ def main():
     except ValueError:
         print("Invalid date")
 
-    Date=Datetime(date,month,year)
-    start_date = datetime.date(2015, 5, 1)
-    print(start_date)
+    Date = datetime.date(date,month,year)
+    print(Date)
 
 
 
