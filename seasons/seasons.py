@@ -8,18 +8,17 @@ def main():
         sys.exit("Invalid Date")
     date_=Datetime.gettoday()
     final = _date-date_
-    final = timedelta.total_seconds()
-    words = p.number_to_words(final,andword=", ")
-    print(words)
+    final = datetime.timedelta(final)
+    seconds = final.total_seconds()
+    seconds = seconds*60
+    words = p.number_to_words(seconds,andword=", ")
+    print(words,"minutes")
 
 class Datetime():
     def __init__(self,date,month,year):
         self.date=int(date)
         self.month=int(month)
         self.year=int(year)
-
-    def convert(self):
-        ...
 
     def __sub__(self,other):
         date = self.date-other.date
@@ -29,7 +28,7 @@ class Datetime():
 
     @classmethod
     def gettoday(cls):
-        year,month,date=datetime.date.today().split(",")
+        
         return cls(year,month,date)
     @classmethod
     def get(cls):
