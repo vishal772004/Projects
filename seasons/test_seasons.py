@@ -1,5 +1,5 @@
 import pytest
-from seasons import convert
+from seasons import Birthdate
 
 def test_validdate():
-    assert convert((2024,4,6),(2024,4,7))==1440
+    assert Birthdate.convert((),(2024,4,6),(2024,4,7))==1440
