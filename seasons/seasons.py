@@ -5,6 +5,7 @@ def main():
         _date=Datetime.get()
     except ValueError:
         sys.exit("Invalid Date")
+    words = inflect.number_to_words(_date)
     print(_date)
 
 class Datetime():
