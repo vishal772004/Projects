@@ -3,10 +3,10 @@ import datetime,sys,inflect,re
 def main():
     birth_date=input("Date of Birth:")
     p=inflect.engine()
-    date_of_birth=check(birth_date)
+    year,month,date=check(birth_date)
     date_=datetime.date(int(year),int(month),int(date))
     today=datetime.date.today()
-    final=convert(date_of_birth,today)
+    final=convert(date_,today)
     total_minutes=final.days
     words=p.number_to_words(total_minutes,andword=", ").lstrip("minus ")
     print(words,"minutes")
