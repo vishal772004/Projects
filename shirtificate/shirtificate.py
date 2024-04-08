@@ -2,10 +2,9 @@ from fpdf import FPDF
 
 pdf = FPDF()
 pdf = FPDF(orientation="portrait", format="A4")
-pdf.set_font("Helvetica")
 pdf.set_page_background('shirtificate.png')
 pdf.add_page(format=(210 , 297))
 pdf.set_font("Times", size=36)
 pdf.set_text_color(255,255,255)
-pdf.cell(text="VISHAL SAGAR MURTHY")
+pdf.cell(text="Vishal Sagar Murthy")
 pdf.output("varying_format.pdf")
