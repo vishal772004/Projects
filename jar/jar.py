@@ -10,14 +10,18 @@ class Jar:
         return self.size*i
 
     def deposit(self, n):
-        self.size=self.size+n
-        if self.size>self.capacity:
+        if n>self.capacity:
             raise ValueError
+        if n+self.size>self.capacity:
+            raise ValueError
+        self.size=self.size+n
 
     def withdraw(self, n):
-        self.size=self.size-n
-        if self.size<=0:
+        if n<=0:
             raise ValueError
+        if n+self.size>self.capacity:
+            raise ValueError
+        self.size=self.size+n
 
     @property
     def capacity(self):
