@@ -3,6 +3,7 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def __init__(self,name):
+        self.name=name
         self.pdf =FPDF(orientation="P", format="A4")
         self.pdf.add_page(format=(210,297))
         self.pdf.set_font("Times",style="B",size=30)
@@ -12,7 +13,7 @@ class PDF(FPDF):
         self.pdf.image("shirtificate.png",h=240, w=175)
         self.pdf.set_font("Times",style="B",size=20)
         self.pdf.set_text_color(255,255,255)
-        self.pdf.cell(text=self.name,size=20)
+        self.pdf.cell(text=self.name)
         self.pdf.output("varying_format.pdf")
 
 name=input("Name:")
