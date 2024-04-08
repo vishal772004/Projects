@@ -7,7 +7,8 @@ class PDF(FPDF):
         pdf.add_page()
         pdf.set_font("Times",style="B",size=25)
         pdf.cell(text="CS50 Shirtificate",center="True",new_x="LMARGIN", new_y="NEXT")
-        pdf.image("shirtificate.png",h=145,w=105)
+        
+        pdf.image("shirtificate.png",h=160,w=160)
         pdf.output("varying_format.pdf")
 
 
