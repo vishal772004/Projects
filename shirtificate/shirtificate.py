@@ -5,7 +5,7 @@ class PDF(FPDF):
     def __init__(self):
         pdf =FPDF(orientation="portrait", format="A4")
         pdf.add_page()
-        pdf.set_font("Times",B,30,)
+        pdf.set_font("Times",style="B")
         pdf.cell(text="CS50 Shirtificate",center=True)
         pdf.image("shirtificate.png")
 
