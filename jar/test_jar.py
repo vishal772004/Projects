@@ -19,11 +19,11 @@ def test_str():
 
 
 def test_deposit():
-    jar2=Jar()
-    jar2.deposit(5)
-    assert jar2.size==5
-    jar2.deposit(5)
-    assert jar2.size==10
+    jar=Jar()
+    jar.deposit(5)
+    assert jar.size==5
+    jar.deposit(5)
+    assert jar.size==10
 
 def test_withdraw():
     jar2=Jar()
