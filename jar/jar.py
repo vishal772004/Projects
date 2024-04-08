@@ -7,7 +7,8 @@ class Jar:
         return self.size*i
 
     def deposit(self, n):
-        self.size
+        self.size=self.size+n
+        return self.size
 
     def withdraw(self, n):
         ...
