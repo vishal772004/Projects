@@ -13,6 +13,7 @@ class Jar:
 
     @property
     def capacity(self):
+        if ca
         return self._capacity
 
     @property
