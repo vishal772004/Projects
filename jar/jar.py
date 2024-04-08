@@ -2,6 +2,7 @@ class Jar:
     def __init__(self, capacity=12):
         self.capacity=capacity
         self.size=0
+        return self.capacity
 
     def __str__(self):
         i="🍪"
