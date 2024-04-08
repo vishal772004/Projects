@@ -1,6 +1,7 @@
 from fpdf import FPDF
 
 pdf = FPDF()
+pdf = fpdf.FPDF(orientation="portrait", format="A4")
 pdf.set_font("Helvetica")
 for i in range(9):
     if i == 6:
