@@ -3,7 +3,9 @@ from jar import Jar
 
 def test_init():
     jar=Jar()
-
+    jar.capacity =12
+    jar=Jar(5)
+    jar.capacity =5
 
 def test_str():
     jar = Jar()
@@ -17,11 +19,16 @@ def test_str():
 
 
 def test_deposit():
-    jar=Jar()
-    assert jar.deposit(1) == 1
-    assert jar.deposit(5) == 6
-
+    jar2=Jar()
+    jar2.deposit(5)
+    assert jar2.size==5
+    jar2.deposit(5)
+    assert jar2.size==10
 
 def test_withdraw():
-    jar=Jar()
-   
+    jar2=Jar()
+    jar2.withdraw(5)
+    assert jar2.size==5
+    jar2.withdraw(1)
+    assert jar2.size == 4
+
