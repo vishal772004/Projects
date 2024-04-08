@@ -27,6 +27,7 @@ def test_deposit():
 
 def test_withdraw():
     jar2=Jar()
+    jar2.deposit(10)
     jar2.withdraw(5)
     assert jar2.size==5
     jar2.withdraw(1)
