@@ -2,7 +2,6 @@ from fpdf import FPDF
 
 pdf = FPDF()
 pdf.set_font("Helvetica")
-pdf.set_page_background((252,212,255))
 for i in range(9):
     if i == 6:
         pdf.set_page_background('shirtificate.png')
