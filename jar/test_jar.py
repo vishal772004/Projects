@@ -3,7 +3,7 @@ from jar import Jar
 
 def test_init():
     jar=Jar()
-    assert init(capacity)  == 12
+    assert Jar() == None
 
 
 def test_str():
