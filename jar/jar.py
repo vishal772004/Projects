@@ -29,6 +29,6 @@ class Jar:
         self.size=int()
 
 def main():
-    ...
+    jar=Jar()
 if __name__=="__main__":
     main()
