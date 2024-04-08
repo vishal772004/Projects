@@ -3,14 +3,12 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def header(self):
-        # Rendering logo:
-        self.image("../docs/fpdf2-logo.png", 10, 8, 33)
         # Setting font: helvetica bold 15
         self.set_font("helvetica", "B", 15)
         # Moving cursor to the right:
         self.cell(80)
         # Printing title:
-        self.cell(30, 10, "Title", border=1, align="C")
+        self.cell(50, 30, "CS50 Shirtificate", align="C")
         # Performing a line break:
         self.ln(20)
 
@@ -24,7 +22,6 @@ class PDF(FPDF):
 
 pdf = PDF()
 pdf.add_page()
+pdf.image("shirtificate.png")
 pdf.set_font("Times", size=12)
-for i in range(1, 41):
-    pdf.cell(0, 10, f"Printing line number {i}", new_x="LMARGIN", new_y="NEXT")
-pdf.output("new-tuto2.pdf")
+pdf.output("varying_format.pdf")
