@@ -23,5 +23,5 @@ class PDF(FPDF):
 pdf = PDF()
 pdf = FPDF(orientation="portrait", format="A4")
 pdf.add_page()
-pdf.image("shirtificate.png", h=pdf.eph-20, w=pdf.epw)
+pdf.("shirtificate.png", h=pdf.eph, w=pdf.epw)
 pdf.output("varying_format.pdf")
