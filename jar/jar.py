@@ -12,11 +12,13 @@ class Jar:
         add=self.size+n
         if add>self.capacity:
             raise ValueError
+        return add
 
     def withdraw(self, n):
         sub=self.size-n
         if n>self.size:
             raise ValueError
+        return sub
 
     @property
     def capacity(self):
@@ -30,5 +32,7 @@ class Jar:
 
 def main():
     jar=Jar()
+    jar.deposit(1)
+    print(jar)
 if __name__=="__main__":
     main()
