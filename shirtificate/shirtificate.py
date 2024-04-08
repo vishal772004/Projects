@@ -21,7 +21,8 @@ class PDF(FPDF):
         self.cell(0, 10, f"Page {self.page_no()}/{{nb}}", align="C")
 
 pdf = PDF()
+pdf = FPDF(orientation="portrait", format="A4")
 pdf.add_page()
-pdf.image("shirtificate.png")
+pdf.set_page_background("shirtificate.png")
 pdf.set_font("Times", size=12)
 pdf.output("varying_format.pdf")
