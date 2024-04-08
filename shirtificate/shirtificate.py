@@ -14,7 +14,7 @@ class PDF(FPDF):
         self.pdf.set_font("Times",style="B",size=30)
         self.pdf.set_text_color(255,255,255)
         self.pdf.text(x=62.5,y=100,text=f"{self.name} took CS50")
-        self.pdf.output("varying_format.pdf")
+        self.pdf.output("shirtificate.pdf")
 
 name=input("Name:")
 pdf = PDF(name)
