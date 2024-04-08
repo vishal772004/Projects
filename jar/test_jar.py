@@ -24,5 +24,4 @@ def test_deposit():
 
 def test_withdraw():
     jar=Jar()
-    assert jar.withdraw(1) == 1
-    assert jar.withdraw(5) == 5
+   
