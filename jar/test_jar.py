@@ -20,7 +20,7 @@ def test_str():
 def test_deposit():
     jar=Jar()
     assert jar.deposit(1) == 1
-    assert jar.deposit(5) == 5
+    assert jar.deposit(5) == 6
 
 
 def test_withdraw():
