@@ -7,5 +7,11 @@ pdf.add_page(format=(210 , 297))
 pdf.set_font("Times", size=20)
 pdf.set_text_color(255,255,255)
 pdf.cell(text="Vishal Sagar Murthy")
-pdf.align()
+class Align():
+    C = pdf("CENTER")
+    @classmethod
+    def coerce(cls, value):
+        if value == "":
+            return cls.L
+        return super(cls, cls).coerce(value)
 pdf.output("varying_format.pdf")
