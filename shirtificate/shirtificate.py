@@ -11,9 +11,9 @@ class PDF(FPDF):
         self.pdf.ln(20)
         self.pdf.cell(8,50)
         self.pdf.image("shirtificate.png",h=240, w=175)
-        self.pdf.set_font("Times",style="B",size=20)
+        self.pdf.set_font("Times",style="B",size=30)
         self.pdf.set_text_color(255,255,255)
-        self.pdf.cell(x=100,y=100,text=self.name,align="c")
+        self.pdf.text(x=62.5,y=100,text=f"{self.name} took CS50")
         self.pdf.output("varying_format.pdf")
 
 name=input("Name:")
