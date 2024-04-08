@@ -3,8 +3,9 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def __init__(self):
-        pdf.
+        pdf =FPDF(orientation="portrait", format="A4")
         pdf.add_page()
+        
         pdf.image("shirtificate.png")
         pdf.set_font("Times", size=12)
 
