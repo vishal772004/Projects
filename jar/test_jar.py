@@ -3,7 +3,6 @@ from jar import Jar
 
 def test_init():
     jar=Jar()
-    assert Jar() == None
 
 
 def test_str():
@@ -16,7 +15,7 @@ def test_str():
 
 
 def test_deposit():
-    ...
+    jar=J
 
 
 def test_withdraw():
