@@ -3,14 +3,7 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def header(self):
-        # Setting font: helvetica bold 15
-        self.set_font("helvetica", "B", 30)
-        # Moving cursor to the right:
-        self.cell(80)
-        # Printing title:
-        self.cell(text="CS50 Shirtificate",h=30,w=30, align="C")
-        # Performing a line break:
-        self.ln(20)
+        
 
     def footer(self):
         # Position cursor at 1.5 cm from bottom:
