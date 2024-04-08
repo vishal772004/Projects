@@ -13,7 +13,8 @@ class Jar:
 
     @property
     def capacity(self):
-        if ca
+        if self.capacity<0:
+            raise ValueError
         return self._capacity
 
     @property
