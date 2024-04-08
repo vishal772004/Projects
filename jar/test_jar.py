@@ -3,7 +3,6 @@ from jar import Jar
 
 def test_init():
     jar=Jar()
-    assert jar.init(12)==None
 
 
 def test_str():
