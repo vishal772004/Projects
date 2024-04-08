@@ -11,10 +11,11 @@ class PDF(FPDF):
         self.pdf.cell(8,50)
         self.pdf.image("shirtificate.png",h=240, w=175)
         self.pdf.set_font("Times",style="B",size=20)
+        self.pdf.set_text_color(255,255,255)
+        self.pdf.cell(text=self.name,size=20)
         self.pdf.output("varying_format.pdf")
 
-
-
-pdf = PDF()
+name=input("Name:")
+pdf = PDF(name)
 
 
