@@ -23,5 +23,6 @@ class PDF(FPDF):
 pdf = PDF()
 pdf = FPDF(orientation="portrait", format="A4")
 pdf.add_page()
-pdf.set_page_background("shirtificate.png")
+pdf.image("shirtificate.png")
+pdf.set_font("Times", size=12)
 pdf.output("varying_format.pdf")
