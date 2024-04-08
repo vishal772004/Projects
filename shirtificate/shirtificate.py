@@ -23,7 +23,7 @@ class PDF(FPDF):
         self.cell(0, 10, f"Page {self.page_no()}/{{nb}}", align="C")
 
 pdf = PDF()
-pdf.add_page("shirtificate.png")
+pdf.add_page()
 pdf.set_font("Times", size=12)
 for i in range(1, 41):
     pdf.cell(0, 10, f"Printing line number {i}", new_x="LMARGIN", new_y="NEXT")
