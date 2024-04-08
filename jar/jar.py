@@ -4,6 +4,7 @@
 class Jar:
     def __init__(self, capacity=12):
         self.capacity=capacity
+        self.size=0
 
     def __str__(self):
         i="🍪"
@@ -33,7 +34,13 @@ class Jar:
 
     @property
     def size(self):
-        self.size=self.capacity-
+        self.size=self.size+self.add
+        return self.size
+    @size.setter
+    def size(self,size):
+        self._size=size
+        if self._size>self.capacity:
+            raise ValueError
 
 def main():
     jar=Jar()
