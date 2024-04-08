@@ -8,7 +8,7 @@ class PDF(FPDF):
         self.pdf.set_font("Times",style="B",size=25)
         self.pdf.cell(text="CS50 Shirtificate",center="True")
         self.pdf.ln(20)
-        self.set_x(200)
+        self.pdf.cell(16,50)
         self.pdf.image("shirtificate.png",h=160,w=160,)
         self.pdf.output("varying_format.pdf")
 
