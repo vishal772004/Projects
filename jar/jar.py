@@ -19,21 +19,6 @@ class Jar:
             raise ValueError
         return self.size
 
-    @property
-    def capacity(self):
-        return self.capacity
-    @capacity.setter
-    def capacity(self,capacity=12):
-        self._capacity=capacity
-
-    @property
-    def size(self):
-        return self.size
-
-    @size.setter
-    def size(self,size):
-        self._size=size
-
 def main():
     jar=Jar()
     jar.deposit(1)
