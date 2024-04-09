@@ -17,11 +17,12 @@ def function_2():
 def function_n():
     ...
 def csv_Reader():
+    row=[]
     with open("IMDBTop250.csv") as file:
         reader = csv.DictReader(file)
-        for row in reader:
-            
-        print(rating)
+        for rows in reader:
+            row.append(rows)
+        print(row)
 
 
 
