@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup
 
 def main():
     response = requests.get('http://www.imdb.com/chart/top')
-    reader = response.json()
     soup = BeautifulSoup(response.text, "html.parser")
-    print(reader)
+    print(soup)
 def function_1():
     ...
 
