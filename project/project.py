@@ -1,8 +1,8 @@
-
+import requests
 
 
 def main():
-    ...
+    response = requests.get("")
 
 
 def function_1():
