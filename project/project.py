@@ -25,7 +25,7 @@ def csv_Reader():
             if i<2:
                 row.append(rows)
                 i+=1
-        print(row)
+        print(row[:]['rating'])
 
 
 
