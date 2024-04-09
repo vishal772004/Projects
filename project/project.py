@@ -19,7 +19,8 @@ def function_n():
 def csv_Reader():
     with open("IMDBTop250.csv") as file:
         reader = csv.DictReader(file)
-        rating = {row for row in reader if rating>9}
+        for row in reader:
+            
         print(rating)
 
 
