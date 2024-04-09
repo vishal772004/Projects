@@ -9,7 +9,7 @@ def main():
     ratings = [b.attrs.get('data-value')
         for b in soup.select('td.posterColumn span[name=ir]')]
     print(movies)
-    https://github.com/ExplorerMunchkin/web-scraping-imdb-top250-python/blob/fe13363c12d3ede75c1fe9ac1e8883babdf64391/IMDBTop250.csv
+    IMDBTop250.csv
 def function_1():
     ...
 
