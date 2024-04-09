@@ -2,7 +2,7 @@
 def main():
     print("\tWelcome to Movie Mania \t")
     print("On what basis do you want to find your movie :")
-    print("1.Genre\n2.)
+    print("1.Rating\n2.Genre\n3.Movieyear\n4.)
 def function_1():
     ...
 
