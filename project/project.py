@@ -4,7 +4,11 @@ from bs4 import BeautifulSoup
 def main():
     response = requests.get('http://www.imdb.com/chart/top')
     soup = BeautifulSoup(response.text, "html.parser")
-    print(soup)
+    movies = soup.select('td.titleColumn')
+    crew = [a.attrs.get('title') for a in soup.select('td.titleColumn a')]
+    ratings = [b.attrs.get('data-value')
+        for b in soup.select('td.posterColumn span[name=ir]')]
+    print(movies)
 def function_1():
     ...
 
