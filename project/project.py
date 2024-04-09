@@ -18,13 +18,14 @@ def function_n():
     ...
 def csv_Reader():
     row=[]
-
+    i=0
     with open("IMDBTop250.csv") as file:
         reader = csv.DictReader(file)
         for rows in reader:
-            if rows['rating'] > 9.0:
+            if i<2:
                 row.append(rows)
-
+                i+=1
+        print(row)
 
 
 
