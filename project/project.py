@@ -22,7 +22,7 @@ def csv_Reader():
     with open("IMDBTop250.csv") as file:
         reader = csv.DictReader(file)
         for rows in reader:
-            if row[{'rating'}] > 9.0:
+            if rows['rating'] > 9.0:
                 row.append(rows)
 
 
