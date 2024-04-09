@@ -1,7 +1,8 @@
 
 def main():
     print("\tWelcome to Movie Mania \t")
-    print(")
+    print("On what basis do you want to find your movie :")
+    print("1.Genre\n2.)
 def function_1():
     ...
 
