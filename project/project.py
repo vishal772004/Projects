@@ -19,6 +19,7 @@ def function_n():
     ...
 def csv_Reader():
     with open("IMDBTop250.csv") as file:
+        reader = csv.DictReader(file)
         
 
 
