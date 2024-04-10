@@ -16,6 +16,7 @@ def Rating():
     j=1
     for i in row:
         print(j,movieName,rating)
+        j+=1
         option=input("Do you want the next top 10 movies:yes/no")
         if option=="no":
             break
