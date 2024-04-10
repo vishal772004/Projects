@@ -63,8 +63,6 @@ def genres(s):
     while j!=250:
         while i<=n:
             if j>=250:
-                if i<2:
-                    print("No Movies Found")
                 sys.exit("The End")
             if option1(s,Genre[j]):
                 print(j+1,"\tGenre=",Genre[j])
@@ -138,7 +136,7 @@ def year():
 def cast():
     row = csv_Reader()
     starList = [m['starList'] for m in row]
-    star = input("Enter any cast member of a movie:")
+    star = input("Enter any cast member of a movie")
 
 
 
