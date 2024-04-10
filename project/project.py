@@ -42,9 +42,7 @@ def genre():
     option=int(input("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Others"))
     match option:
         case 1:
-            for i in Genre:
-                if i=="Action":
-                    print()
+            for i in range()
 
 
 
