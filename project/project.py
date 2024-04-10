@@ -4,11 +4,11 @@ import sys
 def main():
     print("\tWelcome to Movie Mania \t")
     print("On what basis do you want to find your movie :")
-    print("1.Rating\n2.Movie Name\n3.Genre\n4.Movieyear\n5.Star Cast\n6.Language\n7.Random Movie")
+    print("1.Rating\n2.Genre\n3.Movieyear\n4.Star Cast\n5.Language\n6.Random Movie")
     choice=int(input("Please Enter your choice:"))
     match choice:
         case 1: Rating()
-        case 2: moviename()
+        case 2: genre()
         case _: print("Invalid Choice")
 
 def Rating():
@@ -34,10 +34,10 @@ def Rating():
             continue
 
 
-def moviename():
+def genre():
     row = csv_Reader()
     name = input("Enter the Movie Name :")
-    
+
 
 
 def function_n():
