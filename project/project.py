@@ -1,6 +1,6 @@
 import csv
 import sys
-
+import re
 def main():
     print("\tWelcome to Movie Mania \t")
     print("On what basis do you want to find your movie :")
@@ -51,7 +51,8 @@ def genres(s):
     n=10
     while j!=250:
         while j<=n:
-            print(j,"\t",Genre[j],"\t",movieName[j])
+            if re.search(".Action.",Genre[j]):
+                print(j,"\t",Genre[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
