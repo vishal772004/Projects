@@ -17,10 +17,9 @@ def Rating():
     j=1
     n=10
     while j!=250:
-        for i
-            if j<=n:
-                print(j,i['movieTitle'],i['rating'])
-                j+=1
+        while j<=n:
+            print(j,movieName[j],rating[j])
+            j+=1
         n=n+10
         option=input("Do you want the next top 10 movies:yes/no")
         if option=="no":
