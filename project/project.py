@@ -11,8 +11,15 @@ def main():
 def Rating():
     row = csv_Reader()
     rating = [ r['rating'] for r in row ]
-    for i in rating:
-        print("Top )
+    movieName = [m['movieTitle'] for m in row]
+    print("Top 10 movies are:")
+    for i in row:
+        for j in range(10):
+            print(j,movieName,rating)
+            option=input("Do you want the next top 10 movies:yes/no")
+            if option=="no":
+                break
+
     print(rating)
 
 def function_2():
