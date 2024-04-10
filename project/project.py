@@ -108,10 +108,30 @@ def option1(s,Gen):
 def year():
     row = csv_Reader()
     rating = [ r['rating'] for r in row ]
+    movieYear = [m['movieYear'] for m in row]
     movieName = [m['movieTitle'] for m in row]
+    year_of_release = int(input("Enter the Year of Release to search  for a Movie:"))
+    while j!=250:
+        while j<=n:
+            if j>=250:
+                sys.exit("The End")
+            if year_of_release==movieYear[j]:
+                print(j,"\t",rating[j],"\t",movieName[j])
+            j+=1
+        option=input("Do you want the next 10 movies: yes/no :")
+        if option=="no" or option=="NO":
+            sys.exit("Enjoy your Movie")
+        elif option=="yes" or option=="YES":
+            n=n+10
+            continue
+        else:
+            print("Invalid choice")
+            continue
 
 
-    
+
+
+
 def csv_Reader():
     row=[]
     with open("IMDBTop250.csv") as file:
