@@ -117,7 +117,7 @@ def year():
         while j<=n:
             if j>=250:
                 sys.exit("The End")
-            if year_of_release==movieYear[j]:
+            if year_of_release==int(movieYear[j]):
                 print(j,"\t",rating[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
