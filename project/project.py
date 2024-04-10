@@ -36,7 +36,10 @@ def Rating():
 
 def genre():
     row = csv_Reader()
-    
+    movieName = [m['movieTitle'] for m in row]
+    Genre = [g['genre'] for g in row]
+    choice = input
+
 
 
 
