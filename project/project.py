@@ -1,4 +1,5 @@
 import csv
+import sys
 
 def main():
     print("\tWelcome to Movie Mania \t")
@@ -25,7 +26,7 @@ def Rating():
             j+=1
         option=input("Do you want the next top 10 movies: yes/no :")
         if option=="no" or option=="NO":
-            break
+            sys.exit("Enjoy your Movie")
         elif option=="yes" or option=="YES":
             n=n+10
             continue
