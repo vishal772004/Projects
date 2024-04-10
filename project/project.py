@@ -135,7 +135,8 @@ def year():
 
 def cast():
     row = csv_Reader()
-    movieName = [m['movieTitle'] for m in row]
+    starList = [m['starList'] for m in row]
+    star = 
 
 
 
