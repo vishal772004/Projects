@@ -24,7 +24,7 @@ def Rating():
         while j<=n:
             if j>=250:
                 sys.exit("The End")
-            print(j,"\t",rating[j],"\t",movieName[j])
+            print(j+1,"\t",rating[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
@@ -64,7 +64,7 @@ def genres(s):
             if j>=250:
                 sys.exit("The End")
             if option1(s,Genre[j]):
-                print(j,"\tGenre=",Genre[j])
+                print(j+1,"\tGenre=",Genre[j])
                 print("\t\tMovie name=",movieName[j])
                 i+=1
             j+=1
@@ -114,12 +114,13 @@ def year():
     n=10
     j=0
     i=1
+    print("Ranking\t Year\t Movie")
     while j!=250:
         while i<=n:
             if j>=250:
                 sys.exit("The End")
             if year_of_release==int(movieYear[j]):
-                print(j,"\t",movieYear[j],"\t",movieName[j])
+                print(j+1,"\t",movieYear[j],"\t",movieName[j])
                 i+=1
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
