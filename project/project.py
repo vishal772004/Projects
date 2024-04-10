@@ -7,6 +7,7 @@ def main():
     choice=int(input("Please Enter your choice:"))
     match choice:
         case 1: Rating()
+        
 
 def Rating():
     row = csv_Reader()
