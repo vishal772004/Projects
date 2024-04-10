@@ -1,6 +1,7 @@
 import csv
 import sys
 import re
+import random
 def main():
     print("\tWelcome to Movie Mania \t")
     print("On what basis do you want to find your movie :")
@@ -15,6 +16,7 @@ def main():
         case 3: year()
         case 4: cast()
         case 5: language()
+        case 6: random_movie()
         case _: print("Invalid Choice")
 
 def Rating():
@@ -216,7 +218,8 @@ def language():
         else:
             print("Invalid choice")
             continue
-
+def random_movie():
+    ...
 
 
 def csv_Reader():
