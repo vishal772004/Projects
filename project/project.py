@@ -106,7 +106,12 @@ def option1(s,Gen):
                 return True
 
 def year():
-    ...
+    row = csv_Reader()
+    rating = [ r['rating'] for r in row ]
+    movieName = [m['movieTitle'] for m in row]
+
+
+    
 def csv_Reader():
     row=[]
     with open("IMDBTop250.csv") as file:
