@@ -117,15 +117,19 @@ def year():
     year_of_release = int(input("Enter the Year of Release to search  for a Movie:"))
     n=10
     j=0
+    count=0
     i=1
     print("Ranking\t Year\t Movie")
     while j!=250:
         while i<=n:
             if j>=250:
+                if count==0:
+                    print("No Movies Found")
                 sys.exit("The End")
             if year_of_release==int(movieYear[j]):
                 print(j+1,"\t",movieYear[j],"\t",movieName[j])
                 i+=1
+                count=1
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
