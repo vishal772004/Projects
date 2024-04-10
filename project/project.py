@@ -51,8 +51,7 @@ def genres(s):
     n=10
     while j!=250:
         while j<=n:
-            if Genre[j]==s:
-                print(j,"\t",Genre[j],"\t",movieName[j])
+            print(j,"\t",Genre[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
