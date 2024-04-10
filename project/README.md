@@ -5,4 +5,6 @@ Welcome to Movie Mania which suggests the user good movies which is in the top 2
 
 So in the main function I am printing the list of ways to find the movie or to suggest a movie based on that parameter . The first parameter was  based on rating of a particular movie from the csv file . The second parameter was suggesting movies based on the genre . The third parameter was based on the year of release of a movie . The fourth parameter was based on the main actors of the movie . The fifth parameter was based on the language of the  movie . The sixth parameter was just random movie suggestion . I have used choice variable to get the option that the user has chosen and passed it to the match case statement . For every case there is a function called and at the end for any invalid choice given by the user I have prompted the user to give a valid input once again , if the user fails to give a proper choice the program exits.
 
+Then there is a very important function that uses csv library named csv_Reader() which reads  the IMDBTop250.csv using a DictReader and stores it into a list and returns the list whenever it is called.
+
 
