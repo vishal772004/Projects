@@ -10,6 +10,7 @@ def main():
         case 1: Rating()
         case 2: genre()
         case 3: year()
+        case 4: cast()
         case _: print("Invalid Choice")
 
 def Rating():
@@ -132,6 +133,9 @@ def year():
             print("Invalid choice")
             continue
 
+def cast():
+    row = csv_Reader()
+    movieName = [m['movieTitle'] for m in row]
 
 
 
