@@ -53,7 +53,7 @@ def genres(s):
     while j!=250:
         while i<=n:
             if option1(s,Genre[j]):
-                print(j,"\tGenre=",Genre[j])
+                print(j,"\tGenre=",Genre[j],end="")
                 print("\t\tMovie name=",movieName[j])
                 i+=1
             j+=1
