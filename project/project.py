@@ -10,8 +10,8 @@ def main():
 
 def Rating():
     row = csv_Reader()
-    
-
+    rating = { r for r in row if r == r['rating']}
+    print(rating)
 
 def function_2():
     ...
