@@ -7,4 +7,4 @@ So in the main function I am printing the list of ways to find the movie or to s
 
 Then there is a very important function that uses csv library named csv_Reader() which reads  the IMDBTop250.csv using a DictReader and stores it into a list and returns the list whenever it is called.
 
-
+In a function called Rating() , first I have called csv_Reader() and stored the list that is returned in a variable called row . Then I have used list comprehension which was explained in the last week of cs50 and extracted out ratings and movie name in a separate list . Then I have used two while loops where the first one 
