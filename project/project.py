@@ -16,7 +16,7 @@ def Rating():
     j=1
     while j!=250:
         for i in row:
-            print(j,movieName,rating)
+            print(j,i['movieTitle'],rating)
             j+=1
         option=input("Do you want the next top 10 movies:yes/no")
         if option=="no":
