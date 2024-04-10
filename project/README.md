@@ -13,6 +13,8 @@ In the next function called genre() it gives the user a list of genres of which 
 
 In the function genres() which takes the option number as an argument and uses two list for storing genres and movie name . Then we again make use of those two loops but this time there is an if condition that checks a function named option1() which is called in the if statement that returns true or none . Then it prints those movies that is of that genre  .
 
-In the function
+In the function option1() that takes two arguments namely the option number of genre() function and individual genre from the list . An if condition using re.search searches for a pattern that is genre inside that genre from the list . If it is found the function returns true and if not found nothing is returned .
+
+In the function called year() contains list of the year of the movie release and the movie name .Then it asks the user to enter a year .Then it checks that if there are any movies released that year 
 
 
