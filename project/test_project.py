@@ -1,4 +1,4 @@
-import pytest
+
 from project import option1
 
 def test_option1():
