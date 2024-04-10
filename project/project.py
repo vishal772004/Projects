@@ -20,12 +20,16 @@ def Rating():
     print("Top 10 movies are:")
     j=0
     n=10
+    count=0
     print("Ranking\tRating\t Movie Name")
     while j!=250:
         while j<=n:
             if j>=250:
+                if count==0:
+                    sys.exit("No Movies Found")
                 sys.exit("The End")
             print(j+1,"\t",rating[j],"\t",movieName[j])
+            count=1
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
@@ -63,9 +67,9 @@ def genres(s):
     print("Ranking")
     while j!=250:
         while i<=n:
-            if count==0:
-                print("No Movies Found")
             if j>=250:
+                if count==0:
+                    sys.exit("No Movies Found")
                 sys.exit("The End")
             if option1(s,Genre[j]):
                 print(j+1,"\tGenre=",Genre[j])
