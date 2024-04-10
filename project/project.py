@@ -182,8 +182,8 @@ def cast():
 def language():
     row = csv_Reader()
     movieName = [m['movieTitle'] for m in row]
-    starList = [m['starList'].lower() for m in row]
-    star = input("Enter any cast member of a movie:").lower().strip()
+    language = [m['language'].lower() for m in row]
+    lang = input("Enter language of your choice:").lower().strip()
     n=10
     j=0
     count=0
@@ -194,7 +194,7 @@ def language():
                 if count==0:
                     sys.exit("No Movies Found")
                 sys.exit("The End")
-            if star in starList[j]:
+            if lang in language[j]:
                 if count==0:
                     print("Ranking \t Movie Name")
                 print(j+1,"\t",movieName[j])
