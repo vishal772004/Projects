@@ -3,7 +3,7 @@ import csv
 def main():
     print("\tWelcome to Movie Mania \t")
     print("On what basis do you want to find your movie :")
-    print("1.Rating\n2.Genre\n3.Movieyear\n4.Star Cast\n5.Language\n6.Random Movie")
+    print("1.Rating\n2.Movie Name\n3.Genre\n4.Movieyear\n5.Star Cast\n6.Language\n7.Random Movie")
     choice=int(input("Please Enter your choice:"))
     match choice:
         case 1: Rating()
@@ -11,7 +11,8 @@ def main():
 def Rating():
     row = csv_Reader()
     rating = [ r['rating'] for r in row ]
-    
+    for i in rating:
+        print("Top )
     print(rating)
 
 def function_2():
