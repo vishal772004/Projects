@@ -17,7 +17,7 @@ def Rating():
     rating = [ r['rating'] for r in row ]
     movieName = [m['movieTitle'] for m in row]
     print("Top 10 movies are:")
-    j=1
+    j=0
     n=10
     print("Ranking\tRating\t Movie Name")
     while j!=250:
@@ -55,7 +55,7 @@ def genres(s):
     row = csv_Reader()
     movieName = [m['movieTitle'] for m in row]
     Genre = [g['genre'] for g in row]
-    j=1
+    j=0
     n=10
     i=1
     print("Ranking")
@@ -112,13 +112,15 @@ def year():
     movieName = [m['movieTitle'] for m in row]
     year_of_release = int(input("Enter the Year of Release to search  for a Movie:"))
     n=10
-    j=1
+    j=0
+    i=1
     while j!=250:
-        while j<=n:
+        while i<=n:
             if j>=250:
                 sys.exit("The End")
             if year_of_release==int(movieYear[j]):
                 print(j,"\t",movieYear[j],"\t",movieName[j])
+                i+=1
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
