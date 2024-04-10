@@ -11,6 +11,7 @@ def main():
         case 2: genre()
         case 3: year()
         case 4: cast()
+        case 5: language()
         case _: print("Invalid Choice")
 
 def Rating():
@@ -136,7 +137,7 @@ def year():
                 i+=1
                 count=1
             j+=1
-        option=input("Do you want the next 10 movies: yes/no :")
+        option=input("Do you want the next movies: yes/no :")
         if option=="no" or option=="NO":
             sys.exit("Enjoy your Movie")
         elif option=="yes" or option=="YES":
@@ -168,7 +169,7 @@ def cast():
                 i+=1
                 count=1
             j+=1
-        option=input("Do you want the next 10 movies: yes/no :")
+        option=input("Do you want the next movies: yes/no :")
         if option=="no" or option=="NO":
             sys.exit("Enjoy your Movie")
         elif option=="yes" or option=="YES":
@@ -178,7 +179,37 @@ def cast():
             print("Invalid choice")
             continue
 
-
+def language():
+    row = csv_Reader()
+    movieName = [m['movieTitle'] for m in row]
+    starList = [m['starList'].lower() for m in row]
+    star = input("Enter any cast member of a movie:").lower().strip()
+    n=10
+    j=0
+    count=0
+    i=1
+    while j!=250:
+        while i<=n:
+            if j>=250:
+                if count==0:
+                    sys.exit("No Movies Found")
+                sys.exit("The End")
+            if star in starList[j]:
+                if count==0:
+                    print("Ranking \t Movie Name")
+                print(j+1,"\t",movieName[j])
+                i+=1
+                count=1
+            j+=1
+        option=input("Do you want the next movies: yes/no :")
+        if option=="no" or option=="NO":
+            sys.exit("Enjoy your Movie")
+        elif option=="yes" or option=="YES":
+            n=n+10
+            continue
+        else:
+            print("Invalid choice")
+            continue
 
 
 
