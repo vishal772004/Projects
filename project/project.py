@@ -66,10 +66,10 @@ def genres(s):
     j=1
     n=10
     i=1
+    print("Ranking")
     while j!=250:
         while i<=n:
             if option1(s,Genre[j]):
-                print("Ranking")
                 print(j,"\tGenre=",Genre[j])
                 print("\t\tMovie name=",movieName[j])
                 i+=1
