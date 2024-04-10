@@ -36,7 +36,8 @@ def Rating():
 
 def genre():
     row = csv_Reader()
-    name = input("Enter the Movie Name :")
+    
+
 
 
 
