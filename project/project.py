@@ -148,9 +148,34 @@ def year():
 
 def cast():
     row = csv_Reader()
+    movieName = [m['movieTitle'] for m in row]
     starList = [m['starList'] for m in row]
     star = input("Enter any cast member of a movie:")
-    
+    n=10
+    j=0
+    count=0
+    i=1
+    while j!=250:
+        while i<=n:
+            if j>=250:
+                if count==0:
+                    sys.exit("No Movies Found")
+                sys.exit("The End")
+            if star in starList[j]:
+                print(movieName[j])
+                i+=1
+                count=1
+            j+=1
+        option=input("Do you want the next 10 movies: yes/no :")
+        if option=="no" or option=="NO":
+            sys.exit("Enjoy your Movie")
+        elif option=="yes" or option=="YES":
+            n=n+10
+            continue
+        else:
+            print("Invalid choice")
+            continue
+
 
 
 
