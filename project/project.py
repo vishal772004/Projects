@@ -24,7 +24,7 @@ def Rating():
         while j<=n:
             print(j,"\t",rating[j],"\t",movieName[j])
             j+=1
-        option=input("Do you want the next top 10 movies: yes/no :")
+        option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
             sys.exit("Enjoy your Movie")
         elif option=="yes" or option=="YES":
