@@ -221,9 +221,7 @@ def language():
 def random_movie():
     row = csv_Reader()
     movieName = [m['movieTitle'] for m in row]
-    print(movieName[random.number])
-
-
+    print("Movie Name =",movieName[random.randint(1,250)])
 
 def csv_Reader():
     row=[]
