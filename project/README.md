@@ -11,6 +11,8 @@ In a function called Rating() , first I have called csv_Reader() and stored the 
 
 In the next function called genre() it gives the user a list of genres of which the user can choose and enter his choice . Then a match case statement is used where  in each case another function named genres() is called giving the case or option number as argument to the function genres() .
 
-In the function genres() which takes the option number as a an argument and uses two list for storing genres 
+In the function genres() which takes the option number as an argument and uses two list for storing genres and movie name . Then we again make use of those two loops but this time there is an if condition that checks a function named option1() which is called in the if statement that returns true or none . Then it prints those movies that is of that genre  .
+
+In the function
 
 
