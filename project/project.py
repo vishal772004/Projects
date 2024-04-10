@@ -7,7 +7,8 @@ def main():
     choice=int(input("Please Enter your choice:"))
     match choice:
         case 1: Rating()
-        
+        case 2: moviename()
+        case _: print("Invalid Choice")
 
 def Rating():
     row = csv_Reader()
@@ -33,7 +34,7 @@ def Rating():
             continue
 
 
-def function_2():
+def moviename():
     ...
 
 
