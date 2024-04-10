@@ -40,7 +40,7 @@ def genre():
     option=int(input("Enter your choice:"))
     match option:
         case 1:
-            genres("Action")
+            genres(1)
 
 
 def genres(s):
@@ -51,7 +51,7 @@ def genres(s):
     n=10
     while j!=250:
         while j<=n:
-            if Genre[j].index(s)>0:
+            if option1(s,Genre[j]):
                 print(j,"\t",Genre[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
@@ -64,6 +64,11 @@ def genres(s):
             print("Invalid choice")
             continue
 
+def option1(s,Gen):
+    match s:
+        case 1:
+            if re.search(".*(Action).*",Gen):
+                return True
 def csv_Reader():
     row=[]
     with open("IMDBTop250.csv") as file:
