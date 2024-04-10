@@ -162,7 +162,9 @@ def cast():
                     sys.exit("No Movies Found")
                 sys.exit("The End")
             if star in starList[j]:
-                print(movieName[j])
+                if count==0:
+                    print("Ranking \t Movie Name")
+                print(j+1,"\t",movieName[j])
                 i+=1
                 count=1
             j+=1
