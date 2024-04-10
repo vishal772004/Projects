@@ -126,11 +126,10 @@ def year():
                     sys.exit("No Movies Found")
                 sys.exit("The End")
             if year_of_release==int(movieYear[j]):
-                i+=1
                 if i==1:
                      print("Ranking\t Year\t Movie")
                 print(j+1,"\t",movieYear[j],"\t",movieName[j])
-
+                i+=1
                 count=1
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
