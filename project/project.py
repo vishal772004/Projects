@@ -29,7 +29,7 @@ def Rating():
     count=0
     print("Ranking\tRating\t Movie Name")
     while j!=250:
-        while j<=n:
+        while j<n:
             if j>=250:
                 if count==0:
                     sys.exit("No Movies Found")
