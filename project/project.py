@@ -38,7 +38,8 @@ def genre():
     row = csv_Reader()
     movieName = [m['movieTitle'] for m in row]
     Genre = [g['genre'] for g in row]
-    choice = input
+    print("What kind of movies do you like:")
+    print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n)
 
 
 
