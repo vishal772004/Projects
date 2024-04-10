@@ -20,12 +20,16 @@ def Rating():
         while j<=n:
             print(j,movieName[j],rating[j])
             j+=1
-        n=n+10
-        option=input("Do you want the next top 10 movies:yes/no")
-        if option=="no":
+        option=input("Do you want the next top 10 movies: yes/no :")
+        if option=="no"or"NO":
             break
-        elif option=="yes":
+        elif option=="yes"or"YES":
+            n=n+10
             continue
+        else:
+            print("Invalid choice")
+            continue
+
 
 def function_2():
     ...
