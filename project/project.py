@@ -69,7 +69,7 @@ def genres(s):
     print("Ranking")
     while j!=250:
         while i<=n:
-            if j>250:
+            if j>=250:
                 sys.exit("The End")
             if option1(s,Genre[j]):
                 print(j,"\tGenre=",Genre[j])
