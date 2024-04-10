@@ -5,7 +5,10 @@ def main():
     print("\tWelcome to Movie Mania \t")
     print("On what basis do you want to find your movie :")
     print("1.Rating\n2.Genre\n3.Movieyear\n4.Star Cast\n5.Language\n6.Random Movie")
-    choice=int(input("Please Enter your choice:"))
+    try:
+        choice=int(input("Please Enter your choice:"))
+    except ValueError:
+        choice=int(input("Please Enter a valid choice:"))
     match choice:
         case 1: Rating()
         case 2: genre()
