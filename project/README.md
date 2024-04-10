@@ -11,6 +11,6 @@ In a function called Rating() , first I have called csv_Reader() and stored the 
 
 In the next function called genre() it gives the user a list of genres of which the user can choose and enter his choice . Then a match case statement is used where  in each case another function named genres() is called giving the case or option number as argument to the function genres() .
 
-In the function genres() which takes the option number as a an argument
+In the function genres() which takes the option number as a an argument 
 
 
