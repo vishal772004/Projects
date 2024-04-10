@@ -17,7 +17,7 @@ def main():
         case 4: cast()
         case 5: language()
         case 6: random_movie()
-        case _: print("Invalid Choice")
+        case _: sys.exit("Invalid Choice")
 
 def Rating():
     row = csv_Reader()
