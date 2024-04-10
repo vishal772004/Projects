@@ -69,10 +69,13 @@ def genres(s):
     print("Ranking")
     while j!=250:
         while i<=n:
-            if option1(s,Genre[j]):
-                print(j,"\tGenre=",Genre[j])
-                print("\t\tMovie name=",movieName[j])
-                i+=1
+            try:
+                if option1(s,Genre[j]):
+                    print(j,"\tGenre=",Genre[j])
+                    print("\t\tMovie name=",movieName[j])
+                    i+=1
+            except "IndexError":
+                sys.exit("The End")
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
