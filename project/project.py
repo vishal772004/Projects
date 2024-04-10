@@ -14,11 +14,13 @@ def Rating():
     movieName = [m['movieTitle'] for m in row]
     print("Top 10 movies are:")
     j=1
+    n=10
     while j!=250:
         for i in row:
-            
-            print(j,i['movieTitle'],i['rating'])
-            j+=1
+            if j<=n:
+                print(j,i['movieTitle'],i['rating'])
+                j+=1
+        n=n+10
         option=input("Do you want the next top 10 movies:yes/no")
         if option=="no":
             break
