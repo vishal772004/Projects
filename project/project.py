@@ -15,7 +15,6 @@ def Rating():
     row = csv_Reader()
     rating = [ r['rating'] for r in row ]
     movieName = [m['movieTitle'] for m in row]
-    ranking = [r['ranking'] for r in row]
     print("Top 10 movies are:")
     j=1
     n=10
@@ -36,7 +35,9 @@ def Rating():
 
 
 def moviename():
-    ...
+    row = csv_Reader()
+    name = input("Enter the Movie Name :")
+    
 
 
 def function_n():
