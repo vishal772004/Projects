@@ -17,7 +17,7 @@ def Rating():
     j=1
     n=10
     while j!=250:
-        while 
+        for i
             if j<=n:
                 print(j,i['movieTitle'],i['rating'])
                 j+=1
