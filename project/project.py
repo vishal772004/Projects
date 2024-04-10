@@ -36,7 +36,7 @@ def Rating():
 
 def genre():
     print("What kind of movies do you like:")
-    print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Others")
+    print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Animation")
     option=int(input("Enter your choice:"))
     match option:
         case 1:
@@ -106,6 +106,9 @@ def option1(s,Gen):
                 return True
         case 7:
             if re.search(".*(Fantasy).*",Gen):
+                return True
+        case 8:
+            if re.search(".*(Animation).*",Gen):
                 return True
 def csv_Reader():
     row=[]
