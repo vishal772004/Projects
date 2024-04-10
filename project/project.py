@@ -48,7 +48,10 @@ def Rating():
 def genre():
     print("What kind of movies do you like:")
     print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Animation")
-    option=int(input("Enter your choice:"))
+    try:
+        option=int(input("Enter your choice:"))
+    except ValueError:
+        option=int(input("Please Enter a valid choice:"))
     match option:
         case 1: genres(1)
         case 2: genres(2)
