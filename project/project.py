@@ -41,6 +41,22 @@ def genre():
     match option:
         case 1:
             genres(1)
+        case 2:
+            genres(2)
+        case 3:
+            genres(3)
+        case 4:
+            genres(4)
+        case 5:
+            genres(5)
+        case 6:
+            genres(6)
+        case 7:
+            genres(7)
+        case 8:
+            genres(8)
+        case _:
+            sys.exit("Inavlid option")
 
 
 def genres(s):
@@ -71,6 +87,24 @@ def option1(s,Gen):
     match s:
         case 1:
             if re.search(".*(Action).*",Gen):
+                return True
+        case 2:
+            if re.search(".*(Adventure).*",Gen):
+                return True
+        case 3:
+            if re.search(".*(Drama).*",Gen):
+                return True
+        case 4:
+            if re.search(".*(Crime).*",Gen):
+                return True
+        case 5:
+            if re.search(".*(History).*",Gen):
+                return True
+        case 6:
+            if re.search(".*(Comedy).*",Gen):
+                return True
+        case 7:
+            if re.search(".*(Fantasy).*",Gen):
                 return True
 def csv_Reader():
     row=[]
