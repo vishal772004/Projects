@@ -107,7 +107,6 @@ def option1(s,Gen):
 
 def year():
     row = csv_Reader()
-    rating = [ r['rating'] for r in row ]
     movieYear = [m['movieYear'] for m in row]
     movieName = [m['movieTitle'] for m in row]
     year_of_release = int(input("Enter the Year of Release to search  for a Movie:"))
