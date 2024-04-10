@@ -16,14 +16,15 @@ def Rating():
     print("Top 10 movies are:")
     j=1
     n=10
+    print("Ranking\tRating\t Movie Name")
     while j!=250:
         while j<=n:
-            print(j,movieName[j],rating[j])
+            print(j,"\t",rating[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next top 10 movies: yes/no :")
-        if option=="no"or"NO":
+        if option=="no" or option=="NO":
             break
-        elif option=="yes"or"YES":
+        elif option=="yes" or option=="YES":
             n=n+10
             continue
         else:
