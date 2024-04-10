@@ -35,20 +35,24 @@ def Rating():
 
 
 def genre():
-    row = csv_Reader()
-    movieName = [m['movieTitle'] for m in row]
-    Genre = [g['genre'] for g in row]
     print("What kind of movies do you like:")
-    option=int(input("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Others"))
+    print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Others")
+    option=int(input("Enter your choice:"))
     match option:
         case 1:
             genres("Action")
 
 
 def genres(s):
+    row = csv_Reader()
+    movieName = [m['movieTitle'] for m in row]
+    Genre = [g['genre'] for g in row]
+    j=1
+    n=10
     while j!=250:
         while j<=n:
-            print(j,"\t",rating[j],"\t",movieName[j])
+            if Genre[j]==s:
+                print(j,"\t",Genre[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
         if option=="no" or option=="NO":
