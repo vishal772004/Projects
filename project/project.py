@@ -63,6 +63,8 @@ def genres(s):
     print("Ranking")
     while j!=250:
         while i<=n:
+            if count==0:
+                print("No Movies Found")
             if j>=250:
                 sys.exit("The End")
             if option1(s,Genre[j]):
