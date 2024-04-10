@@ -39,7 +39,12 @@ def genre():
     movieName = [m['movieTitle'] for m in row]
     Genre = [g['genre'] for g in row]
     print("What kind of movies do you like:")
-    print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n)
+    option=int(input("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Others"))
+    match option:
+        case 1:
+            for i in Genre:
+                if i=="Action":
+                    print()
 
 
 
