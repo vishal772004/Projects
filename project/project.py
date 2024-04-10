@@ -42,14 +42,24 @@ def genre():
     option=int(input("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Others"))
     match option:
         case 1:
-            for i in range()
+            genres("Action")
 
 
+def genres(s):
+    while j!=250:
+        while j<=n:
+            print(j,"\t",rating[j],"\t",movieName[j])
+            j+=1
+        option=input("Do you want the next 10 movies: yes/no :")
+        if option=="no" or option=="NO":
+            sys.exit("Enjoy your Movie")
+        elif option=="yes" or option=="YES":
+            n=n+10
+            continue
+        else:
+            print("Invalid choice")
+            continue
 
-
-
-def function_n():
-    ...
 def csv_Reader():
     row=[]
     with open("IMDBTop250.csv") as file:
