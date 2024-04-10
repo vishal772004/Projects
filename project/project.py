@@ -9,6 +9,7 @@ def main():
     match choice:
         case 1: Rating()
         case 2: genre()
+        case 3: year()
         case _: print("Invalid Choice")
 
 def Rating():
@@ -21,6 +22,8 @@ def Rating():
     print("Ranking\tRating\t Movie Name")
     while j!=250:
         while j<=n:
+            if j>=250:
+                sys.exit("The End")
             print(j,"\t",rating[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
@@ -33,31 +36,20 @@ def Rating():
             print("Invalid choice")
             continue
 
-
 def genre():
     print("What kind of movies do you like:")
     print("1.Action\n2.Adventure\n3.Drama\n4.Crime\n5.History\n6.Comedy\n7.Fantasy\n8.Animation")
     option=int(input("Enter your choice:"))
     match option:
-        case 1:
-            genres(1)
-        case 2:
-            genres(2)
-        case 3:
-            genres(3)
-        case 4:
-            genres(4)
-        case 5:
-            genres(5)
-        case 6:
-            genres(6)
-        case 7:
-            genres(7)
-        case 8:
-            genres(8)
-        case _:
-            sys.exit("Inavlid option")
-
+        case 1: genres(1)
+        case 2: genres(2)
+        case 3: genres(3)
+        case 4: genres(4)
+        case 5: genres(5)
+        case 6: genres(6)
+        case 7: genres(7)
+        case 8: genres(8)
+        case _: sys.exit("Inavlid option")
 
 def genres(s):
     row = csv_Reader()
@@ -112,6 +104,9 @@ def option1(s,Gen):
         case 8:
             if re.search(".*(Animation).*",Gen):
                 return True
+
+def year():
+    ...
 def csv_Reader():
     row=[]
     with open("IMDBTop250.csv") as file:
