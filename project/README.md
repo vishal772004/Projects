@@ -1,7 +1,7 @@
 MOVIE MANIA
 Video Demo:
 Description:
-Welcome to Movie Mania which suggests the user good movies which is in the top 250 imdb ratings in the imdb website.To begin with the code first I downloaded IMBDTop250.csv from github . Then used the template given by cs50 and started coding. I have imported four libraries namely re i.e regular expressions library ,sys library , csv library and random library .
+Welcome to Movie Mania which suggests the user good movies which is in the top 250 imdb ratings in the imdb website.To begin with the code first I have downloaded IMBDTop250.csv from github . Then used the template given by cs50 and started coding. I have imported four libraries namely re i.e regular expressions library ,sys library , csv library and random library .
 
 So in the main function I am printing the list of ways to find the movie or to suggest a movie based on that parameter . The first parameter was  based on rating of a particular movie from the csv file . The second parameter was suggesting movies based on the genre . The third parameter was based on the year of release of a movie . The fourth parameter was based on the main actors of the movie . The fifth parameter was based on the language of the  movie . The sixth parameter was just random movie suggestion . I have used choice variable to get the option that the user has chosen and passed it to the match case statement . For every case there is a function called and at the end for any invalid choice given by the user I have prompted the user to give a valid input once again , if the user fails to give a proper choice the program exits.
 
@@ -15,6 +15,12 @@ In the function genres() which takes the option number as an argument and uses t
 
 In the function option1() that takes two arguments namely the option number of genre() function and individual genre from the list . An if condition using re.search searches for a pattern that is genre inside that genre from the list . If it is found the function returns true and if not found nothing is returned .
 
-In the function called year() contains list of the year of the movie release and the movie name .Then it asks the user to enter a year .Then it checks that if there are any movies released that year 
+In the function called year() contains list of the year of the movie release and the movie name .Then it asks the user to enter a year .Then it checks that if there are any movies released that year and if there are any movies it will print those movies .
+
+In the function called random_movie() , random library is used and random.randint() function is used that gives any random movie from the list of top 250 movies .
+
+This was my CS50 Final Project for the Year 2024 .
+Hope you like it!!
+Thank You.
 
 
