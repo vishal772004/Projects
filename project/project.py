@@ -219,7 +219,10 @@ def language():
             print("Invalid choice")
             continue
 def random_movie():
-    ...
+    row = csv_Reader()
+    movieName = [m['movieTitle'] for m in row]
+    print(movieName[random.number])
+
 
 
 def csv_Reader():
