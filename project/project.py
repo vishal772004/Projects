@@ -111,6 +111,8 @@ def year():
     movieYear = [m['movieYear'] for m in row]
     movieName = [m['movieTitle'] for m in row]
     year_of_release = int(input("Enter the Year of Release to search  for a Movie:"))
+    n=10
+    j=1
     while j!=250:
         while j<=n:
             if j>=250:
