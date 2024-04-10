@@ -51,7 +51,7 @@ def genres(s):
     n=10
     while j!=250:
         while j<=n:
-            if re.search(".Action.",Genre[j]):
+            if re.search(".*(Action).*",Genre[j]):
                 print(j,"\t",Genre[j],"\t",movieName[j])
             j+=1
         option=input("Do you want the next 10 movies: yes/no :")
