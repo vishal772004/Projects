@@ -136,7 +136,7 @@ def year():
 def cast():
     row = csv_Reader()
     starList = [m['starList'] for m in row]
-    star = 
+    star = input("Enter any cast member of a movie:")
 
 
 
