@@ -7,4 +7,10 @@ So in the main function I am printing the list of ways to find the movie or to s
 
 Then there is a very important function that uses csv library named csv_Reader() which reads  the IMDBTop250.csv using a DictReader and stores it into a list and returns the list whenever it is called.
 
-In a function called Rating() , first I have called csv_Reader() and stored the list that is returned in a variable called row . Then I have used list comprehension which was explained in the last week of cs50 and extracted out ratings and movie name in a separate list . Then I have used two while loops where the first one to iterate through the whole row and the second one to print only ten movies at a time so that it is not conjested . 
+In a function called Rating() , first I have called csv_Reader() and stored the list that is returned in a variable called row . Then I have used list comprehension which was explained in the last week of cs50 and extracted out ratings and movie name in a separate list . Then I have used two while loops where the first one to iterate through the whole row and the second one to print only ten movies at a time so that it is not conjested . Then this function prints the top 10 movies according to its rating and it will ask the user if he wants the next 10 movies . Depending on the answer he will get another 10 movies printed on the screen and if he types no the program exits using sys.exit() function .
+
+In the next function called genre() it gives the user a list of genres of which the user can choose and enter his choice . Then a match case statement is used where  in each case another function named genres() is called giving the case or option number as argument to the function genres() .
+
+In the function genres() which takes the option number as a an argument
+
+
