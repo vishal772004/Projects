@@ -10,6 +10,10 @@ int main()
 
     for (int i=0;i<height;i++)
     {
+        for (int k=0;k<height;k++)
+        {
+            printf(" ");
+        }
         for (int j=i;j<height;j++)
         {
             printf("#");
