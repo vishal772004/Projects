@@ -5,8 +5,8 @@ int main()
     int height;
     do
     {
-        int height = get_int("Height:");
-    }while(height>0);
+         height = get_int("Height:");
+    }while(height<=0);
 
     for (int i=0;i<height;i++)
     {
