@@ -10,7 +10,7 @@ int main()
 
     for (int i=0;i<height;i++)
     {
-        for (int k=0;k<height;k++)
+        for (int k=height;k>i;k--)
         {
             printf(" ");
         }
