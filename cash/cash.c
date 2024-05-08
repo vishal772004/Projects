@@ -31,5 +31,5 @@ int main()
         coins++;
        }
     }
-    printf(coins);
+    printf("",coins);
 }
