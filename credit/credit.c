@@ -7,5 +7,5 @@ int main()
     {
         cnumber = get_long("Number:");
     }
-    while(cnumber)
+    while(!cnumber);
 }
