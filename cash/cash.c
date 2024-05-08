@@ -8,7 +8,8 @@ int main()
         cash = get_int("Change owed?");
     }
     while(cash<0);
-    while(cash!=0)
+    
+    while(cash>0)
     {
        if(cash>25)
        {
@@ -31,5 +32,5 @@ int main()
         coins++;
        }
     }
-    printf("",coins);
+    printf("%i\n",coins);
 }
