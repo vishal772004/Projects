@@ -17,6 +17,7 @@ int main(void)
     L = (letters/words)*100;
     S = (sentences/words)*100;
     index = 0.0588*L - 0.296*S -15.8;
+    
 
 }
 int no_of_letters(string s)
@@ -32,7 +33,7 @@ int no_of_words(string s)
     int count =0;
     for (int i=0,n=strlen(text);i<n;i++)
     {
-        if (text[i]==' '||text[i]=='.')
+        if (text[i]==' '||text[i]=='.'|| text[i]=='!' || text[i]=='?')
             count++;
     }
     return count;
@@ -43,7 +44,7 @@ int no_of_sentences(string s)
     int count=0;
     for (int i=0,n=strlen(text);i<n;i++)
     {
-        if (text[i]=='.')
+        if (text[i]=='.' || text[i]=='!' || text[i]=='?')
             count++;
     }
     return count;
