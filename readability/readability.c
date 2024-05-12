@@ -8,7 +8,7 @@ int main(void)
     string text =get_string("Text:");
     for (int i=0,n=strlen(text);i<n;i++)
     {
-        if (text[i]==" ")
+        if (text[i]==' ')
             continue;
         no_of_letters++;
     }
