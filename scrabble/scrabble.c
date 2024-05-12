@@ -33,8 +33,11 @@ int score(string s)
     int scoreboard = 0;
     for (int i=0,n=strlen(s);i<n;i++)
     {
-        int value = toupper(s[i])-65;
-        scoreboard +=points[value];
+        if (s[i]>=65&&s[i]<=90)
+        {
+            int value = toupper(s[i])-65;
+            scoreboard +=points[value];
+        }
     }
     return scoreboard;
 }
