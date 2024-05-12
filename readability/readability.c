@@ -13,8 +13,10 @@ int main(void)
     letters = no_of_letters(text);
     words = no_of_words(text);
     sentences = no_of_sentences(text);
-
-
+    float L,S,index;
+    L = (letters/words)*100;
+    S = (sentences/words)*100;
+    index = 0.0588*L - 0.296*S -15.8;
 
 }
 int no_of_letters(string s)
