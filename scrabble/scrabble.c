@@ -24,6 +24,7 @@ int main(void)
     {
         printf("Tie!");
     }
+    printf("\n");
 }
 
 int score(string s)
