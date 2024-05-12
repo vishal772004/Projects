@@ -15,4 +15,6 @@ int main(void)
         no_of_letters++;
     }
     printf("%d\n",no_of_letters);
+    printf("%d\n",no_of_words);
+    printf("%d\n",no_of_sentences);
 }
