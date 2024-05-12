@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<cs50.h>
+#include<string.h>
+#include<ctype.h>
 
 int score(string s);
 
@@ -13,5 +15,9 @@ int main(void)
 
 int score(string s)
 {
-    
+    for (int i=0,n=strlen(s);i<n;i++)
+    {
+        int value = toupper(s);
+        
+    }
 }
