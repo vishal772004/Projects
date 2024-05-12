@@ -28,8 +28,9 @@ int main(void)
     }
     else
     {
-        printf("Grade %f",round(index));
+        printf("Grade %d",int(round(index)));
     }
+    printf("\n");
 }
 int no_of_letters(string s)
 {
