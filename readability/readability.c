@@ -10,5 +10,5 @@ int main(void)
     {
          no_of_letters++;
     }
-    printf("%d",no_of_letters);
+    printf("%d\n",no_of_letters);
 }
