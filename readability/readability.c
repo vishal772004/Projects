@@ -38,6 +38,7 @@ int no_of_letters(string s)
     {
         count++;
     }
+    return count;
 }
 int no_of_words(string s)
 {
