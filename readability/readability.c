@@ -18,6 +18,7 @@ int main(void)
     L = (letters/words*100);
     S = (sentences/words*100);
     index = 0.0588*L - 0.296*S -15.8;
+    index = (int)round(index);
     if (index>=16)
     {
         printf("Grade 16+");
@@ -28,7 +29,7 @@ int main(void)
     }
     else
     {
-        printf("Grade %d",(int)round(index));
+        printf("Grade %d",index);
     }
     printf("\n");
 }
