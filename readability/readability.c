@@ -37,7 +37,7 @@ int no_of_letters(string s)
     int count = 0;
      for (int i=0,n=strlen(s);i<n;i++)
     {
-        if (s[i]==' '||s[i]=='.'|| s[i]=='!' || s[i]=='?' || s[i]==',')
+        if (s[i]==' ')
             continue;
         count++;
     }
