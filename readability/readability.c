@@ -28,7 +28,7 @@ int main(void)
     }
     else
     {
-        printf("Grade %f",round(index));
+        printf("Grade %i",round(index));
     }
 
     printf("\n");
@@ -52,7 +52,7 @@ int no_of_words(string s)
         if (s[i]==' ')
             count++;
     }
-    return count+1;
+    return count;
 }
 
 int no_of_sentences(string s)
