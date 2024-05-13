@@ -30,6 +30,7 @@ int main(void)
     {
         printf("Grade %d",(int)round(index));
     }
+    printf("%d %d %d",letters,words,sentences);
     printf("%f",index);
     printf("\n");
 }
@@ -38,7 +39,7 @@ int no_of_letters(string s)
     int count = 0;
      for (int i=0,n=strlen(s);i<n;i++)
     {
-        if (s[i]==' ')
+        if (s[i]==' '||s[i]=='.')
             continue;
         count++;
     }
