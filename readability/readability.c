@@ -19,19 +19,7 @@ int main(void)
     S = (sentences/words*100);
     index = 0.0588*L - 0.296*S -15.8;
     index = (int)round(index);
-    if (index>=16)
-    {
-        printf("Grade 16+");
-    }
-    else if(index<=1)
-    {
-        printf("Before Grade 1");
-    }
-    else
-    {
-        printf("Grade %d",index);
-    }
-    printf("\n");
+    printf("Grade %d",index);
 }
 int no_of_letters(string s)
 {
