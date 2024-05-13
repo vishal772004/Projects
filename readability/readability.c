@@ -52,7 +52,7 @@ int no_of_words(string s)
         if (s[i]==' ')
             count++;
     }
-    return count+1;
+    return count+2;
 }
 
 int no_of_sentences(string s)
