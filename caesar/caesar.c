@@ -11,7 +11,8 @@ int main(int argc,string argv[])
     if(argc==2)
     {
             string plaintext = get_string("plaintext:");
-            string ans = cipher(plaintext,argv);
+            int k = int(argv[]);
+            string ans = cipher(plaintext,k);
             printf("%s",ans);
             return 0;
     }
