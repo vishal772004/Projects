@@ -4,21 +4,15 @@
 #include<string.h>
 #include<stdlib.h>
 
+string cipher(string s,string k);
+
 int main(int argc,string argv[])
 {
     if(argc==2)
     {
-        if (isdigit(argv))
-        {
             string plaintext = get_string("plaintext:");
-            print(cipher(plaintext,argv));
+            printf(cipher(plaintext,argv[]));
             return 0;
-        }
-        else
-        {
-            printf("Usage: ./caesar key");
-            return 1;
-        }
     }
     else
     {
