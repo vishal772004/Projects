@@ -8,7 +8,9 @@ int main(int argc,string argv[])
     {
         if (isdigit(argv))
         {
-
+            string plaintext = get_string("plaintext:");
+            print(cipher(plaintext,argv));
+            return 0;
         }
         else
         {
@@ -21,4 +23,8 @@ int main(int argc,string argv[])
         printf("Usage: ./caesar key");
         return 1;
     }
+}
+string cipher(string s,string k)
+{
+    
 }
