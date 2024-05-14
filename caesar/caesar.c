@@ -32,13 +32,7 @@ string cipher(string s,string k)
     int key = atoi(k);
     for (int i=0,n=strlen(s);i<n;i++)
     {
-        if(islower(s[i]))
-        {
             ciphertext = s[i]+key;
-        }
-        else
-        {
-            ci
-        }
     }
+    return ciphertext;
 }
