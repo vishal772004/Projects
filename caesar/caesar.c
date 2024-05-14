@@ -29,6 +29,9 @@ string cipher(string s,string k)
 {
     for (int i=0,n=strlen(s);i<n;i++)
     {
-        
+        if(islower(s[i]))
+        {
+            
+        }
     }
 }
