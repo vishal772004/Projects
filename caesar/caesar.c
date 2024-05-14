@@ -27,6 +27,7 @@ int main(int argc,string argv[])
 }
 string cipher(string s,string k)
 {
+    string ciphertext;
     for (int i=0,n=strlen(s);i<n;i++)
     {
         if(islower(s[i]))
