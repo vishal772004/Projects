@@ -2,6 +2,7 @@
 #include<cs50.h>
 #include<ctype.h>
 #include<string.h>
+#include<stdlib.h>
 
 int main(int argc,string argv[])
 {
@@ -28,11 +29,16 @@ int main(int argc,string argv[])
 string cipher(string s,string k)
 {
     string ciphertext;
+    int key = atoi(k);
     for (int i=0,n=strlen(s);i<n;i++)
     {
         if(islower(s[i]))
         {
-            
+            ciphertext = s[i]+key;
+        }
+        else
+        {
+            ci
         }
     }
 }
