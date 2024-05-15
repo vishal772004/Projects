@@ -39,6 +39,7 @@ void cipher(string s,int k)
                 while(temp>90)
                     temp = (temp - 90) + 65;
             }
+            temp--;
         printf("%c",temp);
     }
 
