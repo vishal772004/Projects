@@ -24,14 +24,16 @@ int main(int argc,string argv[])
 }
 void cipher(string s,int k)
 {
+    int temp;
     char ciphertext[]="";
     for (int i=0,n=strlen(s);i<n;i++)
     {
+        temp=s[i]+k;
             if(islower(s))
             {
-                
+
             }
-        printf("%c",s[i]+k);
+        printf("%c",);
     }
 
 }
