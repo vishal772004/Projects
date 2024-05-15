@@ -8,14 +8,19 @@ void cipher(string s,int k);
 
 int main(int argc,string argv[])
 {
-    int count =0;
-    for (int i=0,n=strlen(argv[1]);i<n;i++)
+
+    if(argc==2)
     {
-        if(!isdigit(argv[1][i]))
-            count++;
-    }
-    if(argc==2 && count==0)
-    {
+            int count =0;
+        for (int i=0,n=strlen(argv[1]);i<n;i++)
+        {
+            if(!isdigit(argv[1][i]))
+                count++;
+        }
+        if(count!=0)
+        {
+            break;
+        }
             string plaintext = get_string("plaintext:");
             int k = atoi(argv[1]);
             cipher(plaintext,k);
