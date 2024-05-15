@@ -36,7 +36,7 @@ void cipher(string s,int k)
                     temp = (temp - 122) + 97;
                 temp--;
             }
-            if(isupper(s[i]) && temp>90)
+            else if(isupper(s[i]) && temp>90)
             {
                 while(temp>90)
                     temp = (temp - 90) + 65;
