@@ -4,14 +4,14 @@
 #include<string.h>
 #include<stdlib.h>
 
-string cipher(string s,string k);
+string cipher(string s,int k);
 
 int main(int argc,string argv[])
 {
     if(argc==2)
     {
             string plaintext = get_string("plaintext:");
-            int k = int(argv[1]);
+            int k = atoi(argv[1]);
             string ans = cipher(plaintext,k);
             printf("%s",ans);
             return 0;
@@ -22,7 +22,7 @@ int main(int argc,string argv[])
         return 1;
     }
 }
-string cipher(string s,string k)
+string cipher(string s,int k)
 {
     string ciphertext;
     int key = atoi(k);
