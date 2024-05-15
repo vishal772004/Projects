@@ -30,7 +30,7 @@ int main(int argc,string argv[])
 }
 void cipher(string s,int k)
 {
-    int temp;
+    int temp=0;
     char ciphertext[]="";
     printf("ciphertext:");
     for (int i=0,n=strlen(s);i<n;i++)
@@ -60,7 +60,7 @@ void cipher(string s,int k)
                 temp--;
             }
 
-        printf("%c",temp);
+        printf("%c\n",temp);
     }
 
 }
