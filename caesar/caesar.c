@@ -48,8 +48,6 @@ void cipher(string s,int k)
                 {
                     temp = (temp - 122) + 97;
                 }
-                printf("%d\n",temp);
-
             }
             else if(isupper(s[i]) && temp>90)
             {
@@ -58,7 +56,7 @@ void cipher(string s,int k)
 
             }
 
-        printf("%c\n",temp-2);
+        printf("%c",temp-2);
     }
 
 }
