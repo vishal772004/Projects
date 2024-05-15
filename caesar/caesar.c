@@ -11,10 +11,10 @@ int main(int argc,string argv[])
     int count =0;
     for (int i=0,n=strlen(argv[1]);i<n;i++)
     {
-        if(isdigit(argv[1][i]))
+        if(isap(argv[1][i]))
             count++;
     }
-    if(argc==2 && count>0)
+    if(argc==2 && count==0)
     {
             string plaintext = get_string("plaintext:");
             int k = atoi(argv[1]);
