@@ -42,11 +42,15 @@ void cipher(string s,int k)
         }
 
         temp=s[i]+k;
-            if(islower(s[i]) && temp>122)
+            if(islower(s[i]))
             {
+                printf("%d",temp);
                 while(temp>122)
+                {
                     temp = (temp - 122) + 97;
-                    printf("%d",temp);
+                    printf("%d\n",temp);
+                }
+
                 temp--;
             }
             else if(isupper(s[i]) && temp>90)
