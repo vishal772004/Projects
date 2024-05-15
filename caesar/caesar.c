@@ -8,7 +8,7 @@ void cipher(string s,int k);
 
 int main(int argc,string argv[])
 {
-    if(argc==2 && isdigit(argv[1]))
+    if(argc==2 && isalnum(argv[1]))
     {
             string plaintext = get_string("plaintext:");
             int k = atoi(argv[1]);
