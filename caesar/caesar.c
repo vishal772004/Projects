@@ -19,7 +19,8 @@ int main(int argc,string argv[])
         }
         if(count!=0)
         {
-            break;
+            printf("Usage: ./caesar key\n");
+            return 1;
         }
             string plaintext = get_string("plaintext:");
             int k = atoi(argv[1]);
