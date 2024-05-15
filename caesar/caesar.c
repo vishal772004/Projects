@@ -4,7 +4,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-string cipher(string s,int k);
+void cipher(string s,int k);
 
 int main(int argc,string argv[])
 {
@@ -12,8 +12,8 @@ int main(int argc,string argv[])
     {
             string plaintext = get_string("plaintext:");
             int k = atoi(argv[1]);
-            string ans = cipher(plaintext,k);
-            printf("%s",ans);
+            cipher(plaintext,k);
+            printf("\n");
             return 0;
     }
     else
@@ -22,13 +22,12 @@ int main(int argc,string argv[])
         return 1;
     }
 }
-string cipher(string s,int k)
+void cipher(string s,int k)
 {
-    string ciphertext;
-    int key = atoi(k);
+    char ciphertext[]="";
     for (int i=0,n=strlen(s);i<n;i++)
     {
-            ciphertext = s[i]+key;
+        printf("%c",s[i]+k);
     }
-    return ciphertext;
+
 }
