@@ -35,7 +35,11 @@ void cipher(string s,int k)
     printf("ciphertext:");
     for (int i=0,n=strlen(s);i<n;i++)
     {
-        if(!isalnum(s[i]))
+        if(!isalpha(s[i]))
+        {
+            printf("%c",s[i]);
+            continue;
+        }
 
         temp=s[i]+k;
             if(islower(s[i]) && temp>122)
