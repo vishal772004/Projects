@@ -31,7 +31,7 @@ void cipher(string s,int k)
         temp=s[i]+k;
             if(islower(s[i]) && temp>122)
             {
-                temp = temp - 97
+                temp = (temp - 122) +
             }
         printf("%c",);
     }
