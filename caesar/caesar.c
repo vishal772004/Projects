@@ -41,7 +41,7 @@ void cipher(string s,int k)
     printf("ciphertext:");
     for (int i=0,n=strlen(s);i<n;i++)
     {
-        if(ispunct(s[i]))
+        if(ispunct(s[i]) && !isblank(s[i]))
         {
             printf("%c",s[i]);
             continue;
