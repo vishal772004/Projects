@@ -29,9 +29,9 @@ void cipher(string s,int k)
     for (int i=0,n=strlen(s);i<n;i++)
     {
         temp=s[i]+k;
-            if(islower(s))
+            if(islower(s[i]) && temp>122)
             {
-
+                temp = temp - 97
             }
         printf("%c",);
     }
