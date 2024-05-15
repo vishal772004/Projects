@@ -27,13 +27,10 @@ void cipher(string s,int k)
     char ciphertext[]="";
     for (int i=0,n=strlen(s);i<n;i++)
     {
-        if(k>=26)
-        {
             if(islower(s))
             {
                 
             }
-        }
         printf("%c",s[i]+k);
     }
 
