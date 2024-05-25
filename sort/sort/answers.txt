@@ -1,8 +1,9 @@
 sort1 uses: TODO
 
 How do you know?: The time it took to sort
-                    random5000.txt = 0.060
-                    
+                    random5000.txt = 0.060s
+                    random10000.txt= 0.186s
+
 
 sort2 uses: TODO
 
