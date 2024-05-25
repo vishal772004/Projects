@@ -15,7 +15,7 @@ sort2 uses: TODO
 How do you know?: The time it took to sort
                     random5000.txt  = 0.035s
                     random10000.txt = 0.077s
-                    random50000.txt =
+                    random50000.txt = 1.348s
                     reversed5000.txt=
                     reversed10000.txt=
                     reversed50000.txt=
