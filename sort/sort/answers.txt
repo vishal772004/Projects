@@ -7,8 +7,8 @@ How do you know?: The time it took to sort
                     reversed5000.txt= 0.119s
                     reversed10000.txt=0.230s
                     reversed50000.txt=14.003s
-                    sorted5000.txt  =
-                    sorted10000.txt =
+                    sorted5000.txt  =0.041s
+                    sorted10000.txt =0.068s
                     sorted50000.txt =
 sort2 uses: TODO
 
