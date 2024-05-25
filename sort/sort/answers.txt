@@ -10,7 +10,7 @@ How do you know?: The time it took to sort
                     sorted5000.txt  =0.041s
                     sorted10000.txt =0.068s
                     sorted50000.txt =36.673s
-sort2 uses: TODO
+sort2 uses: Bubble Sort
 
 How do you know?: The time it took to sort
                     random5000.txt  = 0.035s
