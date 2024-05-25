@@ -23,7 +23,7 @@ How do you know?: The time it took to sort
                     reversed50000.txt=4.870s
                     sorted5000.txt  =0.047s
                     sorted10000.txt =0.076s
-                    sorted50000.txt =2.123s
+                    sorted50000.txt =10.123s
                     It takes less time to sort the sorted txt file.
 
 sort3 uses: Merge Sort
