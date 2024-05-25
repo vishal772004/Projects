@@ -91,5 +91,5 @@ void print_winner(void)
         }
 
     }
-    printf("Winner Candidate %s with votes = %d\n",winner,winning_votes);
+    printf(" %s\n",winner);
 }
