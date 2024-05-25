@@ -26,11 +26,11 @@ How do you know?: The time it took to sort
 sort3 uses: TODO
 
 How do you know?:  The time it took to sort
-                    random5000.txt  = 
-                    random10000.txt =
-                    random50000.txt =
-                    reversed5000.txt=
-                    reversed10000.txt=
+                    random5000.txt  = 0.062s
+                    random10000.txt = 0.149s
+                    random50000.txt = 0.137s
+                    reversed5000.txt= 0.045s
+                    reversed10000.txt= 0.134s
                     reversed50000.txt=
                     sorted5000.txt  =
                     sorted10000.txt =
