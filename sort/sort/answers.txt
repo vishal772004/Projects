@@ -26,16 +26,6 @@ How do you know?: The time it took to sort
                     sorted50000.txt =10.123s
                     It takes less time to sort the sorted txt file.
 
-sort3 uses: Merge Sort
+sort3 uses: Bubble Sort
 
-How do you know?:  The time it took to sort
-                    random5000.txt  = 0.062s
-                    random10000.txt = 0.149s
-                    random50000.txt = 0.137s
-                    reversed5000.txt= 0.045s
-                    reversed10000.txt= 0.134s
-                    reversed50000.txt= 5.433s
-                    sorted5000.txt  = 0.053s
-                    sorted10000.txt = 0.181s
-                    sorted50000.txt = 15.6s
-                    It takes less time to sort the random txt file .
+How do you know?:  It took very less time to sort the sorted txt file.
