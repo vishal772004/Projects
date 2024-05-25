@@ -31,7 +31,7 @@ How do you know?:  The time it took to sort
                     random50000.txt = 0.137s
                     reversed5000.txt= 0.045s
                     reversed10000.txt= 0.134s
-                    reversed50000.txt=
-                    sorted5000.txt  =
+                    reversed50000.txt= 5.433s
+                    sorted5000.txt  = 
                     sorted10000.txt =
                     sorted50000.txt =
