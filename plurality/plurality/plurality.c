@@ -67,21 +67,28 @@ bool vote(string name)
 {
     for (int i=0;i < candidate_count; i++)
     {
-        if (strcpy(name,candidates[i].name)==0)
+        if (strcpy(name,candidates[i].name))
         {
             candidates[i].votes++;
-            return false;
+            return true;
         }
 
     }
-    return true;
+    return false;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
+    int winner = candidates[0].votes,n;
+    for (int i=0;i < candidate_count;i++)
+    {
+        if(candidates[i].votes>winner)
+        {
+            printf(" Winner = %s\n",candidates[i].name);
+            winner = candidates[i].votes;
 
-    printf("Candidates of votes = %d , Winner = %s\n",candidates[0].votes,candidates[0].name);
-    printf("Candidates of votes = %d , Winner = %s\n",candidates[1].votes,candidates[1].name);
+        }
+    }
 
 }
