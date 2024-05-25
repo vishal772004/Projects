@@ -92,5 +92,5 @@ void print_winner(void)
         }
     }
     printf("Candidate with maximum number of votes:%s",winner);
-    return;
+    
 }
