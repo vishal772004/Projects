@@ -1,11 +1,11 @@
 sort1 uses: Bubble Sort
 
-How do you know?: It takes a bit more time than the other two sorting techniques.
+How do you know?:  It took very less time to sort the sorted txt file.
 
-sort2 uses: Bubble Sort
+sort2 uses: Merge  Sort
 
 How do you know?: It took very less time to sort the random 50000 txt file than the other two sorting techniques.
 
-sort3 uses: Merge Sort
+sort3 uses: Selection Sort
 
-How do you know?:  It took very less time to sort the sorted txt file.
+How do you know?: It takes a bit more time than the other two sorting techniques.
