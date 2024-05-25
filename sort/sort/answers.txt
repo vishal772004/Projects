@@ -6,9 +6,10 @@ How do you know?: The time it took to sort
                     random50000.txt = 9.762s
                     reversed5000.txt= 0.119s
                     reversed10000.txt=0.230s
-                    reversed50000.txt=
-
-
+                    reversed50000.txt=14.003s
+                    sorted5000.txt  =
+                    sorted10000.txt =
+                    sorted50000.txt =
 sort2 uses: TODO
 
 How do you know?: TODO
