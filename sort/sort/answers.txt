@@ -1,4 +1,4 @@
-sort1 uses: Selection Sort
+sort1 uses: Bubble Sort
 
 How do you know?: It takes a bit more time than the other two sorting techniques.
 
