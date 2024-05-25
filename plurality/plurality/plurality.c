@@ -77,7 +77,10 @@ bool vote(string name)
 
     }
     if(count==0)
+    {
         return false;
+    }
+
 }
 
 // Print the winner (or winners) of the election
@@ -92,5 +95,5 @@ void print_winner(void)
         }
     }
     printf("Candidate with maximum number of votes:%s",winner);
-    
+
 }
