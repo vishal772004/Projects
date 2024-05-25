@@ -1,4 +1,4 @@
-sort1 uses: TODO
+sort1 uses: Selection Sort
 
 How do you know?: The time it took to sort
                     random5000.txt  = 0.060s
@@ -10,6 +10,8 @@ How do you know?: The time it took to sort
                     sorted5000.txt  =0.041s
                     sorted10000.txt =0.068s
                     sorted50000.txt =36.673s
+                    It takes a bit more time than the other two at the best cases.
+
 sort2 uses: Bubble Sort
 
 How do you know?: The time it took to sort
@@ -22,6 +24,7 @@ How do you know?: The time it took to sort
                     sorted5000.txt  =0.047s
                     sorted10000.txt =0.076s
                     sorted50000.txt =2.123s
+                    It takes less time to sort the sorted txt file.
 
 sort3 uses: Merge Sort
 
@@ -35,3 +38,4 @@ How do you know?:  The time it took to sort
                     sorted5000.txt  = 0.053s
                     sorted10000.txt = 0.181s
                     sorted50000.txt = 15.6s
+                    It takes less time to sort the random txt file .
