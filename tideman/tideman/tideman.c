@@ -158,7 +158,7 @@ void sort_pairs(void)
         {
             if(preferences[i][j]!=0)
             {
-                while(preferences[i][j])
+                
             }
         }
     ]
