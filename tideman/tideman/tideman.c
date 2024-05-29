@@ -161,18 +161,16 @@ void sort_pairs(void)
     int j=0;
     int max=no_of_voters(pairs[],j);
     int no_votes=0;
-    for (int i=0;i<k;i++)
+    for (int i=1;i<k;i++)
     {
         no_votes=no_of_voters(pairs[],i);
-        for(int l=0;l<k;l++)
-        {
+
         if(max<no_votes)
         {
             max=no_votes;
             int temp = pairs[i];
             pairs[i] = pairs[j];
             pairs[j] = temp;
-        }
         }
     }
     return;
