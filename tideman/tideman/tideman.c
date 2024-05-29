@@ -153,7 +153,7 @@ void add_pairs(void)
 int no_of_voters(int p[],int n)
 {
     int i=p[n].winner;
-    int j=p[n].loser
+    int j=p[n].loser;
     return preferences[i][j];
 }
 // Sort pairs in decreasing order by strength of victory
