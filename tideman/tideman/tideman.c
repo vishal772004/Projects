@@ -165,8 +165,8 @@ void sort_pairs(void)
         no_votes=no_of_voters(pairs[],i);
         if(max<no_votes)
         {
-            int temp=pair[i];
-            pair[]
+            max=no_votes;
+            
         }
     }
     return;
