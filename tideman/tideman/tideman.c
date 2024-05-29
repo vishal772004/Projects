@@ -148,6 +148,10 @@ void add_pairs(void)
     }
 }
 
+int no_of_voters()
+{
+    
+}
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
