@@ -167,8 +167,9 @@ void sort_pairs(void)
         if(max<no_votes)
         {
             max=no_votes;
-            int temp = pairs[j];
-            pairs[i] = 
+            int temp = pairs[i];
+            pairs[i] = pairs[j];
+            pairs[j] = temp;
         }
     }
     return;
