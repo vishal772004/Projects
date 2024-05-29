@@ -23,6 +23,7 @@ pair pairs[MAX * (MAX - 1) / 2];
 
 int pair_count;
 int candidate_count;
+int k;
 
 // Function prototypes
 bool vote(int rank, string name, int ranks[]);
@@ -133,7 +134,7 @@ void add_pairs(void)
 {
     // TODO
     pair_count=0;
-    int k=0;
+    k=0;
     for (int i=0;i<candidate_count;i++)
     {
         for (int j=0;j<candidate_count;j++)
@@ -158,15 +159,11 @@ void sort_pairs(void)
 {
     // TODO
     int max=no_of_voters(pairs[],0);
-    for (int i=0;i<candidate_count;i++)
+    for (int i=0;i<k;i++)
     {
-        for(int j=0;j<candidate_count;j++)
+        if(max<no_of_voters(pairs[],i))
         {
-
-            if(max<no_of_voters(pairs[],i+j))
-            {
-
-            }
+            
         }
     }
     return;
