@@ -163,7 +163,7 @@ void sort_pairs(void)
         for(int j=0;j<candidate_count;j++)
         {
 
-            if(max<no_of_voters(pairs[],))
+            if(max<no_of_voters(pairs[],i+j))
             {
 
             }
