@@ -221,6 +221,6 @@ void print_winner(void)
 
         }
     }
-    printf(")
+    printf("%s\n",candidates[j]);
 
 }
