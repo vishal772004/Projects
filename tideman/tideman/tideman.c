@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-
+#include<string.h>
 // Max number of candidates
 #define MAX 9
 
@@ -29,7 +29,7 @@ int k;
 bool vote(int rank, string name, int ranks[]);
 void record_preferences(int ranks[]);
 void add_pairs(void);
-int no_of_voters(int pairs[],int n)
+int no_of_voters(int pairs[],int n);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
@@ -123,7 +123,7 @@ void record_preferences(int ranks[])
                 continue;
             if(ranks[i]<ranks[j])
             {
-                preferences[i][j]+=1
+                preferences[i][j]+=1;
             }
         }
     }
@@ -150,7 +150,7 @@ void add_pairs(void)
     }
 }
 
-int no_of_voters(int pairs[],int n)
+int no_of_voters(int p[],int n)
 {
     return preferences[pairs[n].winner][pairs[n].loser];
 }
