@@ -174,13 +174,14 @@ void sort_pairs(void)
             j=i;
         }
     }
-    return;
+
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
     // TODO
+    
     return;
 }
 
