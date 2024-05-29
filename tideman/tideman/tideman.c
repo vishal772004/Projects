@@ -187,7 +187,7 @@ void lock_pairs(void)
         {
             if(preferences[i][j]>preferences[j][i])
             {
-                
+                locked[i][j]=true;
             }
         }
     }
