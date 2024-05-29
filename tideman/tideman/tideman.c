@@ -198,6 +198,7 @@ void lock_pairs(void)
 void print_winner(void)
 {
     int source[];
+    int winner=-1;
     for(int i=0;i<candidate_count;i++)
     {
         for(int j=0;j<candidate_count;j++)
@@ -211,7 +212,15 @@ void print_winner(void)
     }
     for( i=0;i<source.length();i++)
     {
-        
+        for( j=0;j<source.length();j++)
+        {
+            if(source[j]>source[j+1])
+            {
+                winner=j;
+            }
+
+        }
     }
+    printf(")
 
 }
