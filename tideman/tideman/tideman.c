@@ -191,12 +191,12 @@ void lock_pairs(void)
             }
         }
     }
-    return;
+
 }
 
 // Print the winner of the election
 void print_winner(void)
 {
-    // TODO
-    return;
+
+    
 }
