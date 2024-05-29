@@ -148,21 +148,21 @@ void add_pairs(void)
     }
 }
 
-int no_of_voters()
+int no_of_voters(int pairs[],int n)
 {
-
+    return preferences
 }
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
     // TODO
-    int max=no_of_voters();
+    int max=no_of_voters(pairs[],0);
     for (int i=0;i<candidate_count;i++)
     {
         for(int j=0;j<candidate_count;j++)
         {
 
-            if(preferences[i][j]!=0)
+            if()
             {
 
             }
