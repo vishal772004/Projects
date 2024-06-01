@@ -220,7 +220,7 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner()
 {
-    for(int i=0,j=0;i<candidate_count;i++)
+    for(int i=0,j=0;i<candidate_count;i++;j++)
     {
         int count=0;
         while(j<candidate_count)
