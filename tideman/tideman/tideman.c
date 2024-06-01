@@ -173,6 +173,7 @@ void sort_pairs(void)
                 pair temp=pairs[j];
                 pairs[i] = pairs[j];
                 pairs[j]=temp;
+                
             }
         }
     }
