@@ -138,22 +138,23 @@ void add_pairs(void)
     // TODO
     for(int i=0;i<candidate_count;i++)
     {
+        pair q;
         for(int j=0;j<candidate_count;j++)
         {
             int candidate_i=preferences[i][j];
             int candidate_j=preferences[j][i];
             if(candidate_i>candidate_j)
             {
-                pairs[pair_count].winner=i;
-                pairs[pair_count].loser=j;
-                pairs[pair_count++];
+                q.winner=i;
+                q.loser=j;
             }
             else
             {
-                pairs[pair_count].winner=j;
-                pairs[pair_count].loser=i;
-                pairs[pair_count++];
+                q.winner=j;
+                q.loser=i;
+
             }
+             pairs[pair_count++]=p;
         }
     }
     return;
