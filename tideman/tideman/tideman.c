@@ -190,12 +190,13 @@ bool hasCycle(int winner,int loser)
                 count=1;
             }
         }
-        if(winner==loser)
-            return true;
+
         if(count==0)
             winner=-1;
 
     }
+    if(winner==loser)
+            return true;
 
         return false;
 }
