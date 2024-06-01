@@ -146,8 +146,8 @@ void add_pairs(void)
                 pair_count++;
                 pairs[pair_count].winner=i;
                 pairs[pair_count].loser=j;
-                printf("%d %s\n",i,candidates[pairs[i].winner]);
-                printf("%d %s\n",i,candidates[pairs[i].loser]);
+                printf("%d %s\n",pair_count,candidates[pairs[pair_count].winner]);
+                printf("%d %s\n",pair_count,candidates[pairs[pair_count].loser]);
             }
         }
     }
