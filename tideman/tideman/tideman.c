@@ -121,7 +121,7 @@ void record_preferences(int ranks[])
             else if(ranks[i]>ranks[j])
             {
                 preferences[i][j]+=1;
-                printf("%d %d %d\n",i,j,preferences[i][j]);
+
             }
         }
 
@@ -153,5 +153,16 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
+     for (int i=0;i<candidate_count;i++)
+    {
+        printf("%d )
+
+     for (int i=0;i<candidate_count;i++)
+    {
+        for(int j=0;j<candidate_count;j++)
+        {
+            printf("%d \n",preferences[i][j]);
+        }
+    }
 
 }
