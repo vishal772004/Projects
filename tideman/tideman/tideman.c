@@ -170,8 +170,8 @@ void sort_pairs(void)
             if(no_of_votes(j)<no_of_votes(j+1))
             {
                 pair temp=pairs[j];
-                pairs[j+1] = pairs[j];
-                pairs[j]=temp;
+                pairs[j] = pairs[j+1];
+                pairs[j+1]=temp;
 
             }
         }
@@ -193,8 +193,7 @@ void print_winner()
 
      for (int i=0;i<pair_count;i++)
     {
-        printf("%d %s \n",pairs[i].winner,candidates[pairs[i].winner]);
-        printf("%d %s\n",pairs[i].loser,candidates[pairs[i].loser]);
+        printf(" %d %s %s \n",i,candidates[pairs[i].winner],candidates[pairs[i].loser]);
     }
 
 
