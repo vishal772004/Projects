@@ -179,5 +179,10 @@ void print_winner()
             printf("%d %d %d \n",i,j,preferences[i][j]);
         }
     }
+     for (int i=0;i<pair_count;i++)
+    {
+        printf("%d %s",i,pairs[i].winner);
+        printf("%d %s",i,pairs[i].loser);
+    }
 
 }
