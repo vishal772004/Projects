@@ -179,13 +179,23 @@ void sort_pairs(void)
 
 }
 
+bool hasCycle(int winner,int loser)
+{
+    while(winner!=-1&&winner!=loser)
+    {
+        for(int i=0;i<candidate_count;i++)
+        {
+            if(locked[])
+        }
+    }
+}
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
     // TODO
     for(int i=0;i<pair_count;i++)
     {
-        if(hasCycle(pairs[i].winner,))
+        if(!hasCycle(pairs[i].winner,pairs[i].loser))
         {
             locked[pairs[i].winner][pairs[i].loser]=true;
         }
