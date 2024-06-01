@@ -139,7 +139,7 @@ void add_pairs(void)
     for(int i=0;i<candidate_count;i++)
     {
         pair q;
-        for(int j=0;j<candidate_count;j++)
+        for(int j=i+1;j<candidate_count;j++)
         {
             int candidate_i=preferences[i][j];
             int candidate_j=preferences[j][i];
