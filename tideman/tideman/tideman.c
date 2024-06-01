@@ -246,7 +246,7 @@ void print_winner()
         }
         if(count==0)
         {
-            printf("%s",candidates[j]);
+            printf("%s\n",candidates[j]);
             return;
         }
     }
