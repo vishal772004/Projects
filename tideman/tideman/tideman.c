@@ -196,9 +196,11 @@ bool hasCycle(int winner,int loser)
         }
         if(winner==loser)
             return true;
+        if(count==0)
+            winner=-1;
 
     }
-    
+
         return false;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
