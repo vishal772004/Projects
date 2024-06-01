@@ -187,7 +187,7 @@ void lock_pairs(void)
     {
         if(preferences[pairs[i].winner][pairs[i].loser]!=0)
         {
-            locked[i][j]=true;
+            locked[pairs[i].winner][pairs[i].loser]=true;
         }
     }
 
