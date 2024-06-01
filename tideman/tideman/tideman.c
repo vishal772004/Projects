@@ -129,6 +129,7 @@ void record_preferences(int ranks[])
         }
 
     }
+    return;
 }
 
 // Record pairs of candidates where one is preferred over the other
@@ -147,6 +148,7 @@ void add_pairs(void)
             }
         }
     }
+    return;
 
 }
 
@@ -173,7 +175,7 @@ void sort_pairs(void)
             }
         }
     }
-
+    return;
 }
 
 bool hasCycle(int winner,int loser)
@@ -231,6 +233,7 @@ void print_winner()
         if(count<=(candidate_count))
         {
             printf("%s \n",candidates[j]);
+            return;
         }
     }
 
