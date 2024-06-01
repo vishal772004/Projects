@@ -174,8 +174,10 @@ void sort_pairs(void)
     // TODO
     for(int i=0;i<pair_count;i++)
     {
+        int max=i;
+        int strength=no_of_votes
 
-        for(int j=i;j<pair_count-1;j++)
+        for(int j=i+1;j<pair_count-1;j++)
         {
             if(no_of_votes(j)<no_of_votes(j+1))
             {
