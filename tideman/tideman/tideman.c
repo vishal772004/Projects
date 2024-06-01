@@ -170,7 +170,7 @@ void sort_pairs(void)
         {
             if(min<no_of_votes(j))
             {
-                int temp=pairs[j];
+                pair temp=pairs[j];
                 pairs[i] = pairs[j];
                 pairs[j]=temp;
             }
