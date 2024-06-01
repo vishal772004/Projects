@@ -83,6 +83,10 @@ int main(int argc, string argv[])
                 return 3;
             }
         }
+        for ( i=0;i<candidate_count;i++)
+    {
+        printf("%d \n",ranks[i]);
+    }
         record_preferences(ranks);
 
         printf("\n");
@@ -151,11 +155,9 @@ void lock_pairs(void)
 }
 
 // Print the winner of the election
-void print_winner(void)
+void print_winner()
 {
-     for (int i=0;i<candidate_count;i++)
-    {
-        printf("%d \n",ran)
+
 
      for (int i=0;i<candidate_count;i++)
     {
