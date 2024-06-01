@@ -230,7 +230,7 @@ void print_winner()
         }
         if(count==(candidate_count-1))
         {
-            printf("%s \n",candidates[i]);
+            printf("%s \n",candidates[j]);
         }
     }
 
