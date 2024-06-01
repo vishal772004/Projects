@@ -83,7 +83,6 @@ int main(int argc, string argv[])
                 return 3;
             }
         }
-
         record_preferences(ranks);
 
         printf("\n");
@@ -130,7 +129,7 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
-
+    ...
 }
 
 
@@ -138,21 +137,18 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
-
-
+    ...
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
     // TODO
-
-
+    ...
 }
 
 // Print the winner of the election
 void print_winner(void)
 {
-
-
+    ...
 }
