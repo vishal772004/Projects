@@ -238,10 +238,10 @@ void print_winner()
     {   count=0;
         for(int i=0;i<candidate_count;i++)
         {
-            if(locked[i][j]==false)
+            if(locked[i][j]==true)
                 count++;
         }
-        if(count<=(candidate_count))
+        if(count!=0)
         {
             printf("%s \n",candidates[j]);
             return;
