@@ -155,7 +155,7 @@ void print_winner(void)
 {
      for (int i=0;i<candidate_count;i++)
     {
-        printf("%d )
+        printf("%d \n",ran)
 
      for (int i=0;i<candidate_count;i++)
     {
