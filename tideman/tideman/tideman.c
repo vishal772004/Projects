@@ -152,9 +152,8 @@ void add_pairs(void)
             {
                 q.winner=j;
                 q.loser=i;
-
             }
-             pairs[pair_count++]=p;
+             pairs[pair_count++]=q;
         }
     }
     return;
