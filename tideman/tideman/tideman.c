@@ -186,17 +186,21 @@ bool hasCycle(int winner,int loser)
         {
             if(locked[i][winner]==true)
             {
-                i=winner;
+                winner=i;
                 count=1;
             }
         }
 
         if(count==0)
+        {
             winner=-1;
+        }
 
     }
     if(winner==loser)
-            return true;
+    {
+        return true;
+    }
 
         return false;
 }
