@@ -222,7 +222,8 @@ void print_winner()
 {
     for(int i=0;i<candidate_count;i++)
     {
-        
+        int j=0;
+        while
     }
 
 }
