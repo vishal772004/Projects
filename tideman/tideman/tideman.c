@@ -144,8 +144,8 @@ void add_pairs(void)
             if(preferences[i][j]!=0)
             {
                 pair_count++;
-                pairs[pair_count].winner=candidates[i];
-                pairs[pair_count].loser=candidates[j];
+                pairs[pair_count].winner=i;
+                pairs[pair_count].loser=j;
             }
         }
     }
@@ -181,8 +181,8 @@ void print_winner()
     }
      for (int i=0;i<pair_count;i++)
     {
-        printf("%d %s",i,pairs[i].winner);
-        printf("%d %s",i,pairs[i].loser);
+        printf("%d %s",pairs[i].winner,candidates[pairs[i].winner]);
+        printf("%d %s",pairs[i].loser,candidates[pairs[i].loser]);
     }
 
 }
