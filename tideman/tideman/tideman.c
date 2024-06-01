@@ -143,7 +143,9 @@ void add_pairs(void)
         {
             int candidate_i=preferences[i][j];
             int candidate_j=preferences[j][i];
-            if(candidate_i>candidate_j)
+            if(candidate_i!=candidate_j)
+            {
+                if(candidate_i>candidate_j)
             {
                 q.winner=i;
                 q.loser=j;
@@ -154,6 +156,7 @@ void add_pairs(void)
                 q.loser=i;
             }
              pairs[pair_count++]=q;
+        }
         }
     }
     return;
