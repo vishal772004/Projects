@@ -191,12 +191,10 @@ void print_winner()
 {
 
 
-     for (int i=0;i<candidate_count;i++)
+     for (int i=0;i<pair_count;i++)
     {
-        for(int j=0;j<candidate_count;j++)
-        {
-            printf("%d %d %d \n",i,j,preferences[i][j]);
-        }
+        printf("%d %s",pairs[pair_count].winner,candidates[pairs[pair_count].winner]);
+        printf("%d %s",pairs[pair_count].loser,candidates[pairs[pair_count].loser]);
     }
 
 
