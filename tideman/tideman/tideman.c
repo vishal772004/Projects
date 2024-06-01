@@ -31,6 +31,7 @@ void record_preferences(int ranks[]);
 void add_pairs(void);
 int no_of_votes(int n);
 void sort_pairs(void);
+bool hasCycle(int winner,int loser)
 void lock_pairs(void);
 void print_winner(void);
 
@@ -194,7 +195,7 @@ bool hasCycle(int winner,int loser)
         }
         if(winner==loser)
             return true;
-        if(count!=0)
+        if(count==0)
             return false;
     }
 }
