@@ -185,9 +185,9 @@ bool hasCycle(int winner,int loser)
     {
         for(int i=0;i<candidate_count;i++)
         {
-            if(locked[winner][i]==true)
+            if(locked[i][winner]==true)
             {
-                i=winner
+                i=winner;
             }
         }
         if(winner==loser)
