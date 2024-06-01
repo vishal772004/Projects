@@ -162,18 +162,17 @@ int no_of_votes(int n)
 void sort_pairs(void)
 {
     // TODO
-    int min=0;
     for(int i=0;i<pair_count;i++)
     {
-        min = no_of_votes(i);
+
         for(int j=i+1;j<pair_count-1;j++)
         {
-            if(min<no_of_votes(j))
+            if(no_of_votes(j)<no_of_votes(j+1))
             {
                 pair temp=pairs[j];
-                pairs[i] = pairs[j];
+                pairs[j+1] = pairs[j];
                 pairs[j]=temp;
-                
+
             }
         }
     }
