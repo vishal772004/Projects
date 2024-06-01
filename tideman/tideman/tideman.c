@@ -29,7 +29,6 @@ int candidate_count;
 bool vote(int rank, string name, int ranks[]);
 void record_preferences(int ranks[]);
 void add_pairs(void);
-int no_of_votes(int n);
 void sort_pairs(void);
 bool hasCycle(int winner,int loser);
 void lock_pairs(void);
@@ -163,10 +162,7 @@ void add_pairs(void)
 
 }
 
-int no_of_votes(int n)
-{
-    return
-}
+
 
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
@@ -182,6 +178,7 @@ void sort_pairs(void)
             int t_strength =preferences[pairs[j].winner][pairs[j].loser]-preferences[pairs[j].loser][pairs[j].winner];
             if(t_strength>strength)
             {
+                max=j;
                 strength = preferences[pairs[j].winner][pairs[j].loser]-preferences[pairs[j].loser][pairs[j].winner];
             }
         }
