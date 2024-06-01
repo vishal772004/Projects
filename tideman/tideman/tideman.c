@@ -184,10 +184,10 @@ void sort_pairs(void)
             {
                 strength = preferences[pairs[j].winner][pairs[j].loser]-preferences[pairs[j].loser][pairs[j].winner];
             }
-             pair temp=pairs[max];
-             pairs[max] = pairs[i];
-             pairs[i]=temp;
         }
+        pair temp=pairs[max];
+        pairs[max] = pairs[i];
+        pairs[i]=temp;
     }
     return;
 }
