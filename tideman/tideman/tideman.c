@@ -31,7 +31,7 @@ void record_preferences(int ranks[]);
 void add_pairs(void);
 int no_of_votes(int n);
 void sort_pairs(void);
-bool hasCycle(int winner,int loser)
+bool hasCycle(int winner,int loser);
 void lock_pairs(void);
 void print_winner(void);
 
@@ -216,12 +216,5 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner()
 {
-
-
-     for (int i=0;i<pair_count;i++)
-    {
-        printf(" %d %s %s \n",i,candidates[pairs[i].winner],candidates[pairs[i].loser]);
-    }
-
-
+    
 }
