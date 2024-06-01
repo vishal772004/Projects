@@ -163,7 +163,7 @@ void print_winner()
     {
         for(int j=0;j<candidate_count;j++)
         {
-            printf("%d \n",preferences[i][j]);
+            printf("%d %d %d \n",i,j,preferences[i][j]);
         }
     }
 
