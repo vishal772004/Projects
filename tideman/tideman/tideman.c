@@ -183,15 +183,19 @@ bool hasCycle(int winner,int loser)
 {
     while(winner!=-1&&winner!=loser)
     {
+        int count=0;
         for(int i=0;i<candidate_count;i++)
         {
             if(locked[i][winner]==true)
             {
                 i=winner;
+                count=1;
             }
         }
         if(winner==loser)
             return true;
+        if(count!=0)
+            return false;
     }
 }
 // Lock pairs into the candidate graph in order, without creating cycles
