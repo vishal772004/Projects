@@ -181,8 +181,8 @@ void print_winner()
     }
      for (int i=0;i<pair_count;i++)
     {
-        printf("%d %s\n",pairs[i].winner,candidates[pairs[i].winner]);
-        printf("%d %s\n",pairs[i].loser,candidates[pairs[i].loser]);
+        printf("%d %s\n",i,candidates[pairs[i].winner]);
+        printf("%d %s\n",i,candidates[pairs[i].loser]);
     }
 
 }
