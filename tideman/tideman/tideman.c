@@ -143,11 +143,9 @@ void add_pairs(void)
         {
             if(preferences[i][j]!=0 && i!=j)
             {
-                pair_count++;
                 pairs[pair_count].winner=i;
                 pairs[pair_count].loser=j;
-                printf("%d %s\n",pair_count,candidates[pairs[pair_count].winner]);
-                printf("%d %s\n",pair_count,candidates[pairs[pair_count].loser]);
+                pair_count++;
             }
         }
     }
@@ -159,6 +157,7 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
+    
 
 }
 
