@@ -233,17 +233,17 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner()
 {
-    bool found;
+    int count;
     for(int j=0;j<candidate_count;j++)
-    {   found=false;
+    {   count=0;
         for(int i=0;i<candidate_count;i++)
         {
             if(locked[i][j]==true)
-                found=true;
+                count++;
         }
-        if(found==false)
+        if(count==0)
         {
-            printf("%s \n",candidates[j]);
+            printf("%s",candidates[j]);
             return;
         }
     }
