@@ -201,7 +201,7 @@ bool hasCycle(int winner,int loser)
     {
         return true;
     }
-
+        printf("%s \n",candidates[winner]);
         return false;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
