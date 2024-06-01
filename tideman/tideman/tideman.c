@@ -226,7 +226,7 @@ void print_winner()
         int count=0;
         while(j<candidate_count)
         {
-            if(locked[i][j]!=0)
+            if(locked[i][j]==0)
                 count++;
         }
         if(count==(candidate_count-1))
