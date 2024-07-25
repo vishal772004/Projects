@@ -79,14 +79,14 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             double n=0.0;
             double ravg=0.0,bavg=0.0,gavg=0.0;
             int rsum=0,gsum=0,bsum=0;
-            int p=i,q=j;
+            int p=i-1,q=j-1;
            for (int rows=0;rows<3;rows++)
            {
                 for(int col=0;col<3;col++)
                 {
-                    if((p-1)<0 || (p+1)>height)
+                    if(p<0 || p>height)
                         continue;
-                    if((q-1)<0 || (q+1)>width)
+                    if(q<0 || q>width)
                         continue;
 
                 rsum += copy[rows][col].rgbtRed;
