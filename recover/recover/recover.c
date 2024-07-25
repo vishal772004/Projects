@@ -25,11 +25,6 @@ int main(int argc, char *argv[])
             {
                 sprintf(buffer,"%03i.jpg",n);
                 n++;
-
-                if(n==0)
-                {
-                    fwrite()
-                }
             }
     }
     fclose(card);
