@@ -16,20 +16,19 @@ int main(int argc, char *argv[])
     }
     uint8_t buffer[512];
     int n=0;
-    FILE *img = NULL;
     char* filename = malloc(8*sizeof(uint8_t));
 
-    while (fread(&buffer, 1, 512, card) == 512)
+    while (fread(&buffer, sizeof(uint8_t), 512, card) == 512)
     {
             if(buffer[0]==0xff && buffer[1]==0xd8 && buffer[2]==0xff && (buffer[3] & 0xf0)==0xe0)
             {
                 sprintf(filename,"%03i.jpg",n);
-                img = fopen(filename,"w");
+                FILE *img = fopen(filename,"w");
                 n++;
             }
             if(img!=NULL)
             {
-                fwrite(&buffer,1,512,img);
+                fwrite(&buffer,sizeof(uint8_t),512,img);
             }
     }
     free(filename);
