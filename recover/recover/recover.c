@@ -23,7 +23,10 @@ int main(int argc, char *argv[])
                 sprintf(buffer,"%03i.jpg",n);
                 n++;
                 FILE *img = fopen(buffer,"w");
-                
+                if(n==0)
+                {
+                    fwrite()
+                }
             }
     }
     fclose(card);
