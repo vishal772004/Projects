@@ -23,8 +23,14 @@ int main(int argc, char *argv[])
     {
             if(buffer[0]==0xff && buffer[1]==0xd8 && buffer[2]==0xff && (buffer[3] & 0xf0)==0xe0)
             {
-                sprintf(buffer,"%03i.jpg",n);
+                sprintf(filename,"%03i.jpg",n);
+
+                img = fopen(filename,"w");
                 n++;
+            }
+            if(img!=NULL)
+            {
+                fwrite(&buffer,1,512,img);
             }
     }
     fclose(card);
