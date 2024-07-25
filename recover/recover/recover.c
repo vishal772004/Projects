@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
     uint8_t buffer[512];
     int n=0;
     FILE *img = NULL;
+    char* filename = malloc(8*sizeof(uint8_t));
 
     while (fread(&buffer, 1, 512, card) == 512)
     {
