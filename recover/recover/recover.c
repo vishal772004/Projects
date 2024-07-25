@@ -33,5 +33,7 @@ int main(int argc, char *argv[])
                 fwrite(&buffer,1,512,img);
             }
     }
+    free(filename);
     fclose(card);
+    fclose(img);
 }
