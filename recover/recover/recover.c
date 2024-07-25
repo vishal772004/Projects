@@ -35,4 +35,5 @@ int main(int argc, char *argv[])
     free(filename);
     fclose(card);
     fclose(img);
+    return 0;
 }
