@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     FILE *img = NULL;
     char* filename = malloc(8*sizeof(uint8_t));
 
-    while (fread(&buffer, sizeof(uint8_t), 512, card) == 512)
+    while (fread(&buffer, sizeof(uint8_t), 512, card))
     {
             if(buffer[0]==0xff && buffer[1]==0xd8 && buffer[2]==0xff && (buffer[3] & 0xf0)==0xe0)
             {
