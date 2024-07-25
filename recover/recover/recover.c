@@ -15,12 +15,13 @@ int main(int argc, char *argv[])
         return 1;
     }
     uint8_t buffer[512];
-
+    int n=0;
     while (fread(&buffer, 1, 512, card) == 512)
     {
             if(buffer[0]==0xff && buffer[1]==0xd8 && buffer[2]==0xff && (buffer[3] & 0xf0)==0xe0)
             {
-                sprintf("000.jpg","%03i.jpg",)
+                sprintf(buffer,"%03i.jpg",n);
+                n++;
             }
     }
     fclose(card);
