@@ -40,8 +40,9 @@ bool load(const char *dictionary)
     uint8_t buffer;
     while(fread(&buffer,sizeof(uint8_t),1,dict))
     {
-        
+
     }
+    fclose(dict);
     return false;
 }
 
