@@ -52,7 +52,7 @@ bool load(const char *dictionary)
     FILE *source = fopen(dictionary,"r");
     if (source == NULL)
     {
-        return true;
+        return false;
     }
     char *word = NULL;
     while(fscanf(source,"%s",word)!=EOF)
