@@ -64,7 +64,7 @@ bool load(const char *dictionary)
         }
         strcpy(n->word,Word);
         hashvalue = hash(Word);
-        if (table[hashvalue]->next==NULL)
+        if (table[hashvalue]==NULL)
         {
             table[hashvalue]->next = n->next;
             strcpy(table[hashvalue]->word,n->word);
