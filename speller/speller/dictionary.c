@@ -67,13 +67,13 @@ bool load(const char *dictionary)
         if (table[hashvalue]->next==NULL)
         {
             table[hashvalue]->next = n->next;
-            table[hashvalue]->word = n->word;
+            strcpy(table[hashvalue]->word,n->word);
             n->next = NULL;
         }
         else
         {
             n->next = table[hashvalue]->next;
-            table[hashvalue]->word = n->word;
+            strcpy(table[hashvalue]->word,n->word);
             table[hashvalue]->next = n;
         }
         size_of++;
