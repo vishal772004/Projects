@@ -96,7 +96,9 @@ bool unload(void)
     node *ptr = table[n];
     while(ptr!=NULL)
     {
-        node *temp = 
+        node *temp = ptr;
+        ptr = ptr->next;
+        free(temp);
     }
    }
     return true;
