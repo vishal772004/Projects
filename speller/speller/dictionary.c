@@ -100,6 +100,7 @@ bool unload(void)
         ptr = ptr->next;
         free(temp);
     }
+    n++;
    }
     return true;
 }
