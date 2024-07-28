@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include<strings.h>
 #include "dictionary.h"
 
 // Represents a node in a hash table
@@ -26,7 +27,10 @@ bool check(const char *word)
     hashvalue = hash(&word);
     for(node *ptr=table[hashvalue];ptr!=NULL;ptr=ptr->next)
     {
-        if(ptr->word)
+        if(strcasecmp(ptr->word,word)==0)
+        {
+            return true;
+        }
     }
     return false;
 }
