@@ -91,19 +91,14 @@ bool unload(void)
 {
     // TODO
     unsigned int n=0;
-    while(n<N)
+   while(n<N)
+   {
+    for(node *ptr = table[n];ptr!=NULL;ptr = ptr->next)
     {
-        if(table[n]!=NULL)
-        {
-            for(node *ptr = table[n];ptr!=NULL;ptr=ptr->next)
-        {
-            node *temp = ptr;
-            ptr = ptr->next;
-            free(temp);
-        }
-        }
-
-        n++;
+        node *temp = ptr;
+        free(temp);
+        ptr = ptr->next;
     }
+   }
     return true;
 }
