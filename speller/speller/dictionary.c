@@ -54,16 +54,16 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    char word[LENGTH+1];
-    while(fscanf(source,"%s",word)!=EOF)
+    char Word[LENGTH+1];
+    while(fscanf(source,"%s",Word)!=EOF)
     {
         node *n = malloc(sizeof(node));
         if(n==NULL)
         {
             return false;
         }
-        strcpy(n->word,word);
-        hashvalue = hash(word);
+        strcpy(n->word,Word);
+        hashvalue = hash(Word);
         if (table[hashvalue]->next==NULL)
         {
             table[hashvalue]->next = n->next;
