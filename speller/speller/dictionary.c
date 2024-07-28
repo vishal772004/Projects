@@ -90,7 +90,7 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    int n=0;
+    unsigned int n=0;
     while(n<N)
     {
         for(node *ptr = table[n];ptr!=NULL;ptr=ptr->next)
@@ -99,6 +99,7 @@ bool unload(void)
             ptr = ptr->next;
             free(temp);
         }
+        n++;
     }
     return true;
 }
