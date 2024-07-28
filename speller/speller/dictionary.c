@@ -36,6 +36,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    unsigned int hashvalue;
     FILE *source = fopen(dictionary,"r");
     if (source == NULL)
     {
@@ -50,6 +51,7 @@ bool load(const char *dictionary)
             return false;
         }
         strcpy(n->word,word);
+        hashvalue = hash(&word);
         
     }
 
