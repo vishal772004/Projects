@@ -25,7 +25,7 @@ bool check(const char *word)
 {
     // TODO
     unsigned int hashvalue;
-    hashvalue = hash(&word);
+    hashvalue = hash(word);
     for(node *ptr=table[hashvalue];ptr!=NULL;ptr=ptr->next)
     {
         if(strcasecmp(ptr->word,word)==0)
