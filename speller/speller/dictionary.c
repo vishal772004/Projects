@@ -95,7 +95,9 @@ bool unload(void)
     {
         for(node *ptr = table[n];ptr!=NULL;ptr=ptr->next)
         {
-            
+            node *temp = ptr;
+            ptr = ptr->next;
+            free(temp);
         }
     }
     return false;
