@@ -100,5 +100,5 @@ bool unload(void)
             free(temp);
         }
     }
-    return false;
+    return true;
 }
