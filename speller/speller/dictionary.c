@@ -93,11 +93,10 @@ bool unload(void)
     unsigned int n=0;
    while(n<N)
    {
-    for(node *ptr = table[n];ptr!=NULL;ptr = ptr->next)
+    node *ptr = table[n];
+    while(ptr!=NULL)
     {
-        node *temp = ptr;
-        free(temp);
-        ptr = ptr->next;
+        node *temp = 
     }
    }
     return true;
