@@ -26,7 +26,7 @@ bool check(const char *word)
     hashvalue = hash(&word);
     for(node *ptr=table[hashvalue];ptr!=NULL;ptr=ptr->next)
     {
-        
+        if(ptr->word)
     }
     return false;
 }
