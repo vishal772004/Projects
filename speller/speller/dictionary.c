@@ -42,7 +42,7 @@ bool load(const char *dictionary)
         return false;
     }
     char *word = NULL;
-    while(fread(&word,sizeof(char*),2,source))
+    while(fread(&word,sizeof(char),1,source))
     {
         
     }
