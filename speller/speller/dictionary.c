@@ -36,7 +36,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    unsigned int hashvalue;
+    unsigned int hashvalue,size=0;
     FILE *source = fopen(dictionary,"r");
     if (source == NULL)
     {
@@ -54,6 +54,7 @@ bool load(const char *dictionary)
         hashvalue = hash(&word);
         n->next = table[hashvalue]->next;
         table[hashvalue]->word = n->word;
+        size++;
     }
     return true;
 }
@@ -62,6 +63,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
+    
     return 0;
 }
 
