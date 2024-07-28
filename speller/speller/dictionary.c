@@ -24,7 +24,7 @@ bool check(const char *word)
     // TODO
     unsigned int hashvalue;
     hashvalue = hash(&word);
-    
+
     return false;
 }
 
@@ -55,6 +55,7 @@ bool load(const char *dictionary)
         }
         strcpy(n->word,word);
         hashvalue = hash(&word);
+        node *head = NULL;
         n->next = table[hashvalue]->next;
         table[hashvalue]->word = n->word;
         size_of++;
