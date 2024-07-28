@@ -65,6 +65,7 @@ bool load(const char *dictionary)
         {
             n->next = table[hashvalue]->next;
             table[hashvalue]->word = n->word;
+            table[hashvalue]->next = n;
         }
         size_of++;
     }
