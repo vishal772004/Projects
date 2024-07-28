@@ -24,7 +24,10 @@ bool check(const char *word)
     // TODO
     unsigned int hashvalue;
     hashvalue = hash(&word);
-
+    for(node *ptr=table[hashvalue];ptr!=NULL;ptr=ptr->next)
+    {
+        
+    }
     return false;
 }
 
