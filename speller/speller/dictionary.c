@@ -52,7 +52,7 @@ bool load(const char *dictionary)
         }
         strcpy(n->word,word);
         hashvalue = hash(&word);
-        
+        table[hashvalue] = 
     }
 
 }
