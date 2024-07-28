@@ -51,7 +51,7 @@ bool load(const char *dictionary)
     FILE *source = fopen(dictionary,"r");
     if (source == NULL)
     {
-        return false;
+        return true;
     }
     char *word = NULL;
     while(fscanf(source,"%s",word)!=EOF)
@@ -59,7 +59,7 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if(n==NULL)
         {
-            return false;
+            return true;
         }
         strcpy(n->word,word);
         hashvalue = hash(&word);
@@ -77,7 +77,7 @@ bool load(const char *dictionary)
         }
         size_of++;
     }
-    return true;
+    return false;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
