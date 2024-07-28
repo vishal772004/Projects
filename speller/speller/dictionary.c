@@ -36,14 +36,12 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    FILE *dict = fopen(dictionary,"r");
-    uint8_t buffer;
-    while(fread(&buffer,sizeof(uint8_t),1,dict))
+    FILE *source = fopen(dictionary,"r");
+    if (source == NULL)
     {
-
+        return false;
     }
-    fclose(dict);
-    return false;
+    
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
