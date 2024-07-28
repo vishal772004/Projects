@@ -78,6 +78,7 @@ bool load(const char *dictionary)
         }
         size_of++;
     }
+    fclose(source);
     return false;
 }
 
