@@ -41,6 +41,8 @@ bool load(const char *dictionary)
     {
         return false;
     }
+    char *word = NULL;
+    while(fread())
 
 }
 
