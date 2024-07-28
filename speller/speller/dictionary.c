@@ -43,9 +43,9 @@ bool load(const char *dictionary)
         return false;
     }
     char *word = NULL;
-    while(fread(&word,sizeof(char),1,source))
+    while(fscanf(source,"%s",word)!=EOF)
     {
-        fscanf(source,"%s",word);
+        
     }
 
 }
