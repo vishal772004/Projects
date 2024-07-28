@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include<strings.h>
 #include<string.h>
+#include<stdlib.h>
 #include "dictionary.h"
 
 // Represents a node in a hash table
@@ -62,7 +63,7 @@ bool load(const char *dictionary)
             return true;
         }
         strcpy(n->word,word);
-        hashvalue = hash(&word);
+        hashvalue = hash(word);
         if (table[hashvalue]->next==NULL)
         {
             table[hashvalue]->next = n->next;
