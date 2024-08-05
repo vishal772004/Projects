@@ -1,3 +1,5 @@
 height = int(input("Height:"))
 for i in range(height):
-    print("#"*i)
+    for j in range(i):
+        print("#",end="")
+    print()
