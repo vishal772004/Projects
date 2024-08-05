@@ -2,7 +2,7 @@ import sys
 
 while(True):
     height = input("Height:")
-    if(height.isdigit() and int(height)>0):
+    if(height.isdigit() and 9>int(height)>0):
         break
 height = int(height)
 
