@@ -11,8 +11,8 @@ if(re.search("^(34)|(37)[0-9]{13}",num)):
     sys.exit(0)
 
 
-if(re.search("^5+[1-5]{13}",num)):
-    print("AMEX")
+if(re.search("^5+[1-5]{14}",num)):
+    print("MASTERCARD")
     sys.exit(0)
 
 for i in range(len(l)):
