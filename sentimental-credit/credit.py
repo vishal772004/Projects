@@ -19,6 +19,9 @@ if(re.search("^5+[1-5]{14}",num)):
 if(re.search("^4+[0-9]{15}",num)):
     print("VISA")
     sys.exit(0)
+elif(re.search("^4+[0-9]{12}",num)):
+    print("VISA")
+    sys.exit(0)
 
 for i in range(len(l)):
     if i%2==0 or i==0:
