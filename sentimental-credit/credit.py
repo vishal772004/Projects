@@ -10,6 +10,8 @@ for i in range(len(l)):
         prod = prod + (l[i]*2)
     else:
         sum = sum + l[i]
+maxsum = prod+sum
+print(maxsum)
 if((prod+sum)%10==0):
     pass
 else:
