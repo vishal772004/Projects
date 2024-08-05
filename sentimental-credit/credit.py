@@ -2,7 +2,8 @@
 num = input("Number:")
 prod = 1
 sum = 0
-for i in num.split():
+for i in num:
     n = int(i)
-    print(n)
+    prod = prod*n
+print(prod)
 
