@@ -15,4 +15,5 @@ if((prod+sum)%10==0):
 else:
     print("INVALID")
 
-if(re.search("^"))
+if(re.search("^(34)|(37)[0-9]{13}",num)):
+    print("AMEX")
