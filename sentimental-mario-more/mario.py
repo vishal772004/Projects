@@ -1,4 +1,8 @@
+
+
 height = int(input("Height:"))
+
+
 for i in range(height):
     for k in range(height-i):
         print(" ",end="")
