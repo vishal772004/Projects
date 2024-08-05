@@ -1,11 +1,15 @@
 import sys
 
 height = input("Height:")
-if((height.isnumeric()))
 
-if(height<=0)
+if (height.isdigit()):
+    pass
+else:
     sys.exit(1)
+height = int(height)
 
+if(height<=0):
+    sys.exit(1)
 
 for i in range(height):
     for k in range(height-i):
