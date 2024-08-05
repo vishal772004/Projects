@@ -1,8 +1,11 @@
 import sys
 
-height = int(input("Height:"))
+height = input("Height:")
+if((height.isnumeric()))
+
 if(height<=0)
     sys.exit(1)
+
 
 for i in range(height):
     for k in range(height-i):
