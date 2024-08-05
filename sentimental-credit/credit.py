@@ -15,4 +15,4 @@ if((prod+sum)%10==0):
 else:
     print("INVALID")
 
-if()
+if(re.search("^"))
