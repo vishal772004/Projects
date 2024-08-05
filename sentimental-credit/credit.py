@@ -15,6 +15,14 @@ if(re.search("^5+[1-5]{14}",num)):
     print("MASTERCARD")
     sys.exit(0)
 
+
+if(re.search("^4+{12}",num)):
+    print("VISA")
+    sys.exit(0)
+elif(re.search("^4+{15}",num)):
+    print("VISA")
+    sys.exit(0)
+
 for i in range(len(l)):
     if i%2==0 or i==0:
         prod = prod + (l[i]*2)
