@@ -10,5 +10,8 @@ for i in range(len(l)):
         prod = prod + (l[i]*2)
     else:
         sum = sum + l[i]
-
+if((prod+sum)%10==0):
+    pass
+else:
+    print("INVALID")
 
