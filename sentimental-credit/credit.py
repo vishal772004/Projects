@@ -16,10 +16,7 @@ if(re.search("^5+[1-5]{14}",num)):
     sys.exit(0)
 
 
-if(re.search("^4+[0-9]{12}",num)):
-    print("VISA")
-    sys.exit(0)
-elif(re.search("^4+[0-9]{15}",num)):
+if(re.search("^4+[0-9]{15}",num)):
     print("VISA")
     sys.exit(0)
 
