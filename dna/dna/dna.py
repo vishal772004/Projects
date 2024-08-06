@@ -19,8 +19,7 @@ def main():
     l2 = []
     with open(sys.argv[2]) as file:
         sreader = csv.DictReader(file)
-        for i in sreader:
-            l2.append(i)
+        l2.append(sreader.fieldnames)
     print(l2)
     # TODO: Find longest match of each STR in DNA sequence
     #longest_run = longest_match()
