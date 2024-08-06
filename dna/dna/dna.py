@@ -13,18 +13,19 @@ def main():
     with open(sys.argv[1]) as file:
         dreader = csv.DictReader(file)
         for i in dreader:
-            l1.append(i)
-
+            l1.append(dreader.fieldnames)
+    print(l1)
     # TODO: Read DNA sequence file into a variable
     l2 = []
     with open(sys.argv[2]) as file:
         sreader = csv.DictReader(file)
         l2.append(sreader.fieldnames)
+    print(l2)
     # TODO: Find longest match of each STR in DNA sequence
 
-    longest_run = longest_match(l1,l2)
+    longest_run = longest_match(l2[0],'AGAT')
     # TODO: Check database for matching profiles
-    print(longest_run)
+
     return
 
 
