@@ -20,12 +20,11 @@ def main():
     with open(sys.argv[2]) as file:
         sreader = csv.DictReader(file)
         l2.append(sreader.fieldnames)
-    print(l2)
     # TODO: Find longest match of each STR in DNA sequence
-    
-    longest_run = longest_match()
-    # TODO: Check database for matching profiles
 
+    longest_run = longest_match(l2,l1)
+    # TODO: Check database for matching profiles
+    print(longest_run)
     return
 
 
