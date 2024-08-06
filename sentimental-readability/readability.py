@@ -11,8 +11,9 @@ for i in text.split():
             lettercount = lettercount+1
         if(j=='.' or j=='!' or j=='?'):
             sentencecount = sentencecount+1
+    if (wordcount==100):
+        L=lettercount
 
-L = lettercount/100
 
 grade = 0.0588 * L - 0.296 * S - 15.8
 print(wordcount,lettercount,sentencecount)
