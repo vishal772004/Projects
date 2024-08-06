@@ -22,7 +22,7 @@ def main():
         l2.append(sreader.fieldnames)
     print(l2)
     # TODO: Find longest match of each STR in DNA sequence
-    for i in 
+    
     longest_run = longest_match()
     # TODO: Check database for matching profiles
 
