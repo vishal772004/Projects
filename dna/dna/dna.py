@@ -40,8 +40,10 @@ def main():
             k=0
             l=len(j)
             for i in d:
-                print(j[i],d[i])
-
+                if(int(j[i])==int(d[i])):
+                    k=k+1
+            if(k==(l-1)):
+                print(j['name'])
     return
 
 
