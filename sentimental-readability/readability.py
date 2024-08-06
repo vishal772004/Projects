@@ -16,6 +16,7 @@ L = lettercount/wordcount*100
 S = sentencecount/wordcount*100
 
 grade = 0.0588 * L - 0.296 * S - 15.8
+grade = round(grade)
 if (grade<1):
     print("Before Grade 1")
 elif (grade>=16):
