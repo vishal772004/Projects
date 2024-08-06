@@ -11,11 +11,17 @@ for i in text.split():
             lettercount = lettercount+1
         if(j=='.' or j=='!' or j=='?'):
             sentencecount = sentencecount+1
-    if (wordcount==100):
-        L=lettercount
 
+L = lettercount/wordcount*100
+S = sentencecount/wordcount*100
 
 grade = 0.0588 * L - 0.296 * S - 15.8
-print(wordcount,lettercount,sentencecount)
+if (grade<1):
+    print("Before Grade 1")
+elif (grade>=16):
+    print("Grade 16+")
+else:
+    print("Grade",grade)
+
 
 
