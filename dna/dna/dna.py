@@ -14,6 +14,7 @@ def main():
         dreader = csv.DictReader(file)
         print(dreader.fieldnames)
     # TODO: Read DNA sequence file into a variable
+    
     with open(sys.argv[2]) as file:
         sreader = csv.DictReader(file)
         print(sreader.fieldnames)
