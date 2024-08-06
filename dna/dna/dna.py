@@ -40,8 +40,9 @@ def main():
             k=0
             l=len(j)
             for i in d:
-                while(k<l):
+                if(k<l):
                     print(i,d[i])
+                    print(j,j[i])
                     k=k+1
 
     return
