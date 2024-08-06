@@ -29,11 +29,12 @@ def main():
     s = l2[0][0]
 
     # TODO: Find longest match of each STR in DNA sequence
+    d = dict()
     for i in ssub:
         longest_run = longest_match(s,i)
-        
+        d[i] = longest_run
     # TODO: Check database for matching profiles
-
+    
     return
 
 
