@@ -34,7 +34,9 @@ def main():
         longest_run = longest_match(s,i)
         d[i] = longest_run
     # TODO: Check database for matching profiles
-    
+    with open(sys.argv[1]) as file:
+        dreader = csv.DictReader(file)
+        
     return
 
 
