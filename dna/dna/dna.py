@@ -36,9 +36,7 @@ def main():
     # TODO: Check database for matching profiles
     with open(sys.argv[1]) as file:
         dreader = csv.DictReader(file)
-        for i in dreader:
-            for j in ssub:
-                print(i[j])
+        for i in ssub
     return
 
 
