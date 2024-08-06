@@ -38,8 +38,8 @@ def main():
         dreader = csv.DictReader(file)
         for i in dreader:
             print(i)
-            for j in len(i):
-                
+            for j in len(i)-1:
+                if(i[])
     return
 
 
