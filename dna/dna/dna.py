@@ -36,14 +36,18 @@ def main():
     # TODO: Check database for matching profiles
     with open(sys.argv[1]) as file:
         dreader = csv.DictReader(file)
+        found = 0
         for j in dreader:
             k=0
-            l=len(j)
+            l=len(j)-1
             for i in d:
                 if(int(j[i])==int(d[i])):
                     k=k+1
-            if(k==(l-1)):
+            if(k==(l)):
+                found = 1
                 print(j['name'])
+    if found == 0:
+        print("No match")
     return
 
 
