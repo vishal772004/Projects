@@ -37,8 +37,9 @@ def main():
     with open(sys.argv[1]) as file:
         dreader = csv.DictReader(file)
         for i in dreader:
+            print(i,end="")
             for j in d:
-                print(i,i[j])
+                print(i[j])
     return
 
 
