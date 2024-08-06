@@ -20,7 +20,7 @@ def main():
             if j=="name":
                 continue
             ssub.append(j)
-    print(ssub)
+
     # TODO: Read DNA sequence file into a variable
     l2 = []
     with open(sys.argv[2]) as file:
@@ -36,7 +36,8 @@ def main():
     # TODO: Check database for matching profiles
     with open(sys.argv[1]) as file:
         dreader = csv.DictReader(file)
-        
+        for i in dreader:
+            print(i)
     return
 
 
