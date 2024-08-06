@@ -5,18 +5,18 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if (sys.argc!=3):
+    if (len(sys.argv)!=3):
         sys.exit(1)
 
     # TODO: Read database file into a variable
-    
+
     with open(sys.argv[1]) as file:
         dreader = csv.DictReader(file)
-    print(dreader.fieldnames)
+        print(dreader.fieldnames)
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2]) as file:
         sreader = csv.DictReader(file)
-    print(sreader.fieldnames)
+        print(sreader.fieldnames)
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
