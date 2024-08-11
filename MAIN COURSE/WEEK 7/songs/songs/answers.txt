@@ -1,0 +1,14 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+ANS: Firstly we try to find the average of energy, valence and danceability of the top 100 songs of that particular listener . Then we categorize
+them based on the average and moods or auras of the listener . Then we pick the top two auras . Thus we can characterize the audio aura of the listener.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this
+aura would you propose?
+
+ANS:To be frank an individuals mood changes from time to  time. Calculating an aura of an individual mathematically may not be the best way ,
+because the favourite songs of an individual changes depending on his mood or the trend of that time . Basically it all depends on his mood ,
+if he is happy he will try to listen to beautiful songs with meanings . If he is sad he will listen to any song that has a sad melody .
+So I think by separating the songs based on the auras definitely helps the user . But trying to find out the mood of the user is bit difficult ,
+throughout the day he may be happy , sad or angry . So the best way is to have a playlist for all the auras that exist and it is better to have a
+playlist containing mixed aura songs or songs shuffled from two or three different auras instead of finding the perfect aura of that individual.
