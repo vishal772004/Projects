@@ -16,3 +16,13 @@ AND month=7
 AND day=28;
 
 /*Then after careful observation we head on to the bakery security footage */
+SELECT *
+FROM interviews
+WHERE year=2023
+AND month=7
+AND day=28
+AND hour=10
+AND minute>15;
+
+/*Having the list of licence plates we next move to the atm transactions as told by the witness*/
+
