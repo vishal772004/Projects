@@ -33,4 +33,5 @@ AND day=28
 AND atm_location="Leggitt Street"
 AND transaction_type="withdraw";
 
-/*Having the list of account number we then move on to the 
+/*Having the list of account number we then move on to the bank accounts table to have the list of names who  withdraw their money*/
+
