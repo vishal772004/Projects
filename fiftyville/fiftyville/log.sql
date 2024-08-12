@@ -76,4 +76,26 @@ IN(
 );
 
 /* Now we try to find the person who booked a flight*/
+SELECT phone_number,name
+FROM people
+WHERE passport_number
+IN(
+    SELECT DISTINCT(passport_number)
+    FROM passengers,flights
+    WHERE flight_id
+    IN(
+        SELECT id
+        FROM flights
+        WHERE day=29
+        AND month=7
+        AND year=2023
+        AND origin_airport_id=(
+            SELECT id
+            FROM airports
+            WHERE city="Fiftyvile"
+        )
+        ORDER BY hour
+        LIMIT 1
+    )
+);
 
