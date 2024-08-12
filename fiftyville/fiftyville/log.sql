@@ -34,4 +34,20 @@ AND atm_location="Leggitt Street"
 AND transaction_type="withdraw";
 
 /*Having the list of account number we then move on to the bank accounts table to have the list of names who  withdraw their money*/
+SELECT p.name
+FROM bank_accounts
+AS b
+JOIN atm_transactions
+AS a
+ON b.account_number=a.account_number
+JOIN people
+AS p
+ON p.id=b.person_id
+WHERE year=2023
+AND month=7
+AND day=28
+AND atm_location="Leggitt Street"
+AND transaction_type="withdraw";
+
+/*Now we try to find out the person to whom the theif called*/
 
