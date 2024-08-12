@@ -60,11 +60,11 @@ ON b.account_number=a.account_number
 JOIN people
 AS p
 ON p.id=b.person_id
-WHERE year=2023
-AND month=7
-AND day=28
-AND atm_location="Leggitt Street"
-AND transaction_type="withdraw"
+WHERE a.year=2023
+AND a.month=7
+AND a.day=28
+AND a.atm_location="Leggitt Street"
+AND a.transaction_type="withdraw"
 AND p.phone_number
 IN(
     SELECT caller
