@@ -15,7 +15,7 @@ WHERE year=2023
 AND month=7
 AND day=28;
 
-/*Then after careful observation we head on to the bakery security footage */
+/*Then after careful observation we head on to the interviews*/
 SELECT *
 FROM interviews
 WHERE year=2023
