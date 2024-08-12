@@ -25,4 +25,12 @@ AND hour=10
 AND minute>15;
 
 /*Having the list of licence plates we next move to the atm transactions as told by the witness*/
+SELECT *
+FROM atm_transactions
+WHERE year=2023
+AND month=7
+AND day=28
+AND atm_location="Leggitt Street"
+AND transaction_type="withdraw";
 
+/*Having the list of account number we then mov
