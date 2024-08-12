@@ -49,5 +49,19 @@ AND day=28
 AND atm_location="Leggitt Street"
 AND transaction_type="withdraw";
 
-/*Now we try to find out the person to whom the theif called*/
+/*Now we try to shortlist the names of people who withdrew their money and spoke to someone on call for less than a minute*/
 
+SELECT p.name,p.phone_number
+FROM bank_accounts
+AS b
+JOIN atm_transactions
+AS a
+ON b.account_number=a.account_number
+JOIN people
+AS p
+ON p.id=b.person_id
+WHERE year=2023
+AND month=7
+AND day=28
+AND atm_location="Leggitt Street"
+AND transaction_type="withdraw";
