@@ -64,4 +64,16 @@ WHERE year=2023
 AND month=7
 AND day=28
 AND atm_location="Leggitt Street"
-AND transaction_type="withdraw";
+AND transaction_type="withdraw"
+AND p.phone_number
+IN(
+    SELECT caller
+    FROM phone_calls
+    WHERE year=2023
+    AND month=7
+    AND day=28
+    and duration<60
+);
+
+/* Now we try to find the person who booked a flight*/
+
