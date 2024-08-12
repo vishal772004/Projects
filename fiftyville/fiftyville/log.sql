@@ -8,5 +8,5 @@ AND month=7
 AND year=2023
 AND street="Humphrey Street";
 
-/*After observing the description then we head on to bakery_security_logs table as mentiones by the witnesses*/
+/*After observing the description then we head on to the interviews table*/
 
