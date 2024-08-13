@@ -22,7 +22,8 @@ WHERE year=2023
 AND month=7
 AND day=28
 AND hour=10
-AND minute>15;
+AND minute>15
+and activity="exit";
 
 /*Having the list of licence plates we next move to the atm transactions as told by the witness*/
 SELECT *
