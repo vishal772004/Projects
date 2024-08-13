@@ -15,9 +15,9 @@ WHERE year=2023
 AND month=7
 AND day=28;
 
-/*Then after careful observation we head on to the interviews*/
+/*Then after careful observation we head on to the bakery_security_logs*/
 SELECT *
-FROM interviews
+FROM bakery_security_logs
 WHERE year=2023
 AND month=7
 AND day=28
