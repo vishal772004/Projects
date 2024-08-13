@@ -47,7 +47,7 @@ ON p.id=b.person_id
 WHERE year=2023
 AND month=7
 AND day=28
-AND atm_location="Leggitt Street"
+AND atm_location="Leggett Street"
 AND transaction_type="withdraw";
 
 /*Now we try to shortlist the names of people who withdrew their money and spoke to someone on call for less than a minute*/
@@ -64,7 +64,7 @@ ON p.id=b.person_id
 WHERE a.year=2023
 AND a.month=7
 AND a.day=28
-AND a.atm_location="Leggitt Street"
+AND a.atm_location="Leggett Street"
 AND a.transaction_type="withdraw"
 AND p.phone_number
 IN(
