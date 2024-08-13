@@ -76,6 +76,34 @@ IN(
     and duration<60
 );
 
+/*Now we try to find the thief who stole the duck by analyzing the withdrawal ,call history and checking the licence plate at the bakery*/
+
+SELECT distinct(p.name)
+FROM bank_accounts
+AS b
+JOIN atm_transactions
+AS a
+ON b.account_number=a.account_number
+JOIN people
+AS p
+ON p.id=b.person_id
+JOIN phone_calls
+AS ph
+ON ph.caller=p.phone_number
+WHERE a.year=2023
+AND a.month=7
+AND a.day=28
+AND a.atm_location="Leggett Street"
+AND a.transaction_type="withdraw"
+AND ph.caller
+IN(
+    SELECT caller
+    FROM phone_calls
+    WHERE year=2023
+    AND month=7
+    AND day=28
+    and duration<60
+);
 /* Now we try to find the person who booked a flight*/
 SELECT phone_number,name
 FROM people
