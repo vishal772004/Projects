@@ -214,4 +214,20 @@ IN(
 )
 );
 --So the theif is Bruce and to find out his accomplice
+SELECT p.name
+FROM people
+AS p
+JOIN phone_calls
+AS ph
+ON p.phone_number=ph.receiver
+WHERE ph.caller=(
+    SELECT phone_number
+    FROM people
+    WHERE name="Bruce"
+)
+AND ph.year=2023
+AND ph.month=7
+AND ph.day=28
+AND ph.duration<60;
+--His accomplice was Robin and finally to find the destination of the theif i.e Bruce
 
