@@ -135,7 +135,15 @@ IN(
             WHERE city="Fiftyvile"
         )
         ORDER BY hour
-        LIMIT 1
     )
+)
+AND phone_number
+IN(
+    SELECT receiver
+    FROM phone_calls
+    WHERE day=29
+    AND month=7
+    AND year=2023
+    AND duration<60
 );
 
