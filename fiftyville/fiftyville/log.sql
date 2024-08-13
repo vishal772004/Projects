@@ -116,7 +116,7 @@ IN(
     AND activity="exit"
 );
 /* Now we try to find the person who booked a flight*/
-SELECT phone_number,name
+SELECT name
 FROM people
 WHERE passport_number
 IN(
