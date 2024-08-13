@@ -112,7 +112,8 @@ IN(
     AND month=7
     AND day=28
     AND hour=10
-    AND minute>25
+    AND minute<25
+    AND minute>15
     AND activity="exit"
 );
 /* Now we try to find the person who booked a flight*/
