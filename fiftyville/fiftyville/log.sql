@@ -49,32 +49,6 @@ AND day=28
 AND atm_location="Leggitt Street"
 AND transaction_type="withdraw";
 
-/*Now we try to shortlist the names of people who withdrew their money and spoke to someone on call for less than a minute*/
-
-SELECT p.name,p.phone_number
-FROM bank_accounts
-AS b
-JOIN atm_transactions
-AS a
-ON b.account_number=a.account_number
-JOIN people
-AS p
-ON p.id=b.person_id
-WHERE a.year=2023
-AND a.month=7
-AND a.day=28
-AND a.atm_location="Leggitt Street"
-AND a.transaction_type="withdraw"
-AND p.phone_number
-IN(
-    SELECT caller
-    FROM phone_calls
-    WHERE year=2023
-    AND month=7
-    AND day=28
-    and duration<60
-);
-
 /* Now we try to find the person who booked a flight*/
 SELECT phone_number,name
 FROM people
