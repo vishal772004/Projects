@@ -230,4 +230,19 @@ AND ph.month=7
 AND ph.day=28
 AND ph.duration<60;
 --His accomplice was Robin and finally to find the destination of the theif i.e Bruce
-
+SELECT city
+FROM airports
+WHERE id=(
+    SELECT destination_airport_id
+    FROM flights
+    WHERE origin_airport_id=(
+        SELECT id
+        FROM airports
+        WHERE city="Fiftyville"
+    )
+    AND year=2023
+    AND month=7
+    AND day=29
+    ORDER BY hour
+    LIMIT 1
+);
