@@ -18,11 +18,11 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                 <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
-                <button id="correct">6 people per 1 sheep</button>
-                <button id="incorrect1">3 people per 1 sheep</button>
-                <button id="incorrect2">1 person per 1 sheep</button>
-                <button id="incorrect3">1 person per 3 sheep</button>
-                <button id="incorrect4">1 person per 5 sheep</button>
+                <button id="correct">6 people per 1 sheep<p></p></button>
+                <button id="incorrect1">3 people per 1 sheep\n<p></p></button>
+                <button id="incorrect2">1 person per 1 sheep<p></p></button>
+                <button id="incorrect3">1 person per 3 sheep<p></p></button>
+                <button id="incorrect4">1 person per 5 sheep<p></p></button>
             </div>
 
             <div class="section">
@@ -42,6 +42,7 @@
             let button1 = document.querySelector('#incorrect1');
             button1.addEventListener('click',function(){
             document.querySelector('#incorrect1').style.color='red';
+            document.querySelector('#incorrect1').innerHTML="Incorrect";
             });
             let button2 = document.querySelector('#incorrect2');
             button2.addEventListener('click',function(){
