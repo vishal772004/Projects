@@ -38,15 +38,23 @@
         </div>
         <script>
             // TODO: Add code to check answers to questions
-            function myfunction(e){
-            document.querySelector('#incorrect1').style.color='red';
-            document.querySelector('#incorrect2').style.color='red';
-            document.querySelector('#incorrect3').style.color='red';
-            document.querySelector('#incorrect4').style.color='red';
-            document.querySelector('#correct').style.color='green';
-            }
+           
             let button = document.querySelector('.section');
-            button.addEventListener('click',myfunction);
+            button.addEventListener('click',function(){
+            document.querySelector('#incorrect1').style.color='red';
+            });
+            button.addEventListener('click',function(){
+            document.querySelector('#incorrect2').style.color='red';
+            });
+            button.addEventListener('click',function(){
+            document.querySelector('#incorrect3').style.color='red';
+            });
+            button.addEventListener('click',function(){
+            document.querySelector('#incorrect4').style.color='red';
+            });
+            button.addEventListener('click',function(){
+            document.querySelector('#correct').style.color='green';
+            });
 
         </script>
     </body>
