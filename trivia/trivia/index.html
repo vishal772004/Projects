@@ -5,15 +5,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
-        <script>
-            // TODO: Add code to check answers to questions
-            function myfunction(e){
-            document.querySelector('#correct').style.color='red';
-            }
-            let button = document.querySelector('button');
-            button.addEventListener('click',myfunction);
 
-        </script>
     </head>
     <body>
         <div class="header">
@@ -44,5 +36,14 @@
                 </form>
             </div>
         </div>
+        <script>
+            // TODO: Add code to check answers to questions
+            function myfunction(e){
+            document.querySelector('#incorrect').style.color='red';
+            }
+            let button = document.querySelector('button');
+            button.addEventListener('click',myfunction);
+
+        </script>
     </body>
 </html>
