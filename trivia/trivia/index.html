@@ -18,11 +18,11 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                 <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
-                <button id="correct">6 people per 1 sheep</button>
+                <button id="correct">6 people per 1 sheep<div id="correcttext"></div></button>
                 <button id="incorrect1">3 people per 1 sheep<div id="incorrect1text"></div></button>
-                <button id="incorrect2">1 person per 1 sheep</button>
-                <button id="incorrect3">1 person per 3 sheep</button>
-                <button id="incorrect4">1 person per 5 sheep</button>
+                <button id="incorrect2">1 person per 1 sheep<div id="incorrect2text"></div></button>
+                <button id="incorrect3">1 person per 3 sheep<div id="incorrect3text"></div></button>
+                <button id="incorrect4">1 person per 5 sheep<div id="incorrect4text"></div></button>
             </div>
 
             <div class="section">
@@ -42,27 +42,27 @@
             let button1 = document.querySelector('#incorrect1');
             button1.addEventListener('click',function(){
             document.querySelector('#incorrect1').style.color='red';
-            document.querySelector('#incorrect1text').textContent="Incorrect";
+            document.querySelector('#incorrect1text').innerHTML="Incorrect";
             });
             let button2 = document.querySelector('#incorrect2');
             button2.addEventListener('click',function(){
             document.querySelector('#incorrect2').style.color='red';
-            document.querySelector('#incorrect2').innerHTML="Incorrect";
+            document.querySelector('#incorrect2text').innerHTML="Incorrect";
             });
             let button3 = document.querySelector('#incorrect3');
             button3.addEventListener('click',function(){
             document.querySelector('#incorrect3').style.color='red';
-            document.querySelector('#incorrect3').innerHTML="Incorrect";
+            document.querySelector('#incorrect3text').innerHTML="Incorrect";
             });
             let button4 = document.querySelector('#incorrect4');
             button4.addEventListener('click',function(){
             document.querySelector('#incorrect4').style.color='red';
-            document.querySelector('#incorrect4').innerHTML="Incorrect";
+            document.querySelector('#incorrect4text').innerHTML="Incorrect";
             });
             let button5 = document.querySelector('#correct');
             button5.addEventListener('click',function(){
             document.querySelector('#correct').style.color='green';
-            document.querySelector('#correct').innerHTML="Correct";
+            document.querySelector('#correcttext').innerHTML="Correct";
             });
 
         </script>
