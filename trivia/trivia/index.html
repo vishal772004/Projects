@@ -64,8 +64,8 @@
             });
 
             document.querySelector('#feedback').addEventListener('click',function(){
-            let response = document.querySelector('#answer');
-            if(response.value==="Switzerland"){
+            let response = document.querySelector('input');
+            if(response.value=="Switzerland"){
             document.querySelector('#answer').style.color='green';
             document.querySelector('#answer').innerHTML="Correct";
             }})
