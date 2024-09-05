@@ -66,14 +66,14 @@
 
             document.querySelector('#feedback').addEventListener('click',function(){
             let response = document.querySelector('#feedback');
-            if(response.value=="Switzerland"){
+            if(response.value==='Switzerland'){
             response.style.backgroundColor='green';
             document.querySelector('#answer').innerHTML="Correct";
             }
             else {
             response.style.backgroundColor = 'red';
             document.querySelector('#response').innerHTML = 'Incorrect';
-            console.log(response);
+
             }})
 
         </script>
