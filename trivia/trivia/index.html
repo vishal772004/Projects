@@ -32,6 +32,7 @@
                 <h3>In which country is it illegal to own one guinea pig , as a lone guinea pig might get lonely?</h3>
                 <input type="text" id="answer">
                 <button id="feedback">Check Answer</button>
+                <p id="response"></p>
             </div>
         </div>
         <script>
@@ -71,7 +72,8 @@
             }
             else {
             response.style.backgroundColor = 'red';
-            document.querySelector('#answer').innerHTML = 'Incorrect';
+            document.querySelector('#response').innerHTML = 'Incorrect';
+            console.log(response);
             }})
 
         </script>
