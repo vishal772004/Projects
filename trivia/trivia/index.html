@@ -30,7 +30,7 @@
                 <hr>
                 <!-- TODO: Add free response question here -->
                 <h3>In which country is it illegal to own one guinea pig , as a lone guinea pig might get lonely?</h3>
-                <input type="text" id="answer">
+                <input type="text" id="answer" autocomplete="on">
                 <button id="feedback">Check Answer</button>
                 <p id="response"></p>
             </div>
@@ -68,11 +68,13 @@
             let response = document.querySelector('#answer');
 
             if(response.value==='Switzerland'){
-            response.style.backgroundColor='green';
-            document.querySelector('#answer').innerHTML="Correct";
+            response.style.color='green';
+            document.querySelector('#feedback').style.backgroundColor='Green';
+            document.querySelector('#response').innerHTML="Correct";
             }
             else {
-            response.style.backgroundColor = 'red';
+            response.style.color = 'red';
+            document.querySelector('#feedback').style.backgroundColor='Red';
             document.querySelector('#response').innerHTML = 'Incorrect';
 
             }})
