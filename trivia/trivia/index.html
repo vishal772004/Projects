@@ -65,8 +65,8 @@
             document.querySelector('#correcttext').innerHTML="Correct";
             });
 
-            let response = document.querySelector('input');
-            if(input.value==="Switzerland"){
+            let response = document.querySelector('#answer');
+            if(response.value==="Switzerland"){
             response.addEventListener('click',function(){
             document.querySelector('#answer').style.color='green';
             document.querySelector('#answer').innerHTML="Correct";
