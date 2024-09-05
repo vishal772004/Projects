@@ -66,7 +66,8 @@
 
             document.querySelector('#feedback').addEventListener('click',function(){
             let response = document.querySelector('#answer');
-            const text=
+            const text=response.value;
+            console.log(text);
             if(response.value==='Switzerland'){
             response.style.backgroundColor='green';
             document.querySelector('#answer').innerHTML="Correct";
